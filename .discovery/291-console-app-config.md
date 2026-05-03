@@ -1,0 +1,189 @@
+# console-app-config
+
+Source: packages/console/app/src
+Files: 180
+
+## File Tree
+
+- `app.css` (1 lines) — (no exported symbol found)
+- `app.tsx` (44 lines) — default function App() {
+  - `component/dropdown.css` (80 lines) — (no exported symbol found)
+  - `component/dropdown.tsx` (79 lines) — function Dropdown(props: DropdownProps) {
+  - `component/email-signup.tsx` (47 lines) — function EmailSignup() {
+  - `component/faq.tsx` (33 lines) — function Faq(props: ParentProps & { question: string }) {
+  - `component/footer.tsx` (48 lines) — function Footer() {
+  - `component/header-context-menu.css` (63 lines) — (no exported symbol found)
+  - `component/header.tsx` (293 lines) — function Header(props: { zen?: boolean; go?: boolean; hideGetStarted?: boolean }
+  - `component/icon.tsx` (286 lines) — function IconZen(_props: JSX.SvgSVGAttributes<SVGSVGElement>) {
+  - `component/language-picker.css` (135 lines) — (no exported symbol found)
+  - `component/language-picker.tsx` (40 lines) — function LanguagePicker(props: { align?: "left" | "right" } = {}) {
+  - `component/legal.tsx` (28 lines) — function Legal() {
+  - `component/locale-links.tsx` (36 lines) — function LocaleLinks(props: { path: string }) {
+  - `component/modal.css` (67 lines) — (no exported symbol found)
+  - `component/modal.tsx` (24 lines) — function Modal(props: ModalProps) {
+  - `component/spotlight.css` (15 lines) — (no exported symbol found)
+  - `component/spotlight.tsx` (820 lines) — interface ParticlesConfig {
+- `config.ts` (29 lines) — const config = {
+  - `context/auth.session.ts` (1 lines) — {}
+  - `context/auth.ts` (116 lines) — const AuthClient = createClient({
+  - `context/auth.withActor.ts` (7 lines) — async function withActor<T>(fn: () => T, workspace?: string) {
+  - `context/i18n.tsx` (27 lines) — const { use: useI18n, provider: I18nProvider } = createSimpleContext({
+  - `context/language.tsx` (72 lines) — const { use: useLanguage, provider: LanguageProvider } = createSimpleContext({
+- `entry-client.tsx` (4 lines) — (no exported symbol found)
+- `entry-server.tsx` (37 lines) — default createHandler(
+- `global.d.ts` (5 lines) — declare module "@solidjs/start/server" {
+  - `i18n/ar.ts` (779 lines) — const dict = {
+  - `i18n/br.ts` (791 lines) — const dict = {
+  - `i18n/da.ts` (785 lines) — const dict = {
+  - `i18n/de.ts` (790 lines) — const dict = {
+  - `i18n/en.ts` (784 lines) — const dict = {
+  - `i18n/es.ts` (790 lines) — const dict = {
+  - `i18n/fr.ts` (797 lines) — const dict = {
+  - `i18n/index.ts` (43 lines) — type Key = keyof typeof en
+  - `i18n/it.ts` (787 lines) — const dict = {
+  - `i18n/ja.ts` (788 lines) — const dict = {
+  - `i18n/ko.ts` (779 lines) — const dict = {
+  - `i18n/no.ts` (786 lines) — const dict = {
+  - `i18n/pl.ts` (792 lines) — const dict = {
+  - `i18n/ru.ts` (794 lines) — const dict = {
+  - `i18n/th.ts` (782 lines) — const dict = {
+  - `i18n/tr.ts` (791 lines) — const dict = {
+  - `i18n/zh.ts` (761 lines) — const dict = {
+  - `i18n/zht.ts` (760 lines) — const dict = {
+  - `lib/changelog.ts` (146 lines) — type HighlightMedia =
+  - `lib/form-error.ts` (86 lines) — const formError = {
+  - `lib/github.ts` (38 lines) — const github = query(async () => {
+  - `lib/language.ts` (324 lines) — const LOCALES = [
+  - `lib/salesforce.ts` (81 lines) — interface SalesforceLeadInput {
+- `middleware.ts` (16 lines) — default createMiddleware({
+  - `routes/[...404].css` (130 lines) — (no exported symbol found)
+  - `routes/[...404].tsx` (42 lines) — default function NotFound() {
+    - `routes/api/enterprise.ts` (129 lines) — async function POST(event: APIEvent) {
+    - `routes/auth/[...callback].ts` (46 lines) — async function GET(input: APIEvent) {
+    - `routes/auth/authorize.ts` (10 lines) — async function GET(input: APIEvent) {
+    - `routes/auth/index.ts` (14 lines) — async function GET(input: APIEvent) {
+    - `routes/auth/logout.ts` (17 lines) — async function GET(event: APIEvent) {
+    - `routes/auth/status.ts` (7 lines) — async function GET(_input: APIEvent) {
+    - `routes/bench/[id].tsx` (375 lines) — default function BenchDetail() {
+    - `routes/bench/index.tsx` (88 lines) — default function Bench() {
+    - `routes/bench/submission.ts` (32 lines) — async function POST(event: APIEvent) {
+  - `routes/black.css` (841 lines) — (no exported symbol found)
+  - `routes/black.tsx` (283 lines) — default function BlackLayout(props: RouteSectionProps) {
+    - `routes/black/common.tsx` (65 lines) — const plans = [
+    - `routes/black/index.tsx` (125 lines) — default function Black() {
+      - `routes/black/subscribe/[plan].tsx` (484 lines) — default function BlackSubscribe() {
+    - `routes/black/workspace.css` (214 lines) — (no exported symbol found)
+    - `routes/black/workspace.tsx` (238 lines) — default function BlackWorkspace() {
+    - `routes/brand/index.css` (556 lines) — (no exported symbol found)
+    - `routes/brand/index.tsx` (315 lines) — default function Brand() {
+  - `routes/changelog.json.ts` (30 lines) — async function GET() {
+    - `routes/changelog/index.css` (604 lines) — (no exported symbol found)
+    - `routes/changelog/index.tsx` (176 lines) — default function Changelog() {
+    - `routes/debug/index.ts` (13 lines) — async function GET(_evt: APIEvent) {
+  - `routes/desktop-feedback.ts` (5 lines) — async function GET() {
+  - `routes/discord.ts` (5 lines) — async function GET() {
+    - `routes/docs/[...path].ts` (30 lines) — const GET = handler
+    - `routes/docs/index.ts` (30 lines) — const GET = handler
+      - `routes/download/[channel]/[platform].ts` (50 lines) — async function GET({ params: { platform, channel } }: APIEvent) {
+    - `routes/download/index.css` (752 lines) — (no exported symbol found)
+    - `routes/download/index.tsx` (486 lines) — default function Download() {
+    - `routes/download/types.ts` (4 lines) — type DownloadPlatform =
+    - `routes/enterprise/index.css` (588 lines) — (no exported symbol found)
+    - `routes/enterprise/index.tsx` (284 lines) — default function Enterprise() {
+  - `routes/feishu.ts` (7 lines) — async function GET() {
+    - `routes/go/index.css` (1195 lines) — (no exported symbol found)
+    - `routes/go/index.tsx` (528 lines) — default function Home() {
+  - `routes/index.css` (1254 lines) — (no exported symbol found)
+  - `routes/index.tsx` (837 lines) — default function Home() {
+      - `routes/legal/privacy-policy/index.css` (343 lines) — (no exported symbol found)
+      - `routes/legal/privacy-policy/index.tsx` (1516 lines) — default function PrivacyPolicy() {
+      - `routes/legal/terms-of-service/index.css` (254 lines) — (no exported symbol found)
+      - `routes/legal/terms-of-service/index.tsx` (518 lines) — default function TermsOfService() {
+  - `routes/openapi.json.ts` (7 lines) — async function GET() {
+    - `routes/s/[id].ts` (30 lines) — const GET = handler
+    - `routes/stripe/webhook.ts` (371 lines) — async function POST(input: APIEvent) {
+    - `routes/t/[...path].tsx` (26 lines) — const GET = handler
+  - `routes/temp.tsx` (179 lines) — default function Home() {
+  - `routes/user-menu.css` (18 lines) — (no exported symbol found)
+  - `routes/user-menu.tsx` (36 lines) — function UserMenu(props: { email: string | null | undefined }) {
+  - `routes/workspace-picker.css` (74 lines) — (no exported symbol found)
+  - `routes/workspace-picker.tsx` (124 lines) — function WorkspacePicker() {
+  - `routes/workspace.css` (107 lines) — (no exported symbol found)
+  - `routes/workspace.tsx` (40 lines) — default function WorkspaceLayout(props: RouteSectionProps) {
+    - `routes/workspace/[id].css` (337 lines) — (no exported symbol found)
+    - `routes/workspace/[id].tsx` (80 lines) — default function WorkspaceLayout(props: RouteSectionProps) {
+        - `routes/workspace/[id]/billing/billing-section.module.css` (185 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/billing-section.tsx` (266 lines) — function BillingSection() {
+        - `routes/workspace/[id]/billing/black-section.module.css` (142 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/black-section.tsx` (290 lines) — function BlackSection() {
+        - `routes/workspace/[id]/billing/black-waitlist-section.module.css` (23 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/index.tsx` (35 lines) — default function () {
+        - `routes/workspace/[id]/billing/monthly-limit-section.module.css` (96 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/monthly-limit-section.tsx` (145 lines) — function MonthlyLimitSection() {
+        - `routes/workspace/[id]/billing/payment-section.module.css` (93 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/payment-section.tsx` (141 lines) — function PaymentSection() {
+        - `routes/workspace/[id]/billing/redeem-section.module.css` (61 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/redeem-section.tsx` (71 lines) — function RedeemSection() {
+        - `routes/workspace/[id]/billing/reload-section.module.css` (261 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/billing/reload-section.tsx` (220 lines) — function ReloadSection() {
+        - `routes/workspace/[id]/go/index.tsx` (30 lines) — default function () {
+        - `routes/workspace/[id]/go/lite-section.module.css` (232 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/go/lite-section.tsx` (366 lines) — function LiteSection() {
+      - `routes/workspace/[id]/index.tsx` (81 lines) — default function () {
+        - `routes/workspace/[id]/keys/index.tsx` (11 lines) — default function () {
+        - `routes/workspace/[id]/keys/key-section.module.css` (197 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/keys/key-section.tsx` (179 lines) — function KeySection() {
+        - `routes/workspace/[id]/members/index.tsx` (11 lines) — default function () {
+        - `routes/workspace/[id]/members/member-section.module.css` (249 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/members/member-section.tsx` (368 lines) — function MemberSection() {
+        - `routes/workspace/[id]/members/role-dropdown.css` (72 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/members/role-dropdown.tsx` (45 lines) — function RoleDropdown(props: RoleDropdownProps) {
+      - `routes/workspace/[id]/model-section.module.css` (173 lines) — (no exported symbol found)
+      - `routes/workspace/[id]/model-section.tsx` (192 lines) — function ModelSection() {
+      - `routes/workspace/[id]/new-user-section.module.css` (143 lines) — (no exported symbol found)
+      - `routes/workspace/[id]/new-user-section.tsx` (108 lines) — function NewUserSection() {
+      - `routes/workspace/[id]/provider-section.module.css` (138 lines) — (no exported symbol found)
+      - `routes/workspace/[id]/provider-section.tsx` (199 lines) — function ProviderSection() {
+        - `routes/workspace/[id]/settings/index.tsx` (11 lines) — default function () {
+        - `routes/workspace/[id]/settings/settings-section.module.css` (94 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/settings/settings-section.tsx` (125 lines) — function SettingsSection() {
+        - `routes/workspace/[id]/usage/graph-section.module.css` (145 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/usage/graph-section.tsx` (556 lines) — function GraphSection() {
+        - `routes/workspace/[id]/usage/index.tsx` (21 lines) — default function () {
+        - `routes/workspace/[id]/usage/usage-section.module.css` (185 lines) — (no exported symbol found)
+        - `routes/workspace/[id]/usage/usage-section.tsx` (217 lines) — function UsageSection() {
+    - `routes/workspace/common.tsx` (122 lines) — function formatDateForTable(date: Date) {
+          - `routes/zen/go/v1/chat/completions.ts` (12 lines) — function POST(input: APIEvent) {
+        - `routes/zen/go/v1/messages.ts` (12 lines) — function POST(input: APIEvent) {
+        - `routes/zen/go/v1/models.ts` (12 lines) — async function OPTIONS(_input: APIEvent) {
+    - `routes/zen/index.css` (867 lines) — (no exported symbol found)
+    - `routes/zen/index.tsx` (336 lines) — default function Home() {
+      - `routes/zen/util/dataDumper.ts` (44 lines) — function createDataDumper(sessionId: string, requestId: string, projectId: strin
+      - `routes/zen/util/error.ts` (16 lines) — class AuthError extends Error {}
+      - `routes/zen/util/handler.ts` (1104 lines) — async function handler(
+      - `routes/zen/util/ipRateLimiter.ts` (70 lines) — function createRateLimiter(modelId: string, rateLimit: number | undefined, rawIp
+      - `routes/zen/util/keyRateLimiter.ts` (39 lines) — function createRateLimiter(modelId: string, zenApiKey: string | undefined, reque
+      - `routes/zen/util/logger.ts` (12 lines) — const logger = {
+      - `routes/zen/util/modelsHandler.ts` (31 lines) — async function buildOptionsResponse() {
+      - `routes/zen/util/modelTpmLimiter.ts` (47 lines) — function createModelTpmLimiter(providers: { id: string; model: string; tpmLimit?
+        - `routes/zen/util/provider/anthropic.ts` (759 lines) — const anthropicHelper: ProviderHelper = ({ reqModel, providerModel }) => {
+        - `routes/zen/util/provider/google.ts` (75 lines) — const googleHelper: ProviderHelper = ({ providerModel }) => ({
+        - `routes/zen/util/provider/openai-compatible.ts` (555 lines) — const oaCompatHelper: ProviderHelper = ({ adjustCacheUsage }) => ({
+        - `routes/zen/util/provider/openai.ts` (628 lines) — const openaiHelper: ProviderHelper = ({ workspaceID }) => ({
+        - `routes/zen/util/provider/provider.ts` (228 lines) — type UsageInfo = {
+      - `routes/zen/util/stickyProviderTracker.ts` (16 lines) — function createStickyTracker(stickyProvider: "strict" | "prefer" | undefined, se
+      - `routes/zen/util/trialLimiter.ts` (46 lines) — function createTrialLimiter(trialProviders: string[] | undefined, ip: string) {
+        - `routes/zen/v1/chat/completions.ts` (12 lines) — function POST(input: APIEvent) {
+      - `routes/zen/v1/messages.ts` (12 lines) — function POST(input: APIEvent) {
+      - `routes/zen/v1/models.ts` (34 lines) — async function OPTIONS(_input: APIEvent) {
+        - `routes/zen/v1/models/[model].ts` (14 lines) — function POST(input: APIEvent) {
+      - `routes/zen/v1/responses.ts` (12 lines) — function POST(input: APIEvent) {
+  - `style/base.css` (21 lines) — (no exported symbol found)
+    - `style/component/button.css` (102 lines) — (no exported symbol found)
+  - `style/index.css` (8 lines) — (no exported symbol found)
+  - `style/reset.css` (76 lines) — (no exported symbol found)
+    - `style/token/color.css` (91 lines) — (no exported symbol found)
+    - `style/token/font.css` (21 lines) — (no exported symbol found)
+    - `style/token/space.css` (46 lines) — (no exported symbol found)
+
+Auto-generated: 2026-05-03

@@ -1,0 +1,240 @@
+# app-source
+
+Path: /Users/mlapointe/git/opencode/packages/app/src
+Files: 231
+
+## File Tree (by top-level directory)
+
+- `serialize.test.ts` → function createTerminal(cols = 80, rows = 24): { term: Terminal; addon: Serializ (319 ln)
+- `serialize.ts` → interface ISerializeOptions { (634 ln)
+- `app.tsx` → function AppBaseProviders(props: ParentProps<{ locale?: Locale }>) { (330 ln)
+- `debug-bar.tsx` → function DebugBar() { (443 ln)
+- `dialog-connect-provider.tsx` → function DialogConnectProvider(props: { provider: string }) { (654 ln)
+- `dialog-custom-provider-form.ts` → type ModelErr = { (158 ln)
+- `dialog-custom-provider.test.ts` → (no symbol detected) (80 ln)
+- `dialog-custom-provider.tsx` → function DialogCustomProvider(props: Props) { (329 ln)
+- `dialog-edit-project.tsx` → function DialogEditProject(props: { project: LocalProject }) { (265 ln)
+- `dialog-fork.tsx` → const DialogFork: Component = () => { (108 ln)
+- `dialog-manage-models.tsx` → const DialogManageModels: Component = () => { (101 ln)
+- `dialog-release-notes.tsx` → type Highlight = { (144 ln)
+- `dialog-select-directory.tsx` → function DialogSelectDirectory(props: DialogSelectDirectoryProps) { (392 ln)
+- `dialog-select-file.tsx` → function DialogSelectFile(props: { mode?: DialogSelectFileMode; onOpenFile?: (pa (466 ln)
+- `dialog-select-mcp.tsx` → const DialogSelectMcp: Component = () => { (103 ln)
+- `dialog-select-model-unpaid.tsx` → const DialogSelectModelUnpaid: Component<{ model?: ModelState }> = (props) => { (145 ln)
+- `dialog-select-model.tsx` → function ModelSelectorPopover(props: { (230 ln)
+- `dialog-select-provider.tsx` → const DialogSelectProvider: Component = () => { (86 ln)
+- `dialog-select-server.tsx` → function DialogSelectServer() { (649 ln)
+- `dialog-settings.tsx` → const DialogSettings: Component = () => { (73 ln)
+- `file-tree.test.ts` → (no symbol detected) (78 ln)
+- `file-tree.tsx` → function shouldListRoot(input: { level: number; dir?: { loaded?: boolean; loadin (506 ln)
+- `link.tsx` → interface LinkProps extends Omit<ComponentProps<"a">, "href"> { (26 ln)
+- `model-tooltip.tsx` → const ModelTooltip: Component<{ model: ModelInfo; latest?: boolean; free?: boole (91 ln)
+- `prompt-input.tsx` → const PromptInput: Component<PromptInputProps> = (props) => { (1615 ln)
+- `attachments.test.ts` → (no symbol detected) (44 ln)  [components/]
+- `attachments.ts` → function createPromptAttachments(input: PromptAttachmentsInput) { (196 ln)  [components/]
+- `build-request-parts.test.ts` → (no symbol detected) (336 ln)  [components/]
+- `build-request-parts.ts` → function buildRequestParts(input: BuildRequestPartsInput) { (201 ln)  [components/]
+- `context-items.tsx` → const PromptContextItems: Component<ContextItemsProps> = (props) => { (88 ln)  [components/]
+- `drag-overlay.tsx` → const PromptDragOverlay: Component<PromptDragOverlayProps> = (props) => { (25 ln)  [components/]
+- `editor-dom.test.ts` → (no symbol detected) (99 ln)  [components/]
+- `editor-dom.ts` → function createTextFragment(content: string): DocumentFragment { (148 ln)  [components/]
+- `files.ts` → { ACCEPTED_FILE_TYPES } (66 ln)  [components/]
+- `history.test.ts` → (no symbol detected) (153 ln)  [components/]
+- `history.ts` → const MAX_HISTORY = 100 (256 ln)  [components/]
+- `image-attachments.tsx` → const PromptImageAttachments: Component<PromptImageAttachmentsProps> = (props) = (61 ln)  [components/]
+- `paste.ts` → function normalizePaste(text: string) { (24 ln)  [components/]
+- `placeholder.test.ts` → (no symbol detected) (48 ln)  [components/]
+- `placeholder.ts` → function promptPlaceholder(input: PromptPlaceholderInput) { (15 ln)  [components/]
+- `slash-popover.tsx` → type AtOption = (141 ln)  [components/]
+- `submit.test.ts` → (no symbol detected) (345 ln)  [components/]
+- `submit.ts` → type FollowupDraft = { (584 ln)  [components/]
+- `server-row.tsx` → function ServerRow(props: ServerRowProps) { (127 ln)  [components/]
+- `session-context-usage.tsx` → function SessionContextUsage(props: SessionContextUsageProps) { (124 ln)
+- `index.ts` → { SessionHeader } from "./session-header" (5 ln)  [components/]
+- `session-context-breakdown.test.ts` → (no symbol detected) (61 ln)  [components/]
+- `session-context-breakdown.ts` → type SessionContextBreakdownKey = "system" | "user" | "assistant" | "tool" | "ot (132 ln)  [components/]
+- `session-context-format.ts` → function createSessionContextFormatter(locale: string) { (20 ln)  [components/]
+- `session-context-metrics.test.ts` → (no symbol detected) (101 ln)  [components/]
+- `session-context-metrics.ts` → function getSessionContextMetrics(messages: Message[] = [], providers: Provider[ (82 ln)  [components/]
+- `session-context-tab.tsx` → function SessionContextTab() { (341 ln)  [components/]
+- `session-header.tsx` → function SessionHeader() { (503 ln)  [components/]
+- `session-new-view.tsx` → function NewSessionView(props: NewSessionViewProps) { (91 ln)  [components/]
+- `session-sortable-tab.tsx` → function FileVisual(props: { path: string; active?: boolean }): JSX.Element { (70 ln)  [components/]
+- `session-sortable-terminal-tab.tsx` → function SortableTerminalTab(props: { terminal: LocalPTY; onClose?: () => void } (193 ln)  [components/]
+- `settings-general.tsx` → const SettingsGeneral: Component = () => { (802 ln)
+- `settings-keybinds.tsx` → const SettingsKeybinds: Component = () => { (453 ln)
+- `settings-list.tsx` → const SettingsList: Component<{ children: JSX.Element }> = (props) => { (5 ln)
+- `settings-models.tsx` → const SettingsModels: Component = () => { (137 ln)
+- `settings-providers.tsx` → const SettingsProviders: Component = () => { (251 ln)
+- `status-popover-body.tsx` → function StatusPopoverBody(props: { shown: Accessor<boolean> }) { (404 ln)
+- `status-popover.tsx` → function StatusPopover() { (66 ln)
+- `terminal.tsx` → interface TerminalProps extends ComponentProps<"div"> { (645 ln)
+- `titlebar-history.test.ts` → function history(): TitlebarHistory { (63 ln)
+- `titlebar-history.ts` → const MAX_TITLEBAR_HISTORY = 100 (57 ln)
+- `titlebar.tsx` → function Titlebar() { (321 ln)
+- `file-picker.ts` → const ACCEPTED_IMAGE_TYPES = ["image/png", "image/jpeg", "image/gif", "image/web (89 ln)
+- `command-keybind.test.ts` → (no symbol detected) (69 ln)
+- `command.test.ts` → (no symbol detected) (25 ln)
+- `command.tsx` → type KeybindConfig = string (434 ln)
+- `comments.test.ts` → function line(file: string, id: string, time: number): LineComment { (186 ln)
+- `comments.tsx` → type LineComment = { (243 ln)
+- `file-content-eviction-accounting.test.ts` → (no symbol detected) (65 ln)
+- `file.tsx` → type { FileSelection, SelectedLineRange, FileViewState, FileState } (280 ln)
+- `content-cache.ts` → function approxBytes(content: FileContent) { (88 ln)  [context/]
+- `path.test.ts` → (no symbol detected) (360 ln)  [context/]
+- `path.ts` → function stripFileProtocol(input: string) { (151 ln)  [context/]
+- `tree-store.ts` → function createFileTreeStore(options: TreeStoreOptions) { (170 ln)  [context/]
+- `types.ts` → type FileSelection = { (41 ln)  [context/]
+- `view-cache.ts` → function createFileViewCache() { (146 ln)  [context/]
+- `watcher.test.ts` → (no symbol detected) (149 ln)  [context/]
+- `watcher.ts` → function invalidateFromWatcher(event: WatcherEvent, ops: WatcherOps) { (53 ln)  [context/]
+- `global-sdk.tsx` → const { use: useGlobalSDK, provider: GlobalSDKProvider } = createSimpleContext({ (256 ln)
+- `global-sync.test.ts` → (no symbol detected) (122 ln)
+- `global-sync.tsx` → const loadSessionsQuery = (directory: string) => (443 ln)
+- `bootstrap.ts` → function clearProviderRev(directory: string) { (378 ln)  [context/]
+- `child-store.test.ts` → (no symbol detected) (40 ln)  [context/]
+- `child-store.ts` → function createChildStoreManager(input: { (337 ln)  [context/]
+- `event-reducer.test.ts` → (no symbol detected) (554 ln)  [context/]
+- `event-reducer.ts` → function applyGlobalEvent(input: { (364 ln)  [context/]
+- `eviction.ts` → function pickDirectoriesToEvict(input: EvictPlan) { (28 ln)  [context/]
+- `queue.test.ts` → (no symbol detected) (46 ln)  [context/]
+- `queue.ts` → function createRefreshQueue(input: QueueInput) { (87 ln)  [context/]
+- `session-cache.test.ts` → (no symbol detected) (102 ln)  [context/]
+- `session-cache.ts` → const SESSION_CACHE_LIMIT = 40 (62 ln)  [context/]
+- `session-load.ts` → async function loadRootSessionsWithFallback(input: RootLoadArgs) { (25 ln)  [context/]
+- `session-prefetch.test.ts` → (no symbol detected) (96 ln)  [context/]
+- `session-prefetch.ts` → const SESSION_PREFETCH_TTL = 15_000 (100 ln)  [context/]
+- `session-trim.test.ts` → (no symbol detected) (59 ln)  [context/]
+- `session-trim.ts` → function sessionUpdatedAt(session: Session) { (56 ln)  [context/]
+- `types.ts` → type ProjectMeta = { (135 ln)  [context/]
+- `utils.test.ts` → (no symbol detected) (52 ln)  [context/]
+- `utils.ts` → { pathKey as directoryKey, type PathKey as DirectoryKey } from "@/utils/path-key (40 ln)  [context/]
+- `highlights.tsx` → const { use: useHighlights, provider: HighlightsProvider } = createSimpleContext (233 ln)
+- `language.tsx` → type Locale = (236 ln)
+- `layout-scroll.test.ts` → (no symbol detected) (64 ln)
+- `layout-scroll.ts` → type SessionScroll = { (126 ln)
+- `layout.test.ts` → (no symbol detected) (69 ln)
+- `layout.tsx` → type AvatarColorKey = (typeof AVATAR_COLOR_KEYS)[number] (928 ln)
+- `local.tsx` → type ModelKey = { providerID: string; modelID: string; variant?: string } (392 ln)
+- `model-variant.test.ts` → (no symbol detected) (86 ln)
+- `model-variant.ts` → function getConfiguredAgentVariant(input: { agent: Agent | undefined; model: Mod (52 ln)
+- `models.tsx` → type ModelKey = { providerID: string; modelID: string } (163 ln)
+- `notification.tsx` → type Notification = TurnCompleteNotification | ErrorNotification (373 ln)
+- `permission-auto-respond.test.ts` → (no symbol detected) (102 ln)
+- `permission-auto-respond.ts` → function acceptKey(sessionID: string, directory?: string) { (51 ln)
+- `permission.tsx` → const { use: usePermission, provider: PermissionProvider } = createSimpleContext (277 ln)
+- `platform.tsx` → type Platform = { (99 ln)
+- `prompt.tsx` → interface TextPart extends PartBase { (297 ln)
+- `sdk.tsx` → const { use: useSDK, provider: SDKProvider } = createSimpleContext({ (49 ln)
+- `server.tsx` → function normalizeServerUrl(input: string) { (303 ln)
+- `settings.tsx` → interface NotificationSettings { (332 ln)
+- `sync-optimistic.test.ts` → (no symbol detected) (123 ln)
+- `sync.tsx` → function mergeOptimisticPage(page: MessagePage, items: OptimisticItem[]) { (619 ln)
+- `terminal-title.ts` → function defaultTitle(number: number) { (24 ln)
+- `terminal.test.ts` → (no symbol detected) (82 ln)
+- `terminal.tsx` → type LocalPTY = { (437 ln)
+- `entry.tsx` → (no symbol detected) (164 ln)
+- `env.d.ts` → declare module "solid-js" { (21 ln)
+- `use-providers.ts` → const popularProviders = [ (44 ln)
+- `ar.ts` → const dict = { (846 ln)
+- `br.ts` → const dict = { (859 ln)
+- `bs.ts` → const dict = { (935 ln)
+- `da.ts` → const dict = { (929 ln)
+- `de.ts` → const dict = { (871 ln)
+- `en.ts` → const dict = { (960 ln)
+- `es.ts` → const dict = { (942 ln)
+- `fr.ts` → const dict = { (870 ln)
+- `ja.ts` → const dict = { (853 ln)
+- `ko.ts` → const dict = { (848 ln)
+- `no.ts` → const dict = { (936 ln)
+- `parity.test.ts` → (no symbol detected) (32 ln)
+- `pl.ts` → const dict = { (857 ln)
+- `ru.ts` → const dict = { (938 ln)
+- `th.ts` → const dict = { (925 ln)
+- `tr.ts` → const dict = { (944 ln)
+- `zh.ts` → const dict = { (920 ln)
+- `zht.ts` → const dict = { (916 ln)
+- `index.css` → (no symbol detected) (85 ln)
+- `index.ts` → { AppBaseProviders, AppInterface } from "./app" (7 ln)
+- `directory-layout.tsx` → default function Layout(props: ParentProps) { (82 ln)
+- `error.tsx` → type InitError = { (336 ln)
+- `home.tsx` → default function Home() { (139 ln)
+- `layout.tsx` → default function Layout(props: ParentProps) { (2504 ln)
+- `deep-links.ts` → const deepLinkEvent = "opencode:deep-link" (50 ln)  [pages/]
+- `helpers.test.ts` → (no symbol detected) (225 ln)  [pages/]
+- `helpers.ts` → const roots = (store: SessionStore) => (90 ln)  [pages/]
+- `inline-editor.tsx` → function createInlineEditorController() { (126 ln)  [pages/]
+- `sidebar-items.tsx` → function getProjectAvatarSource(id?: string, icon?: { color?: string; url?: stri (335 ln)  [pages/]
+- `sidebar-project.tsx` → type ProjectSidebarContext = { (367 ln)  [pages/]
+- `sidebar-shell.tsx` → const SidebarContent = (props: { (125 ln)  [pages/]
+- `sidebar-workspace.tsx` → type WorkspaceSidebarContext = { (483 ln)  [pages/]
+- `session.tsx` → default function Page() { (1972 ln)
+- `index.ts` → { SessionComposerRegion } from "./session-composer-region" (2 ln)  [pages/]
+- `session-composer-region.tsx` → function SessionComposerRegion(props: { (289 ln)  [pages/]
+- `session-composer-state.test.ts` → (no symbol detected) (128 ln)  [pages/]
+- `session-composer-state.ts` → const todoState = (input: { (198 ln)  [pages/]
+- `session-followup-dock.tsx` → function SessionFollowupDock(props: { (109 ln)  [pages/]
+- `session-permission-dock.tsx` → function SessionPermissionDock(props: { (74 ln)  [pages/]
+- `session-question-dock.tsx` → const SessionQuestionDock: Component<{ request: QuestionRequest; onSubmit: () => (568 ln)  [pages/]
+- `session-request-tree.ts` → function sessionPermissionRequest( (52 ln)  [pages/]
+- `session-revert-dock.tsx` → function SessionRevertDock(props: { (99 ln)  [pages/]
+- `session-todo-dock.tsx` → function SessionTodoDock(props: { (258 ln)  [pages/]
+- `file-tab-scroll.test.ts` → (no symbol detected) (40 ln)  [pages/]
+- `file-tab-scroll.ts` → const nextTabListScrollLeft = (input: Input) => { (67 ln)  [pages/]
+- `file-tabs.tsx` → function FileTabContent(props: { tab: string }) { (456 ln)  [pages/]
+- `handoff.ts` → const setSessionHandoff = (key: string, patch: Partial<HandoffSession>) => { (36 ln)  [pages/]
+- `helpers.test.ts` → (no symbol detected) (181 ln)  [pages/]
+- `helpers.ts` → const getSessionKey = (dir: string | undefined, id: string | undefined) => `${di (194 ln)  [pages/]
+- `message-gesture.test.ts` → (no symbol detected) (62 ln)  [pages/]
+- `message-gesture.ts` → const normalizeWheelDelta = (input: { deltaY: number; deltaMode: number; rootHei (21 ln)  [pages/]
+- `message-id-from-hash.ts` → const messageIdFromHash = (hash: string) => { (6 ln)  [pages/]
+- `message-timeline.tsx` → function MessageTimeline(props: { (1118 ln)  [pages/]
+- `review-tab.tsx` → type DiffStyle = "unified" | "split" (170 ln)  [pages/]
+- `session-layout.ts` → const useSessionKey = () => { (20 ln)  [pages/]
+- `session-model-helpers.test.ts` → (no symbol detected) (52 ln)  [pages/]
+- `session-model-helpers.ts` → const resetSessionModel = (local: Local) => { (16 ln)  [pages/]
+- `session-side-panel.tsx` → function SessionSidePanel(props: { (453 ln)  [pages/]
+- `terminal-label.ts` → const terminalTabLabel = (input: { (16 ln)  [pages/]
+- `terminal-panel.test.ts` → (no symbol detected) (25 ln)  [pages/]
+- `terminal-panel.tsx` → function TerminalPanel() { (317 ln)  [pages/]
+- `use-session-commands.tsx` → type SessionCommandContext = { (587 ln)  [pages/]
+- `use-session-hash-scroll.test.ts` → (no symbol detected) (16 ln)  [pages/]
+- `use-session-hash-scroll.ts` → const useSessionHashScroll = (input: { (215 ln)  [pages/]
+- `sst-env.d.ts` → (no symbol detected) (11 ln)
+- `theme-preload.test.ts` → (no symbol detected) (46 ln)
+- `agent.ts` → function agentColor(name: string, custom?: string) { (44 ln)
+- `aim.ts` → function createAim(props: { (138 ln)
+- `base64.ts` → function decode64(value: string | undefined) { (10 ln)
+- `comment-note.ts` → type PromptComment = { (88 ln)
+- `diffs.test.ts` → (no symbol detected) (74 ln)
+- `diffs.ts` → function diffs(value: unknown): Diff[] { (49 ln)
+- `id.ts` → namespace Identifier { (99 ln)
+- `notification-click.test.ts` → (no symbol detected) (27 ln)
+- `notification-click.ts` → const setNavigate = (fn: (href: string) => void) => { (13 ln)
+- `path-key.ts` → type PathKey = string & { _brand: "PathKey" } (24 ln)
+- `persist.test.ts` → class MemoryStorage implements Storage { (167 ln)
+- `persist.ts` → const PersistTesting = { (611 ln)
+- `prompt.test.ts` → (no symbol detected) (44 ln)
+- `prompt.ts` → function extractPromptFromParts(parts: Part[], opts?: { directory?: string; atta (203 ln)
+- `runtime-adapters.test.ts` → class SpeechCtor {} (64 ln)
+- `runtime-adapters.ts` → const isDisposable = (value: unknown): value is { dispose: () => void } => { (39 ln)
+- `same.ts` → function same<T>(a: readonly T[] | undefined, b: readonly T[] | undefined) { (6 ln)
+- `scoped-cache.test.ts` → (no symbol detected) (69 ln)
+- `scoped-cache.ts` → function createScopedCache<T>(createValue: (key: string) => T, options: ScopedCa (104 ln)
+- `server-errors.test.ts` → function fill(text: string, vars?: Record<string, string | number>) { (131 ln)
+- `server-errors.ts` → type ConfigInvalidError = { (80 ln)
+- `server-health.test.ts` → function abortFromInput(input: RequestInfo | URL, init?: RequestInit) { (123 ln)
+- `server-health.ts` → type ServerHealth = { healthy: boolean; version?: string } (113 ln)
+- `server.ts` → function createSdkForServer({ (25 ln)
+- `session-title.ts` → function sessionTitle(title?: string) { (7 ln)
+- `solid-dnd.tsx` → const getDraggableId = (event: unknown): string | undefined => { (49 ln)
+- `sound.ts` → const SOUND_OPTIONS = [ (102 ln)
+- `terminal-writer.test.ts` → (no symbol detected) (64 ln)
+- `terminal-writer.ts` → function terminalWriter( (65 ln)
+- `time.ts` → function getRelativeTime(dateString: string, t: Translate): string { (22 ln)
+- `uuid.test.ts` → (no symbol detected) (78 ln)
+- `uuid.ts` → function uuid() { (12 ln)
+- `worktree.test.ts` → (no symbol detected) (46 ln)
+- `worktree.ts` → const Worktree = { (73 ln)
+
+Auto-generated: 2026-05-03
