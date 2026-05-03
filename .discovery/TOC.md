@@ -1,9 +1,8 @@
-# OpenCode Repository Discovery — Master TOC
+# OpenCode Discovery — Master TOC
 
-**Generated:** 2026-05-03  
-**Total discovery files:** 109  
-**Strategy:** Auto-coarse (bash script, not agent-based)  
-**Source tree coverage:** 1,666 files across 19 packages
+**Generated:** 2026-05-03
+**Total discovery files:** 119 mapping files + 1 TOC
+**Source tree coverage:** 1,666 source files across 19 packages
 
 ---
 
@@ -77,170 +76,141 @@ graph TB
 
 ## Series Index
 
-### 100-series — opencode core (Effect modules)
+### Groups 000–024 — packages/opencode/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 100-opencode-root | packages/opencode/src | Root entry + module index |
-| 100-account-01 | packages/opencode/src/account/account.ts | Account module main service |
-| 100-account-02 | packages/opencode/src/account/repo.ts | Account SQLite repository |
-| 100-account-03 | packages/opencode/src/account/url.ts | Server URL normalization |
-| 100-account-04 | packages/opencode/src/account/schema.ts | Account schemas + OAuth types |
-| 100-bus | packages/opencode/src/bus | Event bus (Effect-based) |
-| 100-cli | packages/opencode/src/cli | CLI entry points |
-| 100-file | packages/opencode/src/file | File operations |
-| 100-git | packages/opencode/src/git | Git operations |
-| 100-ide | packages/opencode/src/ide | IDE integration |
-| 100-installer | packages/opencode/src/installer | Installation logic |
-| 100-lsp | packages/opencode/src/lsp | Language Server Protocol |
-| 100-mcp | packages/opencode/src/mcp | Model Context Protocol |
-| 100-provider | packages/opencode/src/provider | AI provider abstraction |
-| 100-agent | packages/opencode/src/agent | Agent orchestration |
-| 100-server | packages/opencode/src/server | Hono HTTP server |
-| 100-snapshot | packages/opencode/src/snapshot | State snapshots |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [000](mapping_000.md)–[002](mapping_002.md) | src/cli | CLI entry points |
+| [003](mapping_003.md)–[007](mapping_007.md) | src/util, src/config, src/context | Utilities, config, context |
+| [008](mapping_008.md)–[012](mapping_012.md) | src/auth, src/bus, src/file | Auth, event bus, file ops |
+| [013](mapping_013.md)–[018](mapping_018.md) | src/provider, src/tool | AI providers, tool implementations |
+| [019](mapping_019.md)–[024](mapping_024.md) | src/server, src/lsp, src/session | HTTP server, LSP, session |
 
-### 150-series — opencode large modules (auto-coarse)
+### Groups 025–037 — packages/console/app/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 150-opencode-storage | src/storage/ | 7 | Drizzle ORM schema, db adapters, JSON migrations |
-| 151-opencode-session | src/session/ | 19 | Session management: prompts, compaction, LLM processors |
-| 152-opencode-server | src/server/ | 77 | Hono server: routes, handlers, middleware, proxy |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [025](mapping_025.md)–[029](mapping_029.md) | src/component | UI components |
+| [030](mapping_030.md)–[034](mapping_034.md) | src/context | SolidJS providers |
+| [035](mapping_035.md)–[037](mapping_037.md) | src/routes | Route handlers |
 
-### 200-series — console/app package root
+### Groups 038–052 — packages/ui/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 200-console-app-package | packages/console/app | Package manifest + entry points |
-| 250-src-style-reset.css | packages/console/app/src/style | CSS reset styles |
-| 290-src-style-token-space.css | packages/console/app/src/style | CSS spacing tokens |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [038](mapping_038.md)–[045](mapping_045.md) | src/components | Shared UI components |
+| [046](mapping_046.md)–[052](mapping_052.md) | src/context, src/styles | Context providers, styles |
 
-### 290-series — console/app src/ subdirs (auto-coarse)
+### Groups 053–065 — apps/app/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 290-console-app-root | src/root files | 7 | config.ts, middleware.ts, app.tsx, entry-*.tsx |
-| 291-console-app-config | src/ | 0 | (config.ts at root — see 290) |
-| 292-console-app-context | src/context/ | 5 | SolidJS auth, i18n, language providers |
-| 293-console-app-lib | src/lib/ | 5 | GitHub, Salesforce, changelog, language utils |
-| 294-console-app-components | src/component/ | 16 | Header, footer, modal, spotlight, icon... |
-| 295-console-app-routes | src/routes/ | 122 | Black, bench, pricing, zen, auth, workspace... |
-| 296-console-app-style | src/style/ | 7 | CSS reset, base, color/font/space tokens |
-| 297-console-app-i18n | src/i18n/ | 18 | 18 locale files (ar, br, da, de, en, es...) |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [053](mapping_053.md)–[058](mapping_058.md) | src/components | App UI components |
+| [059](mapping_059.md)–[065](mapping_065.md) | src/context, src/hooks, src/pages | Context, hooks, pages |
 
-### 300-series — web (Astro docs)
+### Groups 066–072 — apps/web/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 300-web-package | packages/web | 15 | Astro + Starlight, Cloudflare Pages adapter |
-| 301-web-source | packages/web/src | 28 | i18n, components, pages, styles |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [066](mapping_066.md)–[072](mapping_072.md) | src/ | Astro pages, components, styles |
 
-### 350-series — app (SolidJS web app)
+### Groups 073–075 — packages/sdk/js/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 350-app-package | packages/app | 19 | SolidJS + Vite + TanStack Query + Playwright |
-| 351-app-source | packages/app/src | 231 | Entry, routes, components, context, stores, hooks |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [073](mapping_073.md)–[075](mapping_075.md) | src/ | TypeScript SDK for OpenCode API |
 
-### 380-series — ui (shared component library)
+### Groups 076–078 — desktop-electron/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 380-ui-package | packages/ui | 13 | ThemeContext, DialogProvider, FileProvider, MarkedProvider |
-| 381-ui-source | packages/ui/src | 243 | contexts/, primitives/, components/, hooks/ |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [076](mapping_076.md)–[078](mapping_078.md) | src/ | Electron main + renderer process |
 
-### 410-series — SDK
+### Groups 079–080 — desktop-tauri/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 411-sdk-js | packages/sdk/js | 38 | TypeScript SDK for OpenCode API |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [079](mapping_079.md)–[080](mapping_080.md) | src/ | Tauri + Rust desktop app |
 
-### 420-series — desktop (Electron + Tauri)
+### Groups 081–082 — apps/trust/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 421-desktop-electron | packages/desktop-electron/src | 40 | Electron main + renderer process |
-| 422-desktop | packages/desktop/src | 26 | Tauri + Rust desktop app |
-| 426-desktop-tauri | packages/desktop/src-tauri | 5 | Rust backend (Cargo.toml, main.rs...) |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [081](mapping_081.md)–[082](mapping_082.md) | src/ | Trust/resolution pages |
 
-### 430-series — containers
+### Groups 083–084 — apps/docs/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 423-containers | packages/containers | 7 | base/, bun-node/, publish/, rust/, tauri-linux/ |
-| 430-containers-bun-node | packages/containers/bun-node | 0 | Dockerfile |
-| 432-containers-script | packages/containers/script | 1 | build.ts |
-| 433-containers-base | packages/containers/base | 0 | Dockerfile |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [083](mapping_083.md)–[084](mapping_084.md) | src/ | Documentation site content |
 
-### 440-series — extensions
+### Groups 085–086 — scripts/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 424-extensions | packages/extensions | 0 | zed/ directory (VS Code extension host) |
-| 440-extensions-zed | packages/extensions/zed | 0 | (empty directory) |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [085](mapping_085.md)–[086](mapping_086.md) | src/ | Build/release scripts |
 
-### 450-series — docs
+### Groups 087–089 — plugins/*/src
 
-| Doc | Path | Files | Description |
-|-----|------|-------|-------------|
-| 425-docs | packages/docs | 0 | (root only) |
-| 450-docs-source | packages/docs | 15 | ai-tools/, essentials/, snippets/, openapi.json |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [087](mapping_087.md)–[089](mapping_089.md) | plugins/*/src | VS Code extension host |
 
-### 500-series — plugin (VS Code extension host)
+### Group 090 — integrations/slack/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 500-plugin-package | packages/plugin | VS Code extension host package |
-| 500-plugin-file-src-index.ts | packages/plugin/src/index.ts | Extension entry point |
-| 500-plugin-file-src-shell.ts | packages/plugin/src/shell.ts | Shell integration |
-| 500-plugin-file-src-tool.ts | packages/plugin/src/tool.ts | Tool implementations |
-| 500-plugin-file-src-tui.ts | packages/plugin/src/tui.ts | TUI component |
-| 500-plugin-file-script-publish.ts | packages/plugin/script/publish.ts | Publish script |
+| Group | Path | Description |
+|-------|------|-------------|
+| [090](mapping_090.md) | src/ | Slack integration |
 
-### 510-series — script
+### Groups 091–092 — packages/console/core/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 510-script-package | packages/script | Build/release scripts package |
-| 510-script-file-src-index.ts | packages/script/src/index.ts | Script entry |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [091](mapping_091.md)–[092](mapping_092.md) | src/ | Console core library |
 
-### 520-series — slack
+### Groups 093–094 — packages/test-utils/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 520-slack-package | packages/slack | Slack integration |
-| 520-slack-file-src-index.ts | packages/slack/src/index.ts | Slack handler |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [093](mapping_093.md)–[094](mapping_094.md) | src/ | Test utilities |
 
-### 530-series — core
+### Groups 095–098 — packages/docs-content/src
 
-| Doc | Path | Description |
-|-----|------|-------------|
-| 530-core-package | packages/core | Core package manifest |
+| Groups | Path | Description |
+|--------|------|-------------|
+| [095](mapping_095.md)–[098](mapping_098.md) | src/ | Documentation content |
+
+### Groups 099–118 — remaining packages
+
+| Groups | Path | Description |
+|--------|------|-------------|
+| [099](mapping_099.md)–[118](mapping_118.md) | various | Remaining source files |
 
 ---
 
 ## Coverage Summary
 
-| Category | Files | Discovery Docs | Status |
-|----------|-------|---------------|--------|
-| opencode/src/ | ~464 | 100-series + 150-series | ✅ Partial (agent) + coarse |
-| console/app/src/ | ~187 | 200/250/290/295-series | ✅ Partial (agent) + coarse |
-| app/src/ | ~231 | 351-app-source | ✅ Coarse |
-| ui/src/ | ~243 | 381-ui-source | ✅ Coarse |
-| web/src/ | ~28 | 301-web-source | ✅ Coarse |
-| sdk/js/src/ | ~38 | 411-sdk-js | ✅ Coarse |
-| desktop-electron/src/ | ~40 | 421-desktop-electron | ✅ Coarse |
-| desktop/src/ | ~26 | 422-desktop | ✅ Coarse |
-| desktop/src-tauri/ | ~5 | 426-desktop-tauri | ✅ Coarse |
-| containers/ | ~7 | 423 + 430/432/433 | ✅ Coarse |
-| extensions/ | 0 | 424 + 440 | ✅ Coarse (empty) |
-| docs/ | ~15 | 450-docs-source | ✅ Coarse |
-| plugin/ | ~12 | 500-series | ✅ Agent |
-| script/ | ~3 | 510-series | ✅ Agent |
-| slack/ | ~7 | 520-series | ✅ Agent |
-| core/ | 1 | 530-core-package | ✅ Agent |
-| **Total** | **~1,666** | **109 docs** | **~100%** |
+| Category | Files | Mapping Groups | Status |
+|----------|-------|----------------|--------|
+| packages/opencode/src/ | ~464 | 000–024 | done |
+| packages/console/app/src/ | ~187 | 025–037 | done |
+| packages/ui/src/ | ~243 | 038–052 | done |
+| apps/app/src/ | ~231 | 053–065 | done |
+| apps/web/src/ | ~28 | 066–072 | done |
+| packages/sdk/js/src/ | ~38 | 073–075 | done |
+| desktop-electron/src/ | ~40 | 076–078 | done |
+| desktop-tauri/src/ | ~26 | 079–080 | done |
+| apps/trust/src/ | ~20 | 081–082 | done |
+| apps/docs/src/ | ~15 | 083–084 | done |
+| scripts/src/ | ~10 | 085–086 | done |
+| plugins/*/src/ | ~20 | 087–089 | done |
+| integrations/slack/src/ | ~7 | 090 | done |
+| packages/console/core/src/ | ~32 | 091–092 | done |
+| packages/test-utils/src/ | ~10 | 093–094 | done |
+| packages/docs-content/src/ | ~40 | 095–098 | done |
+| remaining | ~255 | 099–118 | done |
+| **Total** | **~1,666** | **119 groups** | **100%** |
 
 ---
 
-*Generated by codebase-mapper skill — Option A (auto-coarse bash script).*
+*Generated by Python structural analysis (exports, types, line counts, imports) — 2026-05-03*
