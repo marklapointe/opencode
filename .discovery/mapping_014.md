@@ -1,36 +1,36 @@
 # Mapping Group 014
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `agent.ts` → agentColor (44 ln)  [typescript]
-    → const defaults: Record<string, string> = {
-  - `aim.ts` → createAim (138 ln)  [typescript]
-    → export function createAim(props: {
-  - `base64.ts` → decode64 (10 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/encode
-  - `comment-note.ts` → createCommentMetadata (88 ln)  [typescript]
-    → Imports: @/context/file
-  - `diffs.test.ts` →  (74 ln)  [typescript]
-    → Imports: bun:test
-  - `diffs.ts` → diffs (49 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `id.ts` → Prefix (99 ln)  [typescript]
-    → Imports: zod
-  - `notification-click.test.ts` →  (27 ln)  [typescript]
-    → Imports: bun:test
-  - `notification-click.ts` → setNavigate (13 ln)  [typescript]
-    → let nav: ((href: string) => void) | undefined
-  - `path-key.ts` → pathKey (24 ln)  [typescript]
-    → const isDrive = (value: string) => {
-  - `persist.test.ts` → MemoryStorage (167 ln)  [typescript]
-    → Imports: bun:test
-  - `persist.ts` → removePersisted (611 ln)  [typescript]
-    → Imports: @/context/platform
-  - `prompt.test.ts` →  (44 ln)  [typescript]
-    → Imports: bun:test
-  - `prompt.ts` → extractPromptFromParts (203 ln)  [typescript]
-    → Extract prompt content from message parts for restoring into the prompt input. This is used by undo to restore the original user prompt. /
+- `es.ts` → dict (942 ln)  [typescript]
+  → export const dict = {
+- `fr.ts` → dict (870 ln)  [typescript]
+  → export const dict = {
+- `ja.ts` → dict (853 ln)  [typescript]
+  → export const dict = {
+- `ko.ts` → dict (848 ln)  [typescript]
+  → export const dict = {
+- `no.ts` → dict (936 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `parity.test.ts` →  (32 ln)  [test]
+- `pl.ts` → dict (857 ln)  [typescript]
+  → export const dict = {
+- `ru.ts` → dict (938 ln)  [typescript]
+  → export const dict = {
+- `th.ts` → dict (925 ln)  [typescript]
+  → export const dict = {
+- `tr.ts` → dict (944 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `zh.ts` → dict (920 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `zht.ts` → dict (916 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `index.css` →  (85 ln)  [stylesheet]
+- `index.ts` →  (7 ln)  [typescript]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

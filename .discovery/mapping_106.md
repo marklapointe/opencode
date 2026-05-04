@@ -1,32 +1,21 @@
 # Mapping Group 106
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `markdown.css` →  (266 ln)  [stylesheet]
-  - `markdown.stories.tsx` → Basic (53 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `markdown.tsx` → Markdown (348 ln)  [typescript]
-    → Imports: ../context/marked
-  - `message-file.test.ts` →  (55 ln)  [typescript]
-    → Imports: bun:test
-  - `message-file.ts` → attached (14 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `message-nav.css` →  (123 ln)  [stylesheet]
-  - `message-nav.stories.tsx` → Basic (7 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `message-nav.tsx` → MessageNav (92 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `message-part.css` →  (1275 ln)  [stylesheet]
-  - `message-part.stories.tsx` → Basic (7 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `message-part.tsx` → getToolInfo (2293 ln)  [typescript]
-    → Imports: solid-js
-  - `motion-spring.tsx` → useSpring (45 ln)  [typescript]
-    → Imports: motion
-  - `popover.css` →  (98 ln)  [stylesheet]
-  - `popover.stories.tsx` → Basic (87 ln)  [typescript]
-    → Imports: solid-js
+**packages/opencode/test/**
+- `install.test.ts` →  (570 ln)  [test]
+- `loader-shared.test.ts` →  (1169 ln)  [test]
+- `meta.test.ts` →  (137 ln)  [test]
+- `shared.test.ts` →  (88 ln)  [test]
+- `trigger.test.ts` →  (102 ln)  [test]
+- `workspace-adapter.test.ts` →  (109 ln)  [test]
+- `preload.ts` →  (91 ln)  [test]
+- `migrate-global.test.ts` →  (152 ln)  [test]
+- `project.test.ts` →  (601 ln)  [test]
+- `vcs.test.ts` →  (286 ln)  [test]
+- `worktree-remove.test.ts` →  (126 ln)  [test]
+- `worktree.test.ts` →  (214 ln)  [test]
+- `amazon-bedrock.test.ts` →  (462 ln)  [test]
+- `convert-to-copilot-messages.test.ts` →  (523 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

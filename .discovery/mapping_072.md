@@ -1,38 +1,35 @@
 # Mapping Group 072
 Files: 14
 
-## File Tree
 **packages/opencode/src/**
-  - `apply_patch.ts` → Parameters (309 ln)  [typescript]
-    → Imports: effect
-  - `bash.ts` → Parameters (635 ln)  [typescript]
-    → Imports: effect
-
-**packages/opencode/test/**
-  - `filesystem.test.ts` →  (656 ln)  [typescript]
-    → Imports: bun:test
-  - `format.test.ts` →  (59 ln)  [typescript]
-    → Imports: bun:test
-  - `glob.test.ts` →  (164 ln)  [typescript]
-    → Imports: bun:test
-  - `iife.test.ts` →  (36 ln)  [typescript]
-    → Imports: bun:test
-  - `lazy.test.ts` →  (50 ln)  [typescript]
-    → Imports: bun:test
-  - `lock.test.ts` →  (72 ln)  [typescript]
-    → Imports: bun:test
-  - `log.test.ts` →  (44 ln)  [typescript]
-    → Imports: bun:test
-  - `module.test.ts` →  (59 ln)  [typescript]
-    → Imports: bun:test
-  - `process.test.ts` →  (128 ln)  [typescript]
-    → Imports: bun:test
-  - `timeout.test.ts` →  (21 ln)  [typescript]
-    → Imports: bun:test
-  - `which.test.ts` →  (100 ln)  [typescript]
-    → Imports: bun:test
-  - `wildcard.test.ts` →  (90 ln)  [typescript]
-    → Imports: bun:test
+- `solarized.json` →  (223 ln)  [json]
+- `synthwave84.json` →  (226 ln)  [json]
+- `tokyonight.json` →  (243 ln)  [json]
+- `vercel.json` →  (245 ln)  [json]
+- `vesper.json` →  (218 ln)  [json]
+- `zenburn.json` →  (223 ln)  [json]
+- `tui-config.tsx` →  (9 ln)  [config]
+- `event.ts` → TuiEvent (53 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, @/session/schema, @/util/schema
+- `footer.tsx` →  (93 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js, @opencode-ai/core/global
+- `tips-view.tsx` → Tips (157 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/theme
+- `tips.tsx` →  (55 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js, ./tips-view
+- `context.tsx` →  (63 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2
+  → imports: @opencode-ai/sdk/v2, @opencode-ai/plugin/tui, solid-js
+- `files.tsx` →  (62 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js
+- `footer.tsx` →  (93 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js, @opencode-ai/core/global
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

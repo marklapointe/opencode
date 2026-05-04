@@ -1,36 +1,35 @@
 # Mapping Group 021
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `app.tsx` →  (44 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `entry-client.tsx` →  (4 ln)  [typescript]
-    → Imports: @solidjs/start/client
-  - `entry-server.tsx` →  (37 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `[...404].tsx` →  (42 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `black.tsx` →  (283 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `index.tsx` → OS (486 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `feishu.ts` → GET (7 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `index.tsx` →  (837 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `index.tsx` →  (1516 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `index.tsx` →  (518 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `openapi.json.ts` → GET (7 ln)  [typescript]
-    → export async function GET() {
-  - `webhook.ts` → POST (371 ln)  [typescript]
-    → Imports: stripe
-  - `temp.tsx` →  (179 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `user-menu.tsx` → UserMenu (36 ln)  [typescript]
-    → Imports: @solidjs/router
+- `.gitignore` →  (30 ln)  [file]
+- `README.md` →  (32 ln)  [docs]
+- `package.json` →  (46 ln)  [json]
+- `theme.json` →  (182 ln)  [json]
+- `generate-sitemap.ts` →  (108 ln)  [typescript]
+  → Imports: fs/promises
+  → imports: fs/promises, path, url
+- `app.css` →  (1 ln)  [stylesheet]
+- `app.tsx` →  (44 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, @solidjs/router, @solidjs/start/router
+- `dropdown.css` →  (80 ln)  [stylesheet]
+- `dropdown.tsx` → Dropdown (79 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, ./icon
+- `email-signup.tsx` → EmailSignup (47 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, @opencode-ai/console-resource, solid-js
+- `faq.tsx` → Faq (33 ln)  [typescript]
+  → Imports: @kobalte/core/collapsible
+  → imports: @kobalte/core/collapsible, solid-js
+- `footer.tsx` → Footer (48 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js, ~/lib/github
+- `header-context-menu.css` →  (63 ln)  [stylesheet]
+- `header.tsx` → Header (293 ln)  [typescript]
+  → Imports: ../asset/logo-ornate-light.svg
+  → imports: ../asset/logo-ornate-light.svg, ../asset/logo-ornate-dark.svg, ../asset/lander/logo-light.svg
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

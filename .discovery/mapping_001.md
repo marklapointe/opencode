@@ -1,36 +1,47 @@
 # Mapping Group 001
 Files: 14
 
-## File Tree
-**packages/app/src/**
-  - `dialog-select-model-unpaid.tsx` → DialogSelectModelUnpaid (145 ln)  [typescript]
-    → Imports: @opencode-ai/ui/button
-  - `dialog-select-model.tsx` → ModelSelectorPopover (230 ln)  [typescript]
-    → Imports: @kobalte/core/popover
-  - `dialog-select-provider.tsx` → DialogSelectProvider (86 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-select-server.tsx` → DialogSelectServer (649 ln)  [typescript]
-    → Imports: @opencode-ai/ui/button
-  - `dialog-settings.tsx` → DialogSettings (73 ln)  [typescript]
-    → Imports: solid-js
-  - `file-tree.test.ts` →  (78 ln)  [typescript]
-    → Imports: bun:test
-  - `file-tree.tsx` → shouldListRoot (506 ln)  [typescript]
-    → Imports: @/context/file
-  - `link.tsx` → Link (26 ln)  [typescript]
-    → Imports: solid-js
-  - `model-tooltip.tsx` → ModelTooltip (91 ln)  [typescript]
-    → Imports: solid-js
-  - `attachments.test.ts` →  (44 ln)  [typescript]
-    → Imports: bun:test
-  - `attachments.ts` → createPromptAttachments (196 ln)  [typescript]
-    → Imports: solid-js
-  - `build-request-parts.test.ts` →  (336 ln)  [typescript]
-    → Imports: bun:test
-  - `build-request-parts.ts` → buildRequestParts (201 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/path
-  - `prompt-input.tsx` → PromptInput (1615 ln)  [typescript]
-    → Imports: @opencode-ai/ui/hooks
+**README.es.md/**
+- `README.es.md` →  (141 ln)  [docs]
+
+**README.fr.md/**
+- `README.fr.md` →  (141 ln)  [docs]
+
+**README.gr.md/**
+- `README.gr.md` →  (141 ln)  [docs]
+
+**README.it.md/**
+- `README.it.md` →  (141 ln)  [docs]
+
+**README.ja.md/**
+- `README.ja.md` →  (141 ln)  [docs]
+
+**README.ko.md/**
+- `README.ko.md` →  (141 ln)  [docs]
+
+**README.md/**
+- `README.md` →  (141 ln)  [docs]
+
+**README.no.md/**
+- `README.no.md` →  (141 ln)  [docs]
+
+**README.pl.md/**
+- `README.pl.md` →  (141 ln)  [docs]
+
+**README.ru.md/**
+- `README.ru.md` →  (141 ln)  [docs]
+
+**README.th.md/**
+- `README.th.md` →  (141 ln)  [docs]
+
+**README.tr.md/**
+- `README.tr.md` →  (141 ln)  [docs]
+
+**README.uk.md/**
+- `README.uk.md` →  (142 ln)  [docs]
+
+**README.vi.md/**
+- `README.vi.md` →  (141 ln)  [docs]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

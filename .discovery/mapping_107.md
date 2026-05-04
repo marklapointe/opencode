@@ -1,32 +1,21 @@
 # Mapping Group 107
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `popover.tsx` → Popover (153 ln)  [typescript]
-    → Imports: @kobalte/core/popover
-  - `progress-circle.css` →  (12 ln)  [stylesheet]
-  - `progress-circle.stories.tsx` → Basic (59 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `progress-circle.tsx` → ProgressCircle (57 ln)  [typescript]
-    → Imports: solid-js
-  - `progress.css` →  (63 ln)  [stylesheet]
-  - `progress.stories.tsx` → Basic (67 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `progress.tsx` → Progress (39 ln)  [typescript]
-    → Imports: @kobalte/core/progress
-  - `provider-icon.css` →  (5 ln)  [stylesheet]
-  - `provider-icon.stories.tsx` → Basic (69 ln)  [typescript]
-    → Imports: ./provider-icons/types
-  - `provider-icon.tsx` → ProviderIcon (25 ln)  [typescript]
-    → Imports: solid-js
-  - `types.ts` → iconNames (104 ln)  [typescript]
-    → export const iconNames = [
-  - `radio-group.css` →  (187 ln)  [stylesheet]
-  - `radio-group.stories.tsx` → Basic (92 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `radio-group.tsx` → RadioGroup (83 ln)  [typescript]
-    → Imports: @kobalte/core/segmented-control
+**packages/opencode/test/**
+- `copilot-chat-model.test.ts` →  (592 ln)  [test]
+- `gitlab-duo.test.ts` →  (413 ln)  [test]
+- `provider.test.ts` →  (2714 ln)  [test]
+- `transform.test.ts` →  (3333 ln)  [test]
+- `pty-output-isolation.test.ts` →  (146 ln)  [test]
+- `pty-session.test.ts` →  (102 ln)  [test]
+- `pty-shell.test.ts` →  (104 ln)  [test]
+- `question.test.ts` →  (464 ln)  [test]
+- `AGENTS.md` →  (15 ln)  [test]
+- `global-session-list.test.ts` →  (105 ln)  [test]
+- `httpapi-authorization.test.ts` →  (103 ln)  [test]
+- `httpapi-bridge.test.ts` →  (420 ln)  [test]
+- `httpapi-config.test.ts` →  (67 ln)  [test]
+- `httpapi-cors.test.ts` →  (89 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

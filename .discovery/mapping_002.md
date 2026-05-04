@@ -1,35 +1,57 @@
 # Mapping Group 002
 Files: 14
 
-## File Tree
-**packages/app/src/**
-  - `context-items.tsx` → PromptContextItems (88 ln)  [typescript]
-    → Imports: solid-js
-  - `drag-overlay.tsx` → PromptDragOverlay (25 ln)  [typescript]
-    → Imports: solid-js
-  - `editor-dom.test.ts` →  (99 ln)  [typescript]
-    → Imports: bun:test
-  - `editor-dom.ts` → createTextFragment (148 ln)  [typescript]
-    → const MAX_BREAKS = 200
-  - `files.ts` → attachmentMime + ACCEPTED_FILE_TYPES (66 ln)  [typescript]
-    → Imports: @/constants/file-picker
-  - `history.test.ts` →  (153 ln)  [typescript]
-    → Imports: bun:test
-  - `history.ts` → canNavigateHistoryAtCursor (256 ln)  [typescript]
-    → Imports: @/context/prompt
-  - `image-attachments.tsx` → PromptImageAttachments (61 ln)  [typescript]
-    → Imports: solid-js
-  - `paste.ts` → normalizePaste (24 ln)  [typescript]
-    → const LARGE_PASTE_CHARS = 8000
-  - `placeholder.test.ts` →  (48 ln)  [typescript]
-    → Imports: bun:test
-  - `placeholder.ts` → promptPlaceholder (15 ln)  [typescript]
-  - `slash-popover.tsx` → PromptPopover (141 ln)  [typescript]
-    → Imports: solid-js
-  - `submit.test.ts` →  (345 ln)  [typescript]
-    → Imports: bun:test
-  - `submit.ts` → sendFollowupDraft (584 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
+**README.zh.md/**
+- `README.zh.md` →  (140 ln)  [docs]
+
+**README.zht.md/**
+- `README.zht.md` →  (140 ln)  [docs]
+
+**SECURITY.md/**
+- `SECURITY.md` →  (47 ln)  [docs]
+
+**STATS.md/**
+- `STATS.md` →  (217 ln)  [docs]
+
+**bunfig.toml/**
+- `bunfig.toml` →  (6 ln)  [toml]
+
+**github/.gitignore/**
+- `.gitignore` →  (34 ln)  [file]
+
+**github/README.md/**
+- `README.md` →  (166 ln)  [docs]
+
+**github/index.ts/**
+- `index.ts` →  (1052 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, node:path, @octokit/rest
+
+**github/package.json/**
+- `package.json` →  (20 ln)  [json]
+
+**github/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**github/tsconfig.json/**
+- `tsconfig.json` →  (29 ln)  [config]
+
+**infra/app.ts/**
+- `app.ts` → EMAILOCTOPUS_API_KEY (68 ln)  [typescript]
+  → Imports: ./stage
+  → imports: ./stage
+
+**infra/console.ts/**
+- `console.ts` → database (290 ln)  [typescript]
+  → Imports: ./stage
+  → imports: ./stage, ./app
+
+**infra/enterprise.ts/**
+- `enterprise.ts` →  (17 ln)  [typescript]
+  → Imports: ./secret
+  → imports: ./secret, ./stage
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

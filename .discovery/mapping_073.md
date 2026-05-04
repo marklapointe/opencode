@@ -1,36 +1,49 @@
 # Mapping Group 073
 Files: 14
 
-## File Tree
 **packages/opencode/src/**
-  - `edit.ts` → trimDiff (711 ln)  [typescript]
-    → Levenshtein distance algorithm implementation /
-  - `external-directory.ts` → assertExternalDirectory (49 ln)  [typescript]
-    → Imports: path
-  - `glob.ts` → Parameters (97 ln)  [typescript]
-    → Imports: path
-  - `grep.ts` → Parameters (151 ln)  [typescript]
-    → Imports: path
-  - `invalid.ts` → Parameters (21 ln)  [typescript]
-    → Imports: effect
-  - `lsp.ts` → Parameters (113 ln)  [typescript]
-    → Imports: effect
-  - `mcp-exa.ts` → SearchArgs (73 ln)  [typescript]
-    → Imports: effect
-  - `plan.ts` → Parameters (82 ln)  [typescript]
-    → Imports: path
-  - `question.ts` → Parameters (44 ln)  [typescript]
-    → Imports: effect
-  - `read.ts` → Parameters (343 ln)  [typescript]
-    → Imports: effect
-  - `registry.ts` → layer (347 ln)  [typescript]
-    → Imports: ./plan
-  - `schema.ts` → ToolID (16 ln)  [typescript]
-    → Imports: effect
-  - `skill.ts` → Parameters (75 ln)  [typescript]
-    → Imports: path
-  - `task.ts` → Parameters (180 ln)  [typescript]
-    → Imports: ./task.txt
+- `lsp.tsx` →  (66 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js
+- `mcp.tsx` →  (96 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js
+- `todo.tsx` →  (48 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, solid-js, ../../component/todo-item
+- `plugins.tsx` →  (270 ln)  [typescript]
+  → Imports: @/util/keybind
+  → imports: @/util/keybind, @opencode-ai/plugin/tui, @opentui/solid
+- `layer.ts` → CliLayer (6 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ./config/tui, @opencode-ai/core/npm
+- `api.tsx` → createTuiApi (390 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, @opencode-ai/plugin/tui, @tui/component/dialog-command
+- `internal.ts` → INTERNAL_TUI_PLUGINS (27 ln)  [typescript]
+  → Imports: ../feature-plugins/home/footer
+  → imports: ../feature-plugins/home/footer, ../feature-plugins/home/tips, ../feature-plugins/sidebar/context
+- `runtime.ts` → init (1030 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, path, url
+- `slots.tsx` → setupSlots (60 ln)  [typescript]
+  → Imports: @opencode-ai/plugin/tui
+  → imports: @opencode-ai/plugin/tui, @opentui/solid, @/util/record
+- `home.tsx` → Home (90 ln)  [typescript]
+  → Imports: @tui/component/prompt
+  → imports: @tui/component/prompt, solid-js, ../component/logo
+- `dialog-fork-from-timeline.tsx` → DialogForkFromTimeline (76 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/sync, @tui/ui/dialog-select
+- `dialog-message.tsx` → DialogMessage (108 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/sync, @tui/ui/dialog-select
+- `dialog-subagent.tsx` → DialogSubagent (26 ln)  [typescript]
+  → Imports: @tui/ui/dialog-select
+  → imports: @tui/ui/dialog-select, @tui/context/route
+- `dialog-timeline.tsx` → DialogTimeline (47 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/sync, @tui/ui/dialog-select
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

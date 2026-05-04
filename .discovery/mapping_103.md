@@ -1,33 +1,21 @@
 # Mapping Group 103
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `favicon.tsx` → Favicon (13 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `file-icon.css` →  (26 ln)  [stylesheet]
-  - `file-icon.stories.tsx` → Basic (94 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `file-icon.tsx` → chooseIconName (588 ln)  [typescript]
-    → Imports: solid-js
-  - `types.ts` → iconNames (1095 ln)  [typescript]
-    → export const iconNames = [
-  - `file-media.tsx` → FileMedia (267 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `file-search.tsx` → FileSearchBar (72 ln)  [typescript]
-    → Imports: solid-js/web
-  - `file-ssr.tsx` → FileSSR (193 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `file.css` →  (42 ln)  [stylesheet]
-  - `file.tsx` → File (1132 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/encode
-  - `font.stories.tsx` → Basic (48 ln)  [typescript]
-    → const docs = `### Overview
-  - `font.tsx` → Font (1 ln)  [typescript]
-    → export const Font = () => null
-  - `hover-card.css` →  (61 ln)  [stylesheet]
-  - `hover-card.stories.tsx` → Basic (70 ln)  [typescript]
-    → Imports: solid-js
+**packages/opencode/test/**
+- `db.ts` →  (11 ln)  [test]
+- `fixture.test.ts` →  (26 ln)  [test]
+- `fixture.ts` →  (174 ln)  [test]
+- `flock-worker.ts` →  (72 ln)  [test]
+- `fake-lsp-server.js` →  (249 ln)  [test]
+- `plug-worker.ts` →  (93 ln)  [test]
+- `plugin-meta-worker.ts` →  (19 ln)  [test]
+- `SKILL.md` →  (152 ln)  [test]
+- `callable.md` →  (92 ln)  [test]
+- `SKILL.md` →  (211 ln)  [test]
+- `index.json` →  (6 ln)  [test]
+- `tui-plugin.ts` →  (323 ln)  [test]
+- `tui-runtime.ts` →  (31 ln)  [test]
+- `format.test.ts` →  (272 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

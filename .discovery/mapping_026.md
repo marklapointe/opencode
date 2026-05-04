@@ -1,31 +1,43 @@
 # Mapping Group 026
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `model-section.tsx` → ModelSection (192 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/model.js
-  - `new-user-section.module.css` →  (143 ln)  [stylesheet]
-  - `new-user-section.tsx` → NewUserSection (108 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `provider-section.module.css` →  (138 ln)  [stylesheet]
-  - `provider-section.tsx` → ProviderSection (199 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `index.tsx` →  (11 ln)  [typescript]
-    → Imports: ./settings-section
-  - `settings-section.module.css` →  (94 ln)  [stylesheet]
-  - `settings-section.tsx` → SettingsSection (125 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `graph-section.module.css` →  (145 ln)  [stylesheet]
-  - `graph-section.tsx` → GraphSection (556 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/drizzle/index.js
-  - `index.tsx` →  (21 ln)  [typescript]
-    → Imports: solid-js
-  - `usage-section.module.css` →  (185 ln)  [stylesheet]
-  - `usage-section.tsx` → UsageSection (217 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/billing.js
-  - `common.tsx` → formatDateForTable (122 ln)  [typescript]
-    → Imports: @opencode-ai/console-resource
+- `index.tsx` →  (125 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, @solidjs/meta, solid-js
+- `[plan].tsx` →  (484 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, @solidjs/meta, solid-js
+- `workspace.css` →  (214 ln)  [stylesheet]
+- `workspace.tsx` →  (238 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, @solidjs/meta, ~/lib/github
+- `index.css` →  (556 ln)  [stylesheet]
+- `index.tsx` →  (315 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, ~/component/header, ~/component/footer
+- `changelog.json.ts` → GET (30 ln)  [typescript]
+  → Imports: ~/lib/changelog
+  → imports: ~/lib/changelog
+- `index.css` →  (604 ln)  [stylesheet]
+- `index.tsx` →  (176 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, @solidjs/router, ~/component/header
+- `index.ts` → GET (13 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, @solidjs/router, @opencode-ai/console-core/drizzle/index.js
+- `desktop-feedback.ts` → GET (5 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router
+- `discord.ts` → GET (5 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router
+- `[...path].ts` → GET (30 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, @opencode-ai/console-resource, ~/lib/language
+- `index.ts` → GET (30 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, @opencode-ai/console-resource, ~/lib/language
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

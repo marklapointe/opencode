@@ -1,35 +1,44 @@
 # Mapping Group 098
 Files: 14
 
-## File Tree
-**packages/sdk/js/**
-  - `types.gen.ts` →  (3904 ln)  [typescript]
-    → Brief description of the task /
-  - `index.ts` → createOpencode (21 ln)  [typescript]
-    → Imports: ./client.js
-  - `process.ts` → stop (31 ln)  [typescript]
-    → Imports: node:child_process
-  - `server.ts` → createOpencodeServer (134 ln)  [typescript]
-    → Imports: cross-spawn
-  - `client.ts` → createOpencodeClient + type Config as OpencodeClientConfig, OpencodeClient (88 ln)  [typescript]
-    → Imports: ./gen/client/client.gen.js
-  - `data.ts` → message (32 ln)  [typescript]
-    → Imports: ./client.js
-  - `client.gen.ts` → createClient (285 ln)  [typescript]
-    → Imports: ../core/serverSentEvents.gen.js
-  - `index.ts` → formDataBodySerializer, jsonBodySerializer, urlSearchParamsBodySerializer, , buildClientParams (25 ln)  [typescript]
-  - `types.gen.ts` → MethodFn (202 ln)  [typescript]
-    → Base URL for all requests made by this client. /
-  - `utils.gen.ts` → createQuerySerializer (289 ln)  [typescript]
-    → Infers parseAs value from provided Content-Type header. /
-  - `client.gen.ts` → client (18 ln)  [typescript]
-    → The `createClientConfig()` function will be called on client initialization and the returned object will become the client's initial configuration.
-  - `auth.gen.ts` → getAuthToken (41 ln)  [typescript]
-    → Which part of the request do we use to send the auth?  @default 'header'
-  - `bodySerializer.gen.ts` → formDataBodySerializer (82 ln)  [typescript]
-    → Per-parameter serialization overrides. When provided, these settings override the global array/object settings for specific parameter names. /
-  - `params.gen.ts` → buildClientParams (169 ln)  [typescript]
-    → Field name. This is the name we want the user to see and use. /
+**packages/opencode/src/**
+- `token.ts` → estimate (7 ln)  [typescript]
+  → const CHARS_PER_TOKEN = 4
+- `update-schema.ts` → updateSchema (13 ln)  [typescript]
+  → Imports: zod
+  → imports: zod
+- `which.ts` → which (14 ln)  [typescript]
+  → Imports: which
+  → imports: which, path, @opencode-ai/core/global
+- `wildcard.ts` → match (59 ln)  [typescript]
+  → Imports: remeda
+  → imports: remeda
+- `session-entry-stepper.ts` → memory (261 ln)  [typescript]
+  → Imports: immer
+  → imports: immer, ./session-event, ./session-entry
+- `session-entry.ts` → ID (220 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/util/schema, ./session-event
+- `session-event.ts` →  (458 ln)  [typescript]
+  → Imports: @/id/id
+  → imports: @/id/id, @/util/schema, effect
+- `session.ts` → ID (69 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ./session-entry, effect
+- `index.ts` → Event (592 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, @opencode-ai/core/util/error, @opencode-ai/core/global
+
+**packages/opencode/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/opencode/test/**
+- `AGENTS.md` →  (133 ln)  [test]
+- `repo.test.ts` →  (352 ln)  [test]
+- `service.test.ts` →  (456 ln)  [test]
+- `agent-interface.test.ts` →  (51 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,36 +1,35 @@
 # Mapping Group 018
 Files: 14
 
-## File Tree
-**packages/console/app/**
-  - `br.ts` → dict (791 ln)  [typescript]
-    → Imports: ./en
-  - `da.ts` → dict (785 ln)  [typescript]
-    → Imports: ./en
-  - `de.ts` → dict (790 ln)  [typescript]
-    → Imports: ./en
-  - `en.ts` → dict (784 ln)  [typescript]
-    → export const dict = {
-  - `es.ts` → dict (790 ln)  [typescript]
-    → Imports: ./en
-  - `fr.ts` → dict (797 ln)  [typescript]
-    → Imports: ./en
-  - `index.ts` → i18n (43 ln)  [typescript]
-    → Imports: ~/lib/language
-  - `it.ts` → dict (787 ln)  [typescript]
-    → Imports: ./en
-  - `ja.ts` → dict (788 ln)  [typescript]
-    → Imports: ./en
-  - `ko.ts` → dict (779 ln)  [typescript]
-    → Imports: ./en
-  - `no.ts` → dict (786 ln)  [typescript]
-    → Imports: ./en
-  - `pl.ts` → dict (792 ln)  [typescript]
-    → Imports: ./en
-  - `ru.ts` → dict (794 ln)  [typescript]
-    → Imports: ./en
-  - `th.ts` → dict (782 ln)  [typescript]
-    → Imports: ./en
+**packages/app/src/**
+- `use-session-hash-scroll.test.ts` →  (16 ln)  [test]
+- `use-session-hash-scroll.ts` → useSessionHashScroll (215 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2
+  → imports: @opencode-ai/sdk/v2, @solidjs/router, solid-js
+- `sst-env.d.ts` →  (12 ln)  [typescript]
+- `theme-preload.test.ts` →  (46 ln)  [test]
+- `agent.ts` → agentColor (44 ln)  [typescript]
+  → const defaults: Record<string, string> = {
+- `aim.ts` → createAim (138 ln)  [typescript]
+  → export function createAim(props: {
+- `base64.ts` → decode64 (10 ln)  [typescript]
+  → Imports: @opencode-ai/core/util/encode
+  → imports: @opencode-ai/core/util/encode
+- `comment-note.ts` → createCommentMetadata (88 ln)  [typescript]
+  → Imports: @/context/file
+  → imports: @/context/file
+- `diffs.test.ts` →  (74 ln)  [test]
+- `diffs.ts` → diffs (49 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2
+  → imports: @opencode-ai/sdk/v2, @opencode-ai/sdk/v2/client
+- `id.ts` →  (99 ln)  [typescript]
+  → Imports: zod
+  → imports: zod
+- `notification-click.test.ts` →  (27 ln)  [test]
+- `notification-click.ts` → setNavigate (13 ln)  [typescript]
+  → let nav: ((href: string) => void) | undefined
+- `path-key.ts` → pathKey (24 ln)  [typescript]
+  → const isDrive = (value: string) => {
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

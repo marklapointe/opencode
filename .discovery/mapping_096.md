@@ -1,49 +1,43 @@
 # Mapping Group 096
 Files: 14
 
-## File Tree
-**packages/plugin/src/**
-  - `example-workspace.ts` → FolderWorkspacePlugin (34 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `example.ts` → ExamplePlugin (18 ln)  [typescript]
-    → Imports: ./index.js
-  - `index.ts` → Rule (333 ln)  [typescript]
-    → Imports: @opencode-ai/sdk
-  - `shell.ts` →  (136 ln)  [typescript]
-    → Perform bash-like brace expansion on the given pattern. @param pattern - Brace pattern to expand /
-  - `tool.ts` → tool (41 ln)  [typescript]
-    → Current project directory for this session. Prefer this over process.cwd() when resolving relative paths. /
-  - `tui.ts` → TuiConfigView (501 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-
-**packages/script/src/**
-  - `index.ts` → Script (77 ln)  [typescript]
-    → Imports: bun
-
-**packages/sdk/js/**
-  - `client.ts` → createOpencodeClient + type Config as OpencodeClientConfig, OpencodeClient (55 ln)  [typescript]
-    → Imports: ./gen/client/client.gen.js
-
-**packages/storybook/sst-env.d.ts/**
-  - `sst-env.d.ts` →  (10 ln)  [typescript]
-
-**packages/ui/script/**
-  - `tailwind.ts` →  (23 ln)  [typescript]
-    → const colors = await Bun.file(import.meta.dir + "/colors.txt").text()
-
-**packages/ui/src/**
-  - `custom-elements.d.ts` →  (17 ln)  [typescript]
-    → TypeScript declaration for the <diffs-container> custom element. This tells TypeScript that <diffs-container> is a valid JSX element in SolidJS. Requi
-
-**packages/ui/sst-env.d.ts/**
-  - `sst-env.d.ts` →  (10 ln)  [typescript]
-
-**packages/ui/vite.config.ts/**
-  - `vite.config.ts` →  (59 ln)  [typescript]
-    → Imports: vite
-
-**packages/web/sst-env.d.ts/**
-  - `sst-env.d.ts` →  (10 ln)  [typescript]
+**packages/opencode/src/**
+- `archive.ts` → extractZip (17 ln)  [typescript]
+  → Imports: path
+  → imports: path
+- `bom.ts` → split (31 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @opencode-ai/core/filesystem
+- `color.ts` → isValidHex (19 ln)  [typescript]
+  → export function isValidHex(hex?: string): hex is string {
+- `data-url.ts` → decodeDataUrl (9 ln)  [typescript]
+  → export function decodeDataUrl(url: string) {
+- `defer.ts` → defer (10 ln)  [typescript]
+  → export function defer(fn: () => void | Promise<void>): AsyncDisposable & Disposable {
+- `effect-http-client.ts` → withTransientReadRetry (11 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http
+- `effect-zod.ts` → zod (370 ln)  [typescript]
+  → Annotation key for providing a hand-crafted Zod schema that the walker should use instead of re-deriving from the AST.  Attach it via `Schema.String.annotate({ [ZodOverride]: z.string().startsWith("pe
+  → imports: effect, zod
+- `error.ts` → errorFormat (82 ln)  [typescript]
+  → Imports: ./record
+  → imports: ./record
+- `filesystem.ts` → exists (245 ln)  [typescript]
+  → On Windows, normalize a path to its canonical casing using the filesystem. This is needed because Windows paths are case-insensitive but LSP servers may return paths with different casing than what we
+  → imports: fs/promises, fs, fs
+- `fn.ts` → fn (21 ln)  [typescript]
+  → Imports: zod
+  → imports: zod
+- `format.ts` → formatDuration (20 ln)  [typescript]
+  → export function formatDuration(secs: number) {
+- `iife.ts` → iife (3 ln)  [typescript]
+  → export function iife<T>(fn: () => T) {
+- `keybind.ts` → match (103 ln)  [typescript]
+  → Keybind info derived from OpenTUI's ParsedKey with our custom `leader` field. This ensures type compatibility and catches missing fields at compile time. /
+  → imports: remeda, @opentui/core
+- `lazy.ts` → lazy (18 ln)  [typescript]
+  → export function lazy<T>(fn: () => T) {
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

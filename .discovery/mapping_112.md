@@ -1,32 +1,21 @@
 # Mapping Group 112
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `tool-count-summary.stories.tsx` → Playground (238 ln)  [typescript]
-    → Imports: solid-js
-  - `tool-count-summary.tsx` → AnimatedCountList (52 ln)  [typescript]
-    → Imports: solid-js
-  - `tool-error-card.css` →  (54 ln)  [stylesheet]
-  - `tool-error-card.stories.tsx` → All (92 ln)  [typescript]
-    → Imports: ./tool-error-card
-  - `tool-error-card.tsx` → ToolErrorCard (143 ln)  [typescript]
-    → Imports: solid-js
-  - `tool-status-title.css` →  (89 ln)  [stylesheet]
-  - `tool-status-title.tsx` → ToolStatusTitle (138 ln)  [typescript]
-    → Imports: solid-js
-  - `tooltip.css` →  (74 ln)  [stylesheet]
-  - `tooltip.stories.tsx` → Basic (64 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `tooltip.tsx` → TooltipKeybind (161 ln)  [typescript]
-    → Imports: @kobalte/core/tooltip
-  - `typewriter.css` →  (14 ln)  [stylesheet]
-  - `typewriter.stories.tsx` → Basic (51 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `typewriter.tsx` → Typewriter (55 ln)  [typescript]
-    → Imports: solid-js
-  - `data.tsx` → Data (52 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
+**packages/opencode/test/**
+- `bash.test.ts` →  (1224 ln)  [test]
+- `edit.test.ts` →  (754 ln)  [test]
+- `external-directory.test.ts` →  (169 ln)  [test]
+- `models-api.json` →  (65179 ln)  [test]
+- `glob.test.ts` →  (81 ln)  [test]
+- `grep.test.ts` →  (114 ln)  [test]
+- `lsp.test.ts` →  (187 ln)  [test]
+- `parameters.test.ts` →  (243 ln)  [test]
+- `question.test.ts` →  (129 ln)  [test]
+- `read.test.ts` →  (501 ln)  [test]
+- `registry.test.ts` →  (152 ln)  [test]
+- `skill.test.ts` →  (96 ln)  [test]
+- `task.test.ts` →  (387 ln)  [test]
+- `tool-define.test.ts` →  (99 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

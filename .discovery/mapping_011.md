@@ -1,35 +1,38 @@
 # Mapping Group 011
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `sidebar-items.tsx` → getProjectAvatarSource (335 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `sidebar-project.tsx` → ProjectDragOverlay (367 ln)  [typescript]
-    → Imports: solid-js
-  - `sidebar-shell.tsx` → SidebarContent (125 ln)  [typescript]
-    → Imports: solid-js
-  - `sidebar-workspace.tsx` → WorkspaceDragOverlay (483 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `index.ts` → SessionComposerRegion, createSessionComposerState (2 ln)  [typescript]
-  - `session-composer-region.tsx` → SessionComposerRegion (289 ln)  [typescript]
-    → Imports: solid-js
-  - `session-composer-state.test.ts` →  (128 ln)  [typescript]
-    → Imports: bun:test
-  - `session-composer-state.ts` → createSessionComposerState (198 ln)  [typescript]
-    → Imports: solid-js
-  - `session-followup-dock.tsx` → SessionFollowupDock (109 ln)  [typescript]
-    → Imports: solid-js
-  - `session-permission-dock.tsx` → SessionPermissionDock (74 ln)  [typescript]
-    → Imports: solid-js
-  - `session-question-dock.tsx` → SessionQuestionDock (568 ln)  [typescript]
-    → Imports: solid-js
-  - `session-request-tree.ts` → sessionPermissionRequest (52 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `session-revert-dock.tsx` → SessionRevertDock (99 ln)  [typescript]
-    → Imports: solid-js
-  - `session.tsx` → FollowupItem (1972 ln)  [typescript]
-    → Maintains the rendered history window for a session timeline.  It keeps initial paint bounded to recent turns, reveals cached turns in
+- `session-cache.ts` → dropSessionCaches (62 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client
+- `session-load.ts` → loadRootSessionsWithFallback (25 ln)  [typescript]
+  → Imports: ./types
+  → imports: ./types
+- `session-prefetch.test.ts` →  (96 ln)  [test]
+- `session-prefetch.ts` → shouldSkipSessionPrefetch (100 ln)  [typescript]
+  → const key = (directory: string, sessionID: string) => `${directory}\n${sessionID}`
+- `session-trim.test.ts` →  (59 ln)  [test]
+- `session-trim.ts` → sessionUpdatedAt (56 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client, ./utils, ./types
+- `types.ts` → MAX_DIR_STORES (135 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client, solid-js, solid-js/store
+- `utils.test.ts` →  (52 ln)  [test]
+- `utils.ts` → normalizeAgentList (40 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client
+- `highlights.tsx` →  (233 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/ui/context
+- `language.tsx` → loadLocaleDict (236 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/ui/context
+- `layout-scroll.test.ts` →  (64 ln)  [test]
+- `layout-scroll.ts` → createScrollPersistence (126 ln)  [typescript]
+  → Imports: solid-js/store
+  → imports: solid-js/store
+- `layout.test.ts` →  (69 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,36 +1,48 @@
 # Mapping Group 095
 Files: 14
 
-## File Tree
-**packages/storybook/.storybook/**
-  - `global-sync.ts` → useGlobalSync (42 ln)  [typescript]
-    → Imports: solid-js/store
-  - `language.ts` → useLanguage (75 ln)  [typescript]
-    → const dict: Record<string, string> = {
-  - `layout.ts` → useLayout (41 ln)  [typescript]
-    → Imports: solid-js
-  - `local.ts` → useLocal (41 ln)  [typescript]
-    → Imports: solid-js
-  - `permission.ts` → usePermission (24 ln)  [typescript]
-    → const accepted = new Set<string>()
-  - `platform.ts` → usePlatform (16 ln)  [typescript]
-    → Imports: ../../../../../app/src/context/platform
-  - `prompt.ts` → isPromptEqual (117 ln)  [typescript]
-    → Imports: solid-js
-  - `sdk.ts` → useSDK (25 ln)  [typescript]
-    → const make = (directory: string) => ({
-  - `sync.ts` → useSync (32 ln)  [typescript]
-    → Imports: solid-js/store
-  - `use-providers.ts` → useProviders (23 ln)  [typescript]
-    → const model_id = "claude-3-7-sonnet"
-  - `solid-router.tsx` → useParams (28 ln)  [typescript]
-    → Imports: solid-js
-  - `playground-css-plugin.ts` → playgroundCss (136 ln)  [typescript]
-    → Vite plugin that exposes a POST endpoint for the timeline playground to write CSS changes back to source files on disk.
-  - `preview.tsx` →  (98 ln)  [typescript]
-    → Imports: solid-js
-  - `theme-tool.ts` → ThemeTool (21 ln)  [typescript]
-    → Imports: react
+**packages/opencode/src/**
+- `question.ts` → Parameters (44 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ../question, ./question.txt
+- `read.ts` → Parameters (343 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/util/schema, fs
+- `registry.ts` → layer (347 ln)  [typescript]
+  → Imports: ./plan
+  → imports: ./plan, @/session/session, ./question
+- `schema.ts` → ToolID (16 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/id/id, @/util/effect-zod
+- `skill.ts` → Parameters (75 ln)  [typescript]
+  → Imports: path
+  → imports: path, url, effect
+- `task.ts` → Parameters (180 ln)  [typescript]
+  → Imports: ./task.txt
+  → imports: ./task.txt, @/session/session, ../session/schema
+- `todo.ts` → Parameters (57 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ./todowrite.txt, ../session/todo
+- `tool.ts` → define (162 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ../session/message-v2, ../permission
+- `truncate.ts` → MAX_LINES (160 ln)  [typescript]
+  → Returns output unchanged when it fits within the limits, otherwise writes the full text to the truncation directory and returns a preview plus a hint to inspect the saved file. /
+  → imports: @effect/platform-node, effect, path
+- `truncation-dir.ts` → TRUNCATION_DIR (4 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/global
+- `webfetch.ts` → Parameters (199 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, turndown
+- `websearch.ts` → Parameters (71 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, ./websearch.txt
+- `write.ts` → Parameters (104 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect, @/lsp/lsp
+- `abort.ts` → abortAfter (35 ln)  [typescript]
+  → Creates an AbortController that automatically aborts after a timeout.  Uses bind() instead of arrow functions to avoid capturing the surrounding
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

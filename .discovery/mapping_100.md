@@ -1,32 +1,21 @@
 # Mapping Group 100
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `animated-number.tsx` → AnimatedNumber (109 ln)  [typescript]
-    → Imports: solid-js
-  - `app-icon.css` →  (5 ln)  [stylesheet]
-  - `app-icon.stories.tsx` → Basic (69 ln)  [typescript]
-    → Imports: ./app-icons/types
-  - `app-icon.tsx` → AppIcon (85 ln)  [typescript]
-    → Imports: solid-js
-  - `types.ts` → iconNames (21 ln)  [typescript]
-    → export const iconNames = [
-  - `apply-patch-file.test.ts` →  (43 ln)  [typescript]
-    → Imports: bun:test
-  - `apply-patch-file.ts` → patchFile (78 ln)  [typescript]
-    → Imports: ./session-diff
-  - `avatar.css` →  (49 ln)  [stylesheet]
-  - `avatar.stories.tsx` → Basic (76 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `avatar.tsx` → Avatar (55 ln)  [typescript]
-    → Imports: solid-js
-  - `basic-tool.css` →  (248 ln)  [stylesheet]
-  - `basic-tool.stories.tsx` → Basic (133 ln)  [typescript]
-    → Imports: solid-js
-  - `basic-tool.tsx` → BasicTool (283 ln)  [typescript]
-    → Imports: solid-js
-  - `button.css` →  (194 ln)  [stylesheet]
+**packages/opencode/test/**
+- `editor-context-zed.test.ts` →  (356 ln)  [test]
+- `editor-context.test.tsx` →  (228 ln)  [test]
+- `keybind-plugin.test.ts` →  (90 ln)  [test]
+- `plugin-add.test.ts` →  (111 ln)  [test]
+- `plugin-install.test.ts` →  (87 ln)  [test]
+- `plugin-lifecycle.test.ts` →  (224 ln)  [test]
+- `plugin-loader-entrypoint.test.ts` →  (484 ln)  [test]
+- `plugin-loader-pure.test.ts` →  (71 ln)  [test]
+- `plugin-loader.test.ts` →  (816 ln)  [test]
+- `plugin-toggle.test.ts` →  (157 ln)  [test]
+- `revert-diff.test.ts` →  (35 ln)  [test]
+- `slot-replace.test.tsx` →  (47 ln)  [test]
+- `theme-store.test.ts` →  (51 ln)  [test]
+- `thread.test.ts` →  (28 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,36 +1,43 @@
 # Mapping Group 056
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `cors.ts` → isAllowedCorsOrigin (14 ln)  [typescript]
-    → const opencodeOrigin = /^https:\/\/([a-z0-9-]+\.)*opencode\.ai$/
-  - `error.ts` → errors (36 ln)  [typescript]
-    → Imports: hono-openapi
-  - `event.ts` → Event (7 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `fence.ts` → load (90 ln)  [typescript]
-    → Imports: hono
-  - `mdns.ts` → publish (60 ln)  [typescript]
-    → Imports: bonjour-service
-  - `middleware.ts` → LoggerMiddleware (86 ln)  [typescript]
-    → Imports: @/provider/provider
-  - `projectors.ts` → initProjectors (28 ln)  [typescript]
-    → Imports: ../session/projectors
-  - `proxy-util.ts` → headers (48 ln)  [typescript]
-    → const hop = new Set([
-  - `proxy.ts` → httpEffect (149 ln)  [typescript]
-    → Imports: hono
-  - `index.ts` → ControlPlaneRoutes (160 ln)  [typescript]
-    → Imports: @/auth
-  - `workspace.ts` → WorkspaceRoutes (210 ln)  [typescript]
-    → Imports: hono
-  - `global.ts` → GlobalDisposedEvent (287 ln)  [typescript]
-    → Imports: hono
-  - `config.ts` → ConfigRoutes (89 ln)  [typescript]
-    → Imports: hono
-  - `event.ts` → EventRoutes (88 ln)  [typescript]
-    → Imports: zod
+**packages/desktop/src/**
+- `styles.css` →  (7 ln)  [stylesheet]
+- `updater.ts` → runUpdater (51 ln)  [typescript]
+  → Imports: @tauri-apps/plugin-updater
+  → imports: @tauri-apps/plugin-updater, @tauri-apps/plugin-process, @tauri-apps/plugin-dialog
+- `webview-zoom.ts` →  (37 ln)  [typescript]
+  → Imports: @tauri-apps/api/core
+  → imports: @tauri-apps/api/core, @tauri-apps/plugin-os, solid-js
+
+**packages/desktop/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/desktop/tsconfig.json/**
+- `tsconfig.json` →  (22 ln)  [config]
+
+**packages/desktop/vite.config.ts/**
+- `vite.config.ts` →  (38 ln)  [config]
+
+**packages/docs/README.md/**
+- `README.md` →  (44 ln)  [docs]
+
+**packages/docs/ai-tools/**
+- `claude-code.mdx` →  (83 ln)  [docs]
+- `cursor.mdx` →  (423 ln)  [docs]
+- `windsurf.mdx` →  (96 ln)  [docs]
+
+**packages/docs/development.mdx/**
+- `development.mdx` →  (96 ln)  [docs]
+
+**packages/docs/docs.json/**
+- `docs.json` →  (53 ln)  [json]
+
+**packages/docs/essentials/**
+- `code.mdx` →  (35 ln)  [docs]
+- `images.mdx` →  (56 ln)  [docs]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,35 +1,40 @@
 # Mapping Group 007
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `session-trim.test.ts` →  (59 ln)  [typescript]
-    → Imports: bun:test
-  - `session-trim.ts` → sessionUpdatedAt (56 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `types.ts` → MAX_DIR_STORES (135 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `utils.test.ts` →  (52 ln)  [typescript]
-    → Imports: bun:test
-  - `utils.ts` → normalizeAgentList + pathKey as directoryKey, type PathKey as DirectoryKey (40 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `highlights.tsx` → Store (233 ln)  [typescript]
-    → Imports: solid-js
-  - `language.tsx` → loadLocaleDict (236 ln)  [typescript]
-    → Imports: solid-js
-  - `layout-scroll.test.ts` →  (64 ln)  [typescript]
-    → Imports: bun:test
-  - `layout-scroll.ts` → createScrollPersistence (126 ln)  [typescript]
-    → Imports: solid-js/store
-  - `layout.test.ts` →  (69 ln)  [typescript]
-    → Imports: bun:test
-  - `layout.tsx` → getAvatarColors (928 ln)  [typescript]
-    → Imports: solid-js/store
-  - `local.tsx` → State (392 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context
-  - `model-variant.test.ts` →  (86 ln)  [typescript]
-    → Imports: bun:test
-  - `model-variant.ts` → getConfiguredAgentVariant (52 ln)  [typescript]
+- `placeholder.ts` → promptPlaceholder (15 ln)  [typescript]
+  → t: (key: string, params?: Record<string, string>) => string
+- `slash-popover.tsx` → PromptPopover (141 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @opencode-ai/ui/file-icon, @opencode-ai/ui/icon
+- `submit.test.ts` →  (345 ln)  [test]
+- `submit.ts` → sendFollowupDraft (584 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client, @opencode-ai/ui/toast, @opencode-ai/core/util/encode
+- `server-row.tsx` → ServerRow (127 ln)  [typescript]
+  → Imports: @opencode-ai/ui/tooltip
+  → imports: @opencode-ai/ui/tooltip, @solid-primitives/resize-observer, solid-js
+- `session-context-usage.tsx` → SessionContextUsage (124 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @opencode-ai/ui/tooltip, @opencode-ai/ui/progress-circle
+- `index.ts` →  (5 ln)  [typescript]
+- `session-context-breakdown.test.ts` →  (61 ln)  [test]
+- `session-context-breakdown.ts` → estimateSessionContextBreakdown (132 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client
+- `session-context-format.ts` → createSessionContextFormatter (20 ln)  [typescript]
+  → Imports: luxon
+  → imports: luxon
+- `session-context-metrics.test.ts` →  (101 ln)  [test]
+- `session-context-metrics.ts` → getSessionContextMetrics (82 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client
+- `session-context-tab.tsx` → SessionContextTab (341 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js, @/context/sync
+- `session-header.tsx` → SessionHeader (503 ln)  [typescript]
+  → Imports: @opencode-ai/ui/app-icon
+  → imports: @opencode-ai/ui/app-icon, @opencode-ai/ui/button, @opencode-ai/ui/dropdown-menu
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

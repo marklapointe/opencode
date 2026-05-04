@@ -1,34 +1,35 @@
 # Mapping Group 027
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `completions.ts` → POST (12 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `messages.ts` → POST (12 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `models.ts` → OPTIONS (12 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `index.css` →  (867 ln)  [stylesheet]
-  - `index.tsx` →  (336 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `dataDumper.ts` → createDataDumper (44 ln)  [typescript]
-    → Imports: @opencode-ai/console-resource
-  - `error.ts` → LimitError (16 ln)  [typescript]
-  - `handler.ts` → handler (1104 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `ipRateLimiter.ts` → createRateLimiter (70 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/drizzle/index.js
-  - `keyRateLimiter.ts` → createRateLimiter (39 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/drizzle/index.js
-  - `logger.ts` → logger (12 ln)  [typescript]
-    → Imports: @opencode-ai/console-resource
-  - `modelTpmLimiter.ts` → createModelTpmLimiter (47 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/drizzle/index.js
-  - `modelsHandler.ts` → buildOptionsResponse (31 ln)  [typescript]
-    → export async function buildOptionsResponse() {
-  - `anthropic.ts` → fromAnthropicRequest (759 ln)  [typescript]
-    → Imports: @smithy/eventstream-codec
+- `[platform].ts` → GET (50 ln)  [typescript]
+  → Imports: @solidjs/start
+  → imports: @solidjs/start, ../types
+- `index.css` →  (752 ln)  [stylesheet]
+- `index.tsx` →  (486 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, @solidjs/router, solid-js
+- `types.ts` →  (4 ln)  [typescript]
+- `index.css` →  (588 ln)  [stylesheet]
+- `index.tsx` →  (284 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, solid-js, ~/component/header
+- `feishu.ts` → GET (7 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router
+- `index.css` →  (1195 ln)  [stylesheet]
+- `index.tsx` →  (528 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, @solidjs/meta, solid-js
+- `index.css` →  (1254 ln)  [stylesheet]
+- `index.tsx` →  (837 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, ../asset/lander/opencode-min.mp4, ../asset/lander/opencode-poster.png
+- `index.css` →  (343 ln)  [stylesheet]
+- `index.tsx` →  (1516 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, ~/component/header, ~/component/footer
+- `index.css` →  (254 ln)  [stylesheet]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

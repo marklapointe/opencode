@@ -1,31 +1,46 @@
 # Mapping Group 118
 Files: 14
 
-## File Tree
-**packages/web/src/**
-  - `content-markdown.tsx` → ContentMarkdown (74 ln)  [typescript]
-    → Imports: marked
-  - `content-text.module.css` →  (63 ln)  [stylesheet]
-  - `content-text.tsx` → ContentText (38 ln)  [typescript]
-    → Imports: ./content-text.module.css
-  - `copy-button.module.css` →  (30 ln)  [stylesheet]
-  - `copy-button.tsx` → CopyButton (36 ln)  [typescript]
-    → Imports: solid-js
-  - `part.module.css` →  (428 ln)  [stylesheet]
-  - `part.tsx` → Part (817 ln)  [typescript]
-    → Imports: lang-map
-  - `content.config.ts` → collections (16 ln)  [typescript]
-    → Imports: astro:content
-  - `locales.ts` → exactLocale (114 ln)  [typescript]
-    → export const docsLocale = [
-  - `middleware.ts` → onRequest (94 ln)  [typescript]
-    → Imports: astro:middleware
-  - `[...slug].md.ts` → GET (34 ln)  [typescript]
-    → Imports: astro
-  - `custom.css` →  (405 ln)  [stylesheet]
-  - `lang-map.d.ts` →  (27 ln)  [typescript]
-  - `starlight-virtual.d.ts` →  (14 ln)  [typescript]
-    → export const logos: {
+**packages/sdk/js/**
+- `serverSentEvents.gen.ts` → createSseClient (239 ln)  [typescript]
+  → Fetch API implementation. You can use this option to provide a custom fetch instance.
+  → imports: ./types.gen.js
+- `types.gen.ts` →  (86 ln)  [typescript]
+  → Returns the final request URL. /
+  → imports: ./auth.gen.js, ./bodySerializer.gen.js
+- `utils.gen.ts` → getValidRequestBody (137 ln)  [typescript]
+  → Imports: ./bodySerializer.gen.js
+  → imports: ./bodySerializer.gen.js, ./pathSerializer.gen.js
+- `sdk.gen.ts` → HeyApiClient (4497 ln)  [typescript]
+  → You can provide a client instance returned by `createClient()` instead of individual options. This might be also useful if you want to implement a custom client.
+  → imports: ./client.gen.js, ./client/index.js, ./types.gen.js
+- `types.gen.ts` →  (5546 ln)  [typescript]
+  → Startup script to run when creating a new workspace (worktree) /
+- `index.ts` → createOpencode (23 ln)  [typescript]
+  → Imports: ./client.js
+  → imports: ./client.js, ./server.js, ./server.js
+- `server.ts` → createOpencodeServer (134 ln)  [typescript]
+  → Imports: cross-spawn
+  → imports: cross-spawn, ./gen/types.gen.js, ../process.js
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+- `tsconfig.json` →  (14 ln)  [config]
+
+**packages/sdk/openapi.json/**
+- `openapi.json` →  (13688 ln)  [json]
+
+**packages/slack/.env.example/**
+- `.env.example` →  (3 ln)  [file]
+
+**packages/slack/.gitignore/**
+- `.gitignore` →  (4 ln)  [file]
+
+**packages/slack/README.md/**
+- `README.md` →  (27 ln)  [docs]
+
+**packages/slack/package.json/**
+- `package.json` →  (19 ln)  [json]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

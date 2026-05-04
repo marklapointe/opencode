@@ -1,36 +1,47 @@
 # Mapping Group 044
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `sdk.tsx` →  (142 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `sync.tsx` →  (543 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `theme.tsx` → selectedForeground (1243 ln)  [typescript]
-    → Imports: @opentui/core
-  - `tui-config.tsx` →  (9 ln)  [typescript]
-    → Imports: @/cli/cmd/tui/config/tui
-  - `event.ts` → TuiEvent (53 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `footer.tsx` →  (93 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `tips-view.tsx` → Tips (157 ln)  [typescript]
-    → Imports: solid-js
-  - `tips.tsx` →  (55 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `context.tsx` →  (63 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `files.tsx` →  (62 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `footer.tsx` →  (93 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `lsp.tsx` →  (66 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `mcp.tsx` →  (96 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `todo.tsx` →  (48 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
+**packages/console/mail/**
+- `package.json` →  (22 ln)  [json]
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/console/resource/**
+- `package.json` →  (22 ln)  [json]
+- `resource.cloudflare.ts` → Resource (19 ln)  [typescript]
+  → Imports: cloudflare:workers
+  → imports: cloudflare:workers
+- `resource.node.ts` → waitUntil (70 ln)  [typescript]
+  → Imports: @cloudflare/workers-types
+  → imports: @cloudflare/workers-types, sst, cloudflare
+- `sst-env.d.ts` →  (299 ln)  [typescript]
+  → Imports: sst
+  → imports: sst, sst
+- `tsconfig.json` →  (9 ln)  [config]
+
+**packages/containers/README.md/**
+- `README.md` →  (38 ln)  [docs]
+
+**packages/containers/base/**
+- `Dockerfile` →  (18 ln)  [file]
+
+**packages/containers/bun-node/**
+- `Dockerfile` →  (24 ln)  [file]
+
+**packages/containers/publish/**
+- `Dockerfile` →  (10 ln)  [file]
+
+**packages/containers/rust/**
+- `Dockerfile` →  (13 ln)  [file]
+
+**packages/containers/script/**
+- `build.ts` →  (77 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, url
+
+**packages/containers/tauri-linux/**
+- `Dockerfile` →  (12 ln)  [file]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

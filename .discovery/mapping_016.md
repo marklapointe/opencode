@@ -1,35 +1,42 @@
 # Mapping Group 016
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `terminal-writer.ts` → terminalWriter (65 ln)  [typescript]
-    → export function terminalWriter(
-  - `time.ts` → getRelativeTime (22 ln)  [typescript]
-  - `uuid.test.ts` →  (78 ln)  [typescript]
-    → Imports: bun:test
-  - `uuid.ts` → uuid (12 ln)  [typescript]
-    → const fallback = () => Math.random().toString(16).slice(2)
-  - `worktree.test.ts` →  (46 ln)  [typescript]
-    → Imports: bun:test
-  - `worktree.ts` → Worktree (73 ln)  [typescript]
-    → const normalize = (directory: string) => directory.replace(/[\\/]+$/, "")
-
-**packages/console/app/**
-  - `dropdown.css` →  (80 ln)  [stylesheet]
-  - `dropdown.tsx` → Dropdown (79 ln)  [typescript]
-    → Imports: solid-js
-  - `email-signup.tsx` → EmailSignup (47 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `faq.tsx` → Faq (33 ln)  [typescript]
-    → Imports: @kobalte/core/collapsible
-  - `footer.tsx` → Footer (48 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `header-context-menu.css` →  (63 ln)  [stylesheet]
-  - `header.tsx` → Header (293 ln)  [typescript]
-    → Imports: ../asset/logo-ornate-light.svg
-  - `icon.tsx` → IconZen (286 ln)  [typescript]
-    → Imports: solid-js
+- `session-composer-region.tsx` → SessionComposerRegion (289 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @solidjs/router
+- `session-composer-state.test.ts` →  (128 ln)  [test]
+- `session-composer-state.ts` → createSessionComposerState (198 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/sdk/v2
+- `session-followup-dock.tsx` → SessionFollowupDock (109 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/ui/button
+- `session-permission-dock.tsx` → SessionPermissionDock (74 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @opencode-ai/sdk/v2, @opencode-ai/ui/button
+- `session-question-dock.tsx` → SessionQuestionDock (568 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @tanstack/solid-query
+- `session-request-tree.ts` → sessionPermissionRequest (52 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2/client
+  → imports: @opencode-ai/sdk/v2/client
+- `session-revert-dock.tsx` → SessionRevertDock (99 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/ui/button
+- `session-todo-dock.tsx` → SessionTodoDock (258 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2
+  → imports: @opencode-ai/sdk/v2, @opencode-ai/ui/animated-number, @opencode-ai/ui/checkbox
+- `file-tab-scroll.test.ts` →  (40 ln)  [test]
+- `file-tab-scroll.ts` → nextTabListScrollLeft (67 ln)  [typescript]
+  → export const nextTabListScrollLeft = (input: Input) => {
+- `file-tabs.tsx` → FileTabContent (456 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, solid-js/web
+- `handoff.ts` → setSessionHandoff (36 ln)  [typescript]
+  → Imports: @/context/file
+  → imports: @/context/file
+- `helpers.test.ts` →  (181 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

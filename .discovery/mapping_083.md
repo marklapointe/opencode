@@ -1,40 +1,46 @@
 # Mapping Group 083
 Files: 14
 
-## File Tree
-**packages/enterprise/src/**
-  - `app.tsx` →  (94 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `share.ts` →  (223 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `storage.ts` →  (129 ln)  [typescript]
-    → Imports: aws4fetch
-  - `entry-client.tsx` →  (4 ln)  [typescript]
-    → Imports: @solidjs/start/client
-  - `entry-server.tsx` →  (39 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `global.d.ts` →  (5 ln)  [typescript]
-  - `[...404].tsx` →  (25 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `[...path].ts` → GET (155 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `index.tsx` →  (3 ln)  [typescript]
-    → export default function () {
-  - `[shareID].tsx` →  (397 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `share.tsx` →  (5 ln)  [typescript]
-    → Imports: solid-js
-
-**packages/enterprise/sst-env.d.ts/**
-  - `sst-env.d.ts` →  (299 ln)  [typescript]
-
-**packages/enterprise/test/**
-  - `share.test.ts` →  (284 ln)  [typescript]
-    → Imports: bun:test
-
-**packages/enterprise/test-debug.ts/**
-  - `test-debug.ts` →  (40 ln)  [typescript]
-    → Imports: ./src/core/share
+**packages/opencode/src/**
+- `schema.ts` → ProjectID (15 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/util/effect-zod, @/util/schema
+- `vcs.ts` → Mode (226 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, diff, path
+- `auth.ts` → Methods (228 ln)  [typescript]
+  → Imports: @opencode-ai/plugin
+  → imports: @opencode-ai/plugin, @/auth, @/effect/instance-state
+- `error.ts` → parseStreamError (203 ln)  [typescript]
+  → Imports: ai
+  → imports: ai, http, @/util/iife
+- `models.ts` → get (176 ln)  [typescript]
+  → Imports: @opencode-ai/core/global
+  → imports: @opencode-ai/core/global, path, effect
+- `provider.ts` → defaultModelIDs (1756 ln)  [typescript]
+  → Imports: os
+  → imports: os, fuzzysort, @/config/config
+- `schema.ts` → ProviderID (36 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/util/effect-zod, @/util/schema
+- `README.md` →  (5 ln)  [docs]
+- `convert-to-openai-compatible-chat-messages.ts` → convertToOpenAICompatibleChatMessages (170 ln)  [typescript]
+  → Imports: @ai-sdk/provider
+  → imports: @ai-sdk/provider, ./openai-compatible-api-types, @ai-sdk/provider-utils
+- `get-response-metadata.ts` → getResponseMetadata (15 ln)  [typescript]
+  → export function getResponseMetadata({
+- `map-openai-compatible-finish-reason.ts` → mapOpenAICompatibleFinishReason (19 ln)  [typescript]
+  → Imports: @ai-sdk/provider
+  → imports: @ai-sdk/provider
+- `openai-compatible-api-types.ts` →  (64 ln)  [typescript]
+  → Imports: @ai-sdk/provider
+  → imports: @ai-sdk/provider
+- `openai-compatible-chat-language-model.ts` →  (815 ln)  [typescript]
+  → Whether the model supports structured outputs. /
+  → imports: @ai-sdk/provider, @ai-sdk/provider-utils, zod/v4
+- `openai-compatible-chat-options.ts` → openaiCompatibleProviderOptions (28 ln)  [typescript]
+  → A unique identifier representing your end-user, which can help the provider to monitor and detect abuse. /
+  → imports: zod/v4
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

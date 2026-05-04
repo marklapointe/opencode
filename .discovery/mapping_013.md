@@ -1,33 +1,37 @@
 # Mapping Group 013
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `app.tsx` → AppBaseProviders (330 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context
-  - `entry.tsx` →  (164 ln)  [typescript]
-    → Imports: solid-js/web
-  - `env.d.ts` → ImportMetaEnv (21 ln)  [typescript]
-  - `index.ts` → AppBaseProviders, AppInterface, ACCEPTED_FILE_EXTENSIONS, ACCEPTED_FILE_TYPES, filePickerFilters (7 ln)  [typescript]
-  - `session-model-helpers.ts` → resetSessionModel (16 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `session-side-panel.tsx` → SessionSidePanel (453 ln)  [typescript]
-    → Imports: solid-js
-  - `terminal-label.ts` → terminalTabLabel (16 ln)  [typescript]
-    → Imports: @/context/terminal-title
-  - `terminal-panel.test.ts` →  (25 ln)  [typescript]
-    → Imports: bun:test
-  - `terminal-panel.tsx` → TerminalPanel (317 ln)  [typescript]
-    → Imports: solid-js
-  - `use-session-commands.tsx` → useSessionCommands (587 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `use-session-hash-scroll.test.ts` →  (16 ln)  [typescript]
-    → Imports: bun:test
-  - `use-session-hash-scroll.ts` → useSessionHashScroll (215 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `sst-env.d.ts` → ImportMetaEnv (12 ln)  [typescript]
-  - `theme-preload.test.ts` →  (46 ln)  [typescript]
-    → Imports: bun:test
+- `sync-optimistic.test.ts` →  (123 ln)  [test]
+- `sync.tsx` → mergeOptimisticPage (619 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/core/util/binary
+- `terminal-title.ts` → defaultTitle (24 ln)  [typescript]
+  → const template = "Terminal {{number}}"
+- `terminal.test.ts` →  (82 ln)  [test]
+- `terminal.tsx` → migrateTerminalState (437 ln)  [typescript]
+  → Imports: solid-js/store
+  → imports: solid-js/store, @opencode-ai/ui/context, solid-js
+- `entry.tsx` →  (164 ln)  [typescript]
+  → Imports: solid-js/web
+  → imports: solid-js/web, @/app, @/context/platform
+- `env.d.ts` →  (21 ln)  [typescript]
+- `use-providers.ts` → useProviders (44 ln)  [typescript]
+  → Imports: @/context/global-sync
+  → imports: @/context/global-sync, @/utils/base64, @solidjs/router
+- `ar.ts` → dict (846 ln)  [typescript]
+  → export const dict = {
+- `br.ts` → dict (859 ln)  [typescript]
+  → export const dict = {
+- `bs.ts` → dict (935 ln)  [typescript]
+  → export const dict = {
+- `da.ts` → dict (929 ln)  [typescript]
+  → export const dict = {
+- `de.ts` → dict (871 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `en.ts` → dict (960 ln)  [typescript]
+  → export const dict = {
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

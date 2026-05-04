@@ -1,36 +1,48 @@
 # Mapping Group 049
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `error.ts` → JsonError (21 ln)  [typescript]
-    → Imports: zod
-  - `formatter.ts` → Entry (17 ln)  [typescript]
-    → Imports: effect
-  - `keybinds.ts` → Keybinds (127 ln)  [typescript]
-    → Imports: effect
-  - `layout.ts` → Layout (10 ln)  [typescript]
-    → Imports: effect
-  - `lsp.ts` → Disabled (45 ln)  [typescript]
-    → For custom (non-builtin) LSP server entries, `extensions` is required so the client knows which files the server should attach to. Builtin server IDs
-  - `managed.ts` → managedConfigDir (71 ln)  [typescript]
-    → Imports: fs
-  - `markdown.ts` → files (99 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/error
-  - `mcp.ts` → Local (65 ln)  [typescript]
-    → Imports: effect
-  - `model-id.ts` → ConfigModelID (14 ln)  [typescript]
-    → Imports: effect
-  - `parse.ts` → jsonc (88 ln)  [typescript]
-    → Imports: jsonc-parser
-  - `paths.ts` → fileInDirectory (55 ln)  [typescript]
-    → Imports: path
-  - `permission.ts` → Action (70 ln)  [typescript]
-    → Imports: effect
-  - `plugin.ts` → load (88 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/glob
-  - `provider.ts` → Model (113 ln)  [typescript]
-    → Imports: effect
+**packages/desktop-electron/scripts/**
+- `predev.ts` →  (5 ln)  [typescript]
+  → Imports: bun
+  → imports: bun
+- `prepare.ts` →  (9 ln)  [typescript]
+  → Imports: @opencode-ai/script
+  → imports: @opencode-ai/script
+- `utils.ts` → resolveChannel (77 ln)  [typescript]
+  → Imports: bun
+  → imports: bun
+
+**packages/desktop-electron/src/**
+- `apps.ts` → checkAppExists (148 ln)  [typescript]
+  → Imports: node:child_process
+  → imports: node:child_process, node:fs, node:path
+- `constants.ts` → CHANNEL (10 ln)  [typescript]
+  → Imports: electron
+  → imports: electron
+- `env.d.ts` →  (29 ln)  [typescript]
+  → export const listen: typeof import("../../../opencode/dist/types/src/node").Server.listen
+- `index.ts` →  (452 ln)  [typescript]
+  → Imports: node:crypto
+  → imports: node:crypto, node:events, node:fs
+- `ipc.ts` → registerIpcHandlers (204 ln)  [typescript]
+  → Imports: node:child_process
+  → imports: node:child_process, electron, electron
+- `logging.ts` → initLogging (40 ln)  [typescript]
+  → Imports: electron-log/main.js
+  → imports: electron-log/main.js, node:fs, node:path
+- `markdown.ts` → parseMarkdown (16 ln)  [typescript]
+  → Imports: marked
+  → imports: marked
+- `menu.ts` → createMenu (136 ln)  [typescript]
+  → Imports: electron
+  → imports: electron, ./constants, ./windows
+- `migrate.ts` → migrate (91 ln)  [typescript]
+  → Imports: electron
+  → imports: electron, electron-log/main.js, node:fs
+- `server.ts` → getDefaultServerUrl (101 ln)  [typescript]
+  → Imports: electron
+  → imports: electron, ./constants, ./shell-env
+- `shell-env.test.ts` →  (43 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

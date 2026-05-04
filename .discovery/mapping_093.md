@@ -1,38 +1,44 @@
 # Mapping Group 093
 Files: 14
 
-## File Tree
-**packages/opencode/test/**
-  - `pty-output-isolation.test.ts` →  (146 ln)  [typescript]
-    → Imports: bun:test
-  - `pty-session.test.ts` →  (102 ln)  [typescript]
-    → Imports: bun:test
-  - `pty-shell.test.ts` →  (104 ln)  [typescript]
-    → Imports: bun:test
-  - `question.test.ts` →  (464 ln)  [typescript]
-    → Imports: bun:test
-  - `share-next.test.ts` →  (333 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `shell.test.ts` →  (99 ln)  [typescript]
-    → Imports: bun:test
-  - `discovery.test.ts` →  (116 ln)  [typescript]
-    → Imports: bun:test
-  - `skill.test.ts` →  (391 ln)  [typescript]
-    → Imports: bun:test
-  - `snapshot.test.ts` →  (1531 ln)  [typescript]
-    → Imports: bun:test
-  - `db.test.ts` →  (14 ln)  [typescript]
-    → Imports: bun:test
-  - `json-migration.test.ts` →  (832 ln)  [typescript]
-    → Imports: bun:test
-  - `storage.test.ts` →  (293 ln)  [typescript]
-    → Imports: bun:test
-  - `index.test.ts` →  (256 ln)  [typescript]
-    → Imports: bun:test
-
-**packages/plugin/script/**
-  - `publish.ts` →  (38 ln)  [typescript]
-    → Imports: @opencode-ai/script
+**packages/opencode/src/**
+- `share.sql.ts` → SessionShareTable (13 ln)  [typescript]
+  → Imports: drizzle-orm/sqlite-core
+  → imports: drizzle-orm/sqlite-core, ../session/session.sql, ../storage/schema.sql
+- `shell.ts` → killTree (215 ln)  [typescript]
+  → Imports: @opencode-ai/core/flag/flag
+  → imports: @opencode-ai/core/flag/flag, @/util/lazy, @/util/filesystem
+- `discovery.ts` → layer (116 ln)  [typescript]
+  → Imports: @effect/platform-node
+  → imports: @effect/platform-node, effect, effect/unstable/http
+- `index.ts` → fmt (297 ln)  [typescript]
+  → Imports: path
+  → imports: path, url, zod
+- `index.ts` → Patch (777 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/process, diff
+- `sql.d.ts` →  (4 ln)  [typescript]
+  → const content: string
+- `db.bun.ts` → init (8 ln)  [typescript]
+  → Imports: bun:sqlite
+  → imports: bun:sqlite, drizzle-orm/bun-sqlite
+- `db.node.ts` → init (8 ln)  [typescript]
+  → Imports: node:sqlite
+  → imports: node:sqlite, drizzle-orm/node-sqlite
+- `db.ts` → getChannelPath (181 ln)  [typescript]
+  → Imports: drizzle-orm/bun-sqlite
+  → imports: drizzle-orm/bun-sqlite, drizzle-orm/bun-sqlite/migrator, drizzle-orm/sqlite-core
+- `json-migration.ts` → run (431 ln)  [typescript]
+  → Imports: drizzle-orm/bun-sqlite
+  → imports: drizzle-orm/bun-sqlite, drizzle-orm/node-sqlite, @opencode-ai/core/global
+- `schema.sql.ts` → Timestamps (10 ln)  [typescript]
+  → Imports: drizzle-orm/sqlite-core
+  → imports: drizzle-orm/sqlite-core
+- `schema.ts` →  (5 ln)  [typescript]
+- `storage.ts` → NotFoundError (334 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/global, @opencode-ai/core/util/error
+- `README.md` →  (179 ln)  [docs]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

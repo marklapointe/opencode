@@ -1,36 +1,21 @@
 # Mapping Group 053
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `meta.ts` → touchMany (188 ln)  [typescript]
-    → Imports: path
-  - `shared.ts` → isDeprecatedPlugin (323 ln)  [typescript]
-    → Imports: path
-  - `auth.ts` → Methods (228 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `error.ts` → parseStreamError (203 ln)  [typescript]
-    → Imports: ai
-  - `models.ts` → get (176 ln)  [typescript]
-    → Imports: @opencode-ai/core/global
-  - `provider.ts` → defaultModelIDs (1756 ln)  [typescript]
-    → Imports: os
-  - `schema.ts` → ProviderID (36 ln)  [typescript]
-    → Imports: effect
-  - `convert-to-openai-compatible-chat-messages.ts` → convertToOpenAICompatibleChatMessages (170 ln)  [typescript]
-    → Imports: @ai-sdk/provider
-  - `get-response-metadata.ts` → getResponseMetadata (15 ln)  [typescript]
-    → export function getResponseMetadata({
-  - `map-openai-compatible-finish-reason.ts` → mapOpenAICompatibleFinishReason (19 ln)  [typescript]
-    → Imports: @ai-sdk/provider
-  - `openai-compatible-api-types.ts` → JsonRecord (64 ln)  [typescript]
-    → Imports: @ai-sdk/provider
-  - `openai-compatible-chat-language-model.ts` →  (815 ln)  [typescript]
-    → Whether the model supports structured outputs. /
-  - `openai-compatible-chat-options.ts` → openaiCompatibleProviderOptions (28 ln)  [typescript]
-    → A unique identifier representing your end-user, which can help the provider to monitor and detect abuse. /
-  - `openai-compatible-metadata-extractor.ts` →  (44 ln)  [typescript]
-    → /
+**packages/desktop/src-tauri/**
+- `build.rs` →  (3 ln)  [rust]
+- `default.json` →  (52 ln)  [json]
+- `README.md` →  (11 ln)  [docs]
+- `cli.rs` →  (742 ln)  [rust]
+- `constants.rs` →  (10 ln)  [rust]
+- `lib.rs` →  (601 ln)  [rust]
+- `linux_display.rs` →  (53 ln)  [rust]
+- `linux_windowing.rs` →  (475 ln)  [rust]
+- `logging.rs` →  (76 ln)  [rust]
+- `main.rs` →  (78 ln)  [rust]
+- `markdown.rs` →  (63 ln)  [rust]
+- `mod.rs` →  (2 ln)  [rust]
+- `windows.rs` →  (463 ln)  [rust]
+- `server.rs` →  (170 ln)  [rust]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

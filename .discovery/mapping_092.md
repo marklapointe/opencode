@@ -1,36 +1,49 @@
 # Mapping Group 092
 Files: 14
 
-## File Tree
-**packages/opencode/test/**
-  - `oauth-browser.test.ts` → MockUnauthorizedError (268 ln)  [typescript]
-    → Imports: bun:test
-  - `oauth-callback.test.ts` →  (34 ln)  [typescript]
-    → Imports: bun:test
-  - `abort-leak-webfetch.ts` →  (49 ln)  [typescript]
-    → Imports: ../../src/util/abort
-  - `abort-leak.test.ts` →  (127 ln)  [typescript]
-    → Imports: bun:test
-  - `patch.test.ts` →  (348 ln)  [typescript]
-    → Imports: bun:test
-  - `arity.test.ts` →  (33 ln)  [typescript]
-    → Imports: bun:test
-  - `next.test.ts` →  (1124 ln)  [typescript]
-    → Imports: bun:test
-  - `permission-task.test.ts` →  (326 ln)  [typescript]
-    → Imports: bun:test
-  - `preload.ts` →  (91 ln)  [typescript]
-    → Imports: os
-  - `migrate-global.test.ts` →  (152 ln)  [typescript]
-    → Imports: bun:test
-  - `project.test.ts` →  (601 ln)  [typescript]
-    → Creates a mock ChildProcessSpawner layer that intercepts git subcommands matching `failArg` and returns exit code 128, while delegating everything els
-  - `vcs.test.ts` → BranchEvent (286 ln)  [typescript]
-    → Imports: bun
-  - `worktree-remove.test.ts` →  (126 ln)  [typescript]
-    → Imports: bun
-  - `worktree.test.ts` →  (214 ln)  [typescript]
-    → Imports: bun
+**packages/opencode/src/**
+- `projectors.ts` → toPartialRow (139 ln)  [typescript]
+  → Imports: @/storage/storage
+  → imports: @/storage/storage, drizzle-orm, drizzle-orm
+- `prompt.ts` → createStructuredOutputTool (1784 ln)  [typescript]
+  → Imports: path
+  → imports: path, os, zod
+- `retry.ts` → delay (125 ln)  [typescript]
+  → Imports: @opencode-ai/core/util/error
+  → imports: @opencode-ai/core/util/error, effect, ./message-v2
+- `revert.ts` → RevertInput (164 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ../bus, ../snapshot
+- `run-state.ts` → layer (110 ln)  [typescript]
+  → Imports: @/effect/instance-state
+  → imports: @/effect/instance-state, @/effect/runner, effect
+- `schema.ts` → SessionID (35 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/id/id, @/util/effect-zod
+- `session.sql.ts` → SessionTable (124 ln)  [typescript]
+  → Imports: drizzle-orm/sqlite-core
+  → imports: drizzle-orm/sqlite-core, ../project/project.sql, ./message-v2
+- `session.ts` → isDefaultTitle (902 ln)  [typescript]
+  → Imports: @opencode-ai/core/util/slug
+  → imports: @opencode-ai/core/util/slug, path, @/bus/bus-event
+- `status.ts` → Info (88 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, @/bus, @/effect/instance-state
+- `summary.ts` → layer (165 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/bus, @/snapshot
+- `system.ts` → provider (84 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/effect/instance-state, ./prompt/anthropic.txt
+- `todo.ts` → Info (86 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, @/bus, ./schema
+- `session.ts` → layer (59 ln)  [typescript]
+  → Imports: @/session/session
+  → imports: @/session/session, @/session/schema, @/sync
+- `share-next.ts` → layer (376 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, @/account/account
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

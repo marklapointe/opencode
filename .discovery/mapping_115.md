@@ -1,34 +1,53 @@
 # Mapping Group 115
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `commented-lines.ts` → markCommentedDiffLines (91 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `diff-selection.ts` → findDiffSide (71 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `file-find.ts` → createFileFind (485 ln)  [typescript]
-    → Imports: solid-js
-  - `file-runtime.ts` → createReadyWatcher (114 ln)  [typescript]
-    → export function createReadyWatcher(): ReadyWatcher {
-  - `file-selection.ts` → findElement (85 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `index.ts` → createDefaultOptions (191 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `media.ts` → normalizeMimeType (110 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `selection-bridge.ts` → formatSelectedLineLabel (132 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `virtualizer.ts` → acquireVirtualizer (100 ln)  [typescript]
-    → Imports: @pierre/diffs
-  - `worker.ts` → workerFactory (52 ln)  [typescript]
-    → Imports: @pierre/diffs/worker
-  - `fixtures.ts` → average (51 ln)  [typescript]
-    → export const diff = {
-  - `scaffold.tsx` → create (62 ln)  [typescript]
-    → Imports: solid-js
-  - `animations.css` →  (141 ln)  [stylesheet]
-  - `base.css` →  (404 ln)  [stylesheet]
+**packages/plugin/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/plugin/tsconfig.json/**
+- `tsconfig.json` →  (13 ln)  [config]
+
+**packages/script/package.json/**
+- `package.json` →  (15 ln)  [json]
+
+**packages/script/src/**
+- `index.ts` → Script (77 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, semver, path
+
+**packages/script/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/script/tsconfig.json/**
+- `tsconfig.json` →  (8 ln)  [config]
+
+**packages/sdk/.gitignore/**
+- `.gitignore` →  (10 ln)  [file]
+
+**packages/sdk/js/**
+- `example.ts` →  (56 ln)  [typescript]
+  → Imports: @opencode-ai/sdk
+  → imports: @opencode-ai/sdk, bun
+- `package.json` →  (34 ln)  [json]
+- `build.ts` →  (52 ln)  [typescript]
+  → Imports: url
+  → imports: url, bun, path
+- `publish.ts` →  (45 ln)  [typescript]
+  → Imports: @opencode-ai/script
+  → imports: @opencode-ai/script, bun, url
+- `client.ts` → createOpencodeClient (55 ln)  [typescript]
+  → Imports: ./gen/client/client.gen.js
+  → imports: ./gen/client/client.gen.js, ./gen/client/types.gen.js, ./gen/sdk.gen.js
+- `client.gen.ts` → client (22 ln)  [typescript]
+  → The `createClientConfig()` function will be called on client initialization and the returned object will become the client's initial configuration.
+  → imports: ./types.gen.js, ./client/index.js
+- `client.gen.ts` → createClient (212 ln)  [typescript]
+  → Imports: ../core/serverSentEvents.gen.js
+  → imports: ../core/serverSentEvents.gen.js, ./types.gen.js, ./utils.gen.js
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

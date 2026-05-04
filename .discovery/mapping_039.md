@@ -1,36 +1,31 @@
 # Mapping Group 039
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `snapshot.ts` → SnapshotCommand (53 ln)  [typescript]
-    → Imports: @/effect/app-runtime
-  - `startup.ts` → StartupCommand (11 ln)  [typescript]
-    → Imports: os
-  - `export.ts` → ExportCommand (303 ln)  [typescript]
-    → Imports: yargs
-  - `generate.ts` → GenerateCommand (61 ln)  [typescript]
-    → Imports: ../../server/server
-  - `github.ts` → parseGitHubRemote (1649 ln)  [typescript]
-    → Extracts displayable text from assistant response parts. Returns null for non-text responses (signals summary needed). Throws only for truly empty res
-  - `import.ts` → parseShareUrl (212 ln)  [typescript]
-    → Imports: yargs
-  - `mcp.ts` → McpCommand (798 ln)  [typescript]
-    → Imports: ./cmd
-  - `models.ts` → ModelsCommand (88 ln)  [typescript]
-    → Imports: yargs
-  - `plug.ts` → createPlugTask (233 ln)  [typescript]
-    → Imports: @clack/prompts
-  - `pr.ts` → PrCommand (138 ln)  [typescript]
-    → Imports: ../ui
-  - `providers.ts` → resolvePluginProviders (526 ln)  [typescript]
-    → Imports: ../../auth
-  - `run.ts` → RunCommand (672 ln)  [typescript]
-    → Imports: yargs
-  - `serve.ts` → ServeCommand (21 ln)  [typescript]
-    → Imports: ../../server/server
-  - `session.ts` → SessionCommand (162 ln)  [typescript]
-    → Imports: yargs
+**packages/console/core/**
+- `snapshot.json` →  (2567 ln)  [json]
+- `snapshot.json` →  (2619 ln)  [json]
+- `snapshot.json` →  (2671 ln)  [json]
+- `snapshot.json` →  (2657 ln)  [json]
+- `snapshot.json` →  (2605 ln)  [json]
+- `snapshot.json` →  (2657 ln)  [json]
+- `snapshot.json` →  (2619 ln)  [json]
+- `snapshot.json` →  (2619 ln)  [json]
+- `package.json` →  (52 ln)  [json]
+- `black-cancel-waitlist.ts` →  (39 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js
+- `black-gift.ts` →  (115 ln)  [typescript]
+  → Imports: ../src/billing.js
+  → imports: ../src/billing.js, ../src/drizzle/index.js, ../src/schema/user.sql.js
+- `black-onboard-waitlist.ts` →  (38 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js
+- `black-select-workspaces.ts` →  (41 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js, ../src/schema/user.sql.js
+- `black-stats.ts` →  (312 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

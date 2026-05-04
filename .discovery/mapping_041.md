@@ -1,35 +1,49 @@
 # Mapping Group 041
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `dialog-session-rename.tsx` → DialogSessionRename (31 ln)  [typescript]
-    → Imports: @tui/ui/dialog-prompt
-  - `dialog-skill.tsx` → DialogSkill (36 ln)  [typescript]
-    → Imports: @tui/ui/dialog-select
-  - `dialog-stash.tsx` → DialogStash (87 ln)  [typescript]
-    → Imports: @tui/ui/dialog
-  - `dialog-status.tsx` → DialogStatus (168 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-tag.tsx` → DialogTag (44 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-theme-list.tsx` → DialogThemeList (50 ln)  [typescript]
-    → Imports: ../ui/dialog-select
-  - `dialog-variant.tsx` → DialogVariant (39 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-workspace-create.tsx` → openWorkspaceSession (200 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `dialog-workspace-unavailable.tsx` → DialogWorkspaceUnavailable (81 ln)  [typescript]
-    → Imports: @opentui/core
-  - `error-component.tsx` → ErrorComponent (92 ln)  [typescript]
-    → Imports: @opentui/core
-  - `logo.tsx` → Logo (896 ln)  [typescript]
-    → Imports: @opentui/core
-  - `plugin-route-missing.tsx` → PluginRouteMissing (14 ln)  [typescript]
-    → Imports: ../context/theme
-  - `autocomplete.tsx` → Autocomplete (722 ln)  [typescript]
-    → Imports: @opentui/core
-  - `cwd.ts` →  (0 ln)  [typescript]
+**packages/console/core/**
+- `aws.ts` →  (65 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, @opencode-ai/console-resource, aws4fetch
+- `billing.ts` →  (556 ln)  [typescript]
+  → Imports: stripe
+  → imports: stripe, ./drizzle, ./schema/billing.sql
+- `black.ts` →  (40 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, ./util/fn, @opencode-ai/console-resource
+- `context.ts` →  (21 ln)  [typescript]
+  → Imports: node:async_hooks
+  → imports: node:async_hooks
+- `index.ts` →  (85 ln)  [typescript]
+  → Imports: drizzle-orm/planetscale-serverless
+  → imports: drizzle-orm/planetscale-serverless, @opencode-ai/console-resource, @planetscale/database
+- `types.ts` → ulid (33 ln)  [typescript]
+  → Imports: drizzle-orm
+  → imports: drizzle-orm, drizzle-orm/mysql-core
+- `identifier.ts` →  (32 ln)  [typescript]
+  → Imports: ulid
+  → imports: ulid, zod
+- `key.ts` →  (92 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, ./util/fn, ./actor
+- `lite.ts` →  (20 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, ./util/fn, @opencode-ai/console-resource
+- `model.ts` →  (228 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, drizzle-orm, ./drizzle
+- `provider.ts` →  (57 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, ./util/fn, ./actor
+- `account.sql.ts` → AccountTable (11 ln)  [typescript]
+  → Imports: drizzle-orm/mysql-core
+  → imports: drizzle-orm/mysql-core, ../drizzle/types
+- `auth.sql.ts` → AuthProvider (20 ln)  [typescript]
+  → Imports: drizzle-orm/mysql-core
+  → imports: drizzle-orm/mysql-core, ../drizzle/types
+- `benchmark.sql.ts` → BenchmarkTable (14 ln)  [typescript]
+  → Imports: drizzle-orm/mysql-core
+  → imports: drizzle-orm/mysql-core, ../drizzle/types
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

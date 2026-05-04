@@ -1,30 +1,41 @@
 # Mapping Group 020
 Files: 14
 
-## File Tree
-**packages/console/app/**
-  - `config.ts` → config (29 ln)  [typescript]
-    → Application-wide constants and configuration /
-  - `global.d.ts` →  (5 ln)  [typescript]
-  - `middleware.ts` →  (16 ln)  [typescript]
-    → Imports: @solidjs/start/middleware
-  - `enterprise.ts` → POST (129 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `changelog.json.ts` → GET (30 ln)  [typescript]
-    → Imports: ~/lib/changelog
-  - `index.ts` → GET (13 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `desktop-feedback.ts` → GET (5 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `discord.ts` → GET (5 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `[platform].ts` → GET (50 ln)  [typescript]
-    → Imports: @solidjs/start
-  - `types.ts` →  (4 ln)  [typescript]
-  - `index.css` →  (254 ln)  [stylesheet]
-  - `user-menu.css` →  (18 ln)  [stylesheet]
-  - `workspace-picker.css` →  (74 ln)  [stylesheet]
-  - `workspace.css` →  (107 ln)  [stylesheet]
+**packages/app/src/**
+- `session-title.ts` → sessionTitle (7 ln)  [typescript]
+  → const pattern = /^(New session|Child session) - \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/
+- `solid-dnd.tsx` → getDraggableId (49 ln)  [typescript]
+  → Imports: @thisbeyond/solid-dnd
+  → imports: @thisbeyond/solid-dnd, @thisbeyond/solid-dnd, solid-js
+- `sound.ts` → soundSrc (102 ln)  [typescript]
+  → let files: Record<string, () => Promise<string>> | undefined
+- `terminal-writer.test.ts` →  (64 ln)  [test]
+- `terminal-writer.ts` → terminalWriter (65 ln)  [typescript]
+  → export function terminalWriter(
+- `time.ts` → getRelativeTime (22 ln)  [typescript]
+  → type Translate = (key: TimeKey, params?: Record<string, string | number>) => string
+- `uuid.test.ts` →  (78 ln)  [test]
+- `uuid.ts` → uuid (12 ln)  [typescript]
+  → const fallback = () => Math.random().toString(16).slice(2)
+- `worktree.test.ts` →  (46 ln)  [test]
+- `worktree.ts` → Worktree (73 ln)  [typescript]
+  → const normalize = (directory: string) => directory.replace(/[\\/]+$/, "")
+
+**packages/app/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/app/tsconfig.json/**
+- `tsconfig.json` →  (26 ln)  [config]
+
+**packages/app/vite.config.ts/**
+- `vite.config.ts` →  (33 ln)  [config]
+
+**packages/app/vite.js/**
+- `vite.js` →  (38 ln)  [javascript]
+  → @type {import("vite").PluginOption} /
+  → imports: node:fs, vite-plugin-solid, @tailwindcss/vite
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

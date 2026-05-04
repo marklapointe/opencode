@@ -1,36 +1,45 @@
 # Mapping Group 048
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `upgrade.ts` → UpgradeCommand (74 ln)  [typescript]
-    → Imports: yargs
-  - `web.ts` → WebCommand (81 ln)  [typescript]
-    → Imports: ../../server/server
-  - `prompt.ts` → intro (25 ln)  [typescript]
-    → Imports: effect
-  - `error.ts` → FormatError (82 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/error
-  - `heap.ts` → start (59 ln)  [typescript]
-    → Imports: path
-  - `logo.ts` → logo (11 ln)  [typescript]
-    → export const logo = {
-  - `network.ts` → withNetworkOptions (62 ln)  [typescript]
-    → Imports: yargs
-  - `ui.ts` → println (133 ln)  [typescript]
-    → Imports: zod
-  - `upgrade.ts` → upgrade (33 ln)  [typescript]
-    → Imports: @/bus
-  - `agent.ts` → load (175 ln)  [typescript]
-    → Imports: effect
-  - `command.ts` → load (62 ln)  [typescript]
-    → Imports: effect
-  - `config.ts` → Server (807 ln)  [typescript]
-    → Imports: path
-  - `console-state.ts` → emptyConsoleState (17 ln)  [typescript]
-    → Imports: effect
-  - `entry-name.ts` → configEntryNameFromPath (16 ln)  [typescript]
-    → Imports: path
+**packages/core/test/**
+- `effect-flock.test.ts` →  (386 ln)  [test]
+- `flock.test.ts` →  (426 ln)  [test]
+
+**packages/core/tsconfig.json/**
+- `tsconfig.json` →  (7 ln)  [config]
+
+**packages/desktop-electron/.gitignore/**
+- `.gitignore` →  (28 ln)  [file]
+
+**packages/desktop-electron/AGENTS.md/**
+- `AGENTS.md` →  (4 ln)  [docs]
+
+**packages/desktop-electron/README.md/**
+- `README.md` →  (32 ln)  [docs]
+
+**packages/desktop-electron/electron-builder.config.ts/**
+- `electron-builder.config.ts` →  (116 ln)  [config]
+
+**packages/desktop-electron/electron.vite.config.ts/**
+- `electron.vite.config.ts` →  (98 ln)  [config]
+
+**packages/desktop-electron/icons/**
+- `README.md` →  (14 ln)  [docs]
+
+**packages/desktop-electron/package.json/**
+- `package.json` →  (68 ln)  [json]
+
+**packages/desktop-electron/scripts/**
+- `copy-bundles.ts` →  (12 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, ./utils
+- `copy-icons.ts` →  (12 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, ./utils
+- `finalize-latest-yml.ts` →  (124 ln)  [test]
+- `prebuild.ts` →  (9 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, ./utils
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

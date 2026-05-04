@@ -1,36 +1,44 @@
 # Mapping Group 046
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `question.tsx` → QuestionPrompt (468 ln)  [typescript]
-    → Imports: solid-js/store
-  - `sidebar.tsx` → Sidebar (97 ln)  [typescript]
-    → Imports: @tui/context/project
-  - `subagent-footer.tsx` → SubagentFooter (131 ln)  [typescript]
-    → Imports: solid-js
-  - `thread.ts` → resolveThreadDirectory (261 ln)  [typescript]
-    → Imports: @/cli/cmd/cmd
-  - `dialog-alert.tsx` → DialogAlert (61 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-confirm.tsx` → DialogConfirm (91 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-export-options.tsx` → DialogExportOptions (213 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-help.tsx` → DialogHelp (42 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-prompt.tsx` → DialogPrompt (117 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-select.tsx` → DialogSelect (448 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog.tsx` → Dialog (192 ln)  [typescript]
-    → Imports: @opentui/solid
-  - `link.tsx` → Link (28 ln)  [typescript]
-    → Link component that renders clickable hyperlinks. Clicking anywhere on the link text opens the URL in the default browser. /
-  - `spinner.ts` → deriveTrailColors (368 ln)  [typescript]
-    → Derives a gradient of tail colors from a single bright color using alpha falloff @param brightColor The brightest color (center/head of the scanner) @
-  - `toast.tsx` → Toast (102 ln)  [typescript]
-    → Imports: solid-js
+**packages/core/src/**
+- `binary.ts` →  (41 ln)  [typescript]
+  → export function search<T>(array: T[], id: string, compare: (item: T) => string): { found: boolean; index: number } {
+- `effect-flock.ts` →  (283 ln)  [typescript]
+  → Imports: path
+  → imports: path, os, crypto
+- `encode.ts` → base64Encode (51 ln)  [typescript]
+  → export function base64Encode(value: string) {
+- `error.ts` →  (60 ln)  [typescript]
+  → Imports: zod
+  → imports: zod
+- `flock.ts` →  (358 ln)  [typescript]
+  → Imports: path
+  → imports: path, os, crypto
+- `fn.ts` → fn (11 ln)  [typescript]
+  → Imports: zod
+  → imports: zod
+- `glob.ts` →  (34 ln)  [typescript]
+  → Imports: glob
+  → imports: glob, minimatch
+- `hash.ts` →  (7 ln)  [typescript]
+  → Imports: crypto
+  → imports: crypto
+- `identifier.ts` →  (48 ln)  [typescript]
+  → Imports: crypto
+  → imports: crypto
+- `iife.ts` → iife (3 ln)  [typescript]
+  → export function iife<T>(fn: () => T) {
+- `lazy.ts` → lazy (11 ln)  [typescript]
+  → export function lazy<T>(fn: () => T) {
+- `log.ts` → file (185 ln)  [typescript]
+  → Imports: path
+  → imports: path, fs/promises, fs
+- `module.ts` →  (10 ln)  [typescript]
+  → Imports: node:module
+  → imports: node:module, node:path
+- `opencode-process.ts` → ensureRunID (24 ln)  [typescript]
+  → export const OPENCODE_RUN_ID = "OPENCODE_RUN_ID"
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

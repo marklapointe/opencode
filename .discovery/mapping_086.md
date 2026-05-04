@@ -1,35 +1,47 @@
 # Mapping Group 086
 Files: 14
 
-## File Tree
 **packages/opencode/src/**
-  - `index.ts` → layer (37 ln)  [typescript]
-    → Imports: effect
-  - `formatter.ts` → gofmt (403 ln)  [typescript]
-    → Imports: @opencode-ai/core/npm
-  - `index.ts` → Status (207 ln)  [typescript]
-    → Imports: effect
-  - `index.ts` → layer (260 ln)  [typescript]
-    → Imports: @opencode-ai/core/cross-spawn-spawner
-  - `id.ts` → schema (86 ln)  [typescript]
-    → Imports: zod
-  - `index.ts` →  (247 ln)  [typescript]
-    → Imports: yargs
-  - `index.ts` → getReleaseType (339 ln)  [typescript]
-    → Imports: effect
-  - `auth.ts` → Tokens (144 ln)  [typescript]
-    → Imports: path
-  - `index.ts` → Resource (931 ln)  [typescript]
-    → Connect a client via the given transport with resource safety: on failure the transport is closed; on success the caller owns it. /
-  - `oauth-callback.ts` → ensureRunning (232 ln)  [typescript]
-    → Imports: net
-  - `oauth-provider.ts` → parseRedirectUri + OAUTH_CALLBACK_PORT, OAUTH_CALLBACK_PATH (214 ln)  [typescript]
-    → Parse a redirect URI to extract port and path for the callback server. Returns defaults if the URI can't be parsed. /
-  - `node.ts` → Config, Server, bootstrap, Database, JsonMigration (6 ln)  [typescript]
-  - `index.ts` → parsePatch (684 ln)  [typescript]
-    → Imports: zod
-  - `arity.ts` → prefix (163 ln)  [typescript]
-    → export function prefix(tokens: string[]) {
+- `adapter.node.ts` → adapter (73 ln)  [typescript]
+  → Imports: @hono/node-server
+  → imports: @hono/node-server, @hono/node-ws, hono
+- `adapter.ts` →  (26 ln)  [typescript]
+  → Imports: hono
+  → imports: hono, hono/ws
+- `backend.ts` → select (32 ln)  [typescript]
+  → Imports: @opencode-ai/core/flag/flag
+  → imports: @opencode-ai/core/flag/flag, @opencode-ai/core/installation/version
+- `cors.ts` → isAllowedCorsOrigin (14 ln)  [typescript]
+  → const opencodeOrigin = /^https:\/\/([a-z0-9-]+\.)*opencode\.ai$/
+- `error.ts` → errors (36 ln)  [typescript]
+  → Imports: hono-openapi
+  → imports: hono-openapi, zod, @/storage/storage
+- `event.ts` → Event (7 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, effect
+- `fence.ts` → load (90 ln)  [typescript]
+  → Imports: hono
+  → imports: hono, @/storage/db, drizzle-orm
+- `mdns.ts` → publish (60 ln)  [typescript]
+  → Imports: bonjour-service
+  → imports: bonjour-service
+- `middleware.ts` → LoggerMiddleware (86 ln)  [typescript]
+  → Imports: @/provider/provider
+  → imports: @/provider/provider, @opencode-ai/core/util/error, @/storage/storage
+- `projectors.ts` → initProjectors (28 ln)  [typescript]
+  → Imports: ../session/projectors
+  → imports: ../session/projectors, @/sync, @/session/session
+- `proxy-util.ts` → headers (48 ln)  [typescript]
+  → const hop = new Set([
+- `proxy.ts` → httpEffect (149 ln)  [typescript]
+  → Imports: hono
+  → imports: hono, hono/ws, @/control-plane/schema
+- `index.ts` → ControlPlaneRoutes (160 ln)  [typescript]
+  → Imports: @/auth
+  → imports: @/auth, @/effect/app-runtime, effect
+- `workspace.ts` → WorkspaceRoutes (210 ln)  [typescript]
+  → Imports: hono
+  → imports: hono, hono-openapi, zod
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

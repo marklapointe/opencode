@@ -1,36 +1,49 @@
 # Mapping Group 040
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `stats.ts` → aggregateSessionStats (413 ln)  [typescript]
-    → Imports: yargs
-  - `app.tsx` → tui (909 ln)  [typescript]
-    → Imports: @opentui/solid
-  - `attach.ts` → AttachCommand (99 ln)  [typescript]
-    → Imports: ../cmd
-  - `bg-pulse.tsx` → BgPulse (130 ln)  [typescript]
-    → Imports: @opentui/core
-  - `border.tsx` → EmptyBorder (21 ln)  [typescript]
-    → export const EmptyBorder = {
-  - `dialog-agent.tsx` → DialogAgent (31 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-command.tsx` → useCommandDialog (172 ln)  [typescript]
-    → Imports: @tui/ui/dialog
-  - `dialog-console-org.tsx` → DialogConsoleOrg (103 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-go-upsell.tsx` → DialogGoUpsell (159 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-mcp.tsx` → DialogMcp (86 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-model.tsx` → DialogModel (177 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-provider.tsx` → createDialogProviderOptions (362 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-session-delete-failed.tsx` → DialogSessionDeleteFailed (103 ln)  [typescript]
-    → Imports: @opentui/core
-  - `dialog-session-list.tsx` → DialogSessionList (265 ln)  [typescript]
-    → Imports: @tui/ui/dialog
+**packages/console/core/**
+- `black-transfer.ts` →  (163 ln)  [typescript]
+  → Imports: ../src/billing.js
+  → imports: ../src/billing.js, ../src/drizzle/index.js, ../src/schema/billing.sql.js
+- `create-coupon.ts` →  (24 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js
+- `credit-workspace.ts` →  (35 ln)  [typescript]
+  → Imports: ../src/billing.js
+  → imports: ../src/billing.js, ../src/drizzle/index.js, ../src/schema/workspace.sql.js
+- `disable-reload.ts` →  (34 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/billing.sql.js, ../src/schema/workspace.sql.js
+- `freeze-workspace.ts` →  (39 ln)  [typescript]
+  → Imports: ../src/billing.js
+  → imports: ../src/billing.js, ../src/drizzle/index.js, ../src/schema/billing.sql.js
+- `lookup-user.ts` →  (386 ln)  [typescript]
+  → Imports: ../src/drizzle/index.js
+  → imports: ../src/drizzle/index.js, ../src/schema/auth.sql.js, ../src/schema/user.sql.js
+- `promote-limits.ts` →  (22 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, ../src/subscription
+- `promote-models.ts` →  (33 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, os
+- `pull-models.ts` →  (33 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, os
+- `reset-db.ts` →  (13 ln)  [typescript]
+  → Imports: @opencode-ai/console-resource
+  → imports: @opencode-ai/console-resource, ../src/drizzle/index.js, ../src/schema/user.sql.js
+- `update-limits.ts` →  (28 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, os
+- `update-models.ts` →  (43 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, path, os
+- `account.ts` →  (32 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, drizzle-orm, ./util/fn
+- `actor.ts` →  (98 ln)  [typescript]
+  → Imports: ./context
+  → imports: ./context, ./schema/user.sql, ./util/log
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

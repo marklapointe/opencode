@@ -1,36 +1,39 @@
 # Mapping Group 050
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `server.ts` → Server (22 ln)  [typescript]
-    → Imports: effect
-  - `skills.ts` → Info (16 ln)  [typescript]
-    → Imports: effect
-  - `variable.ts` → substitute (90 ln)  [typescript]
-    → Imports: path
-  - `index.ts` → getAdapter (45 ln)  [typescript]
-    → Imports: @/project/schema
-  - `worktree.ts` → WorktreeAdapter (54 ln)  [typescript]
-    → Imports: effect
-  - `debug-workspace-plugin.ts` → DebugWorkspacePlugin (73 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `schema.ts` → WorkspaceID (18 ln)  [typescript]
-    → Imports: effect
-  - `types.ts` → WorkspaceInfo (45 ln)  [typescript]
-    → Imports: effect
-  - `util.ts` → waitEvent (39 ln)  [typescript]
-    → Imports: @/bus/global
-  - `workspace-context.ts` → WorkspaceContext (26 ln)  [typescript]
-    → Imports: @/util/local-context
-  - `workspace.sql.ts` → WorkspaceTable (17 ln)  [typescript]
-    → Imports: drizzle-orm/sqlite-core
-  - `workspace.ts` → Info (875 ln)  [typescript]
-    → Imports: effect
-  - `app-runtime.ts` → AppLayer (125 ln)  [typescript]
-    → Imports: effect
-  - `bootstrap-runtime.ts` → BootstrapLayer (29 ln)  [typescript]
-    → Imports: effect
+**packages/desktop-electron/src/**
+- `shell-env.ts` → getUserShell (88 ln)  [typescript]
+  → Imports: node:child_process
+  → imports: node:child_process, node:path
+- `store.ts` → getStore (17 ln)  [typescript]
+  → Imports: electron-store
+  → imports: electron-store, ./constants
+- `windows.ts` → setBackgroundColor (206 ln)  [typescript]
+  → Imports: electron-window-state
+  → imports: electron-window-state, electron, node:path
+- `index.ts` →  (71 ln)  [typescript]
+  → Imports: electron
+  → imports: electron, ./types
+- `types.ts` →  (79 ln)  [typescript]
+- `cli.ts` → installCli (12 ln)  [typescript]
+  → Imports: ./i18n
+  → imports: ./i18n
+- `env.d.ts` →  (10 ln)  [typescript]
+  → Imports: ../preload/types
+  → imports: ../preload/types
+- `html.test.ts` →  (62 ln)  [test]
+- `ar.ts` → dict (26 ln)  [typescript]
+  → export const dict = {
+- `br.ts` → dict (27 ln)  [typescript]
+  → export const dict = {
+- `bs.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `da.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `de.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `en.ts` → dict (27 ln)  [typescript]
+  → export const dict = {
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

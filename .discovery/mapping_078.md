@@ -1,36 +1,33 @@
 # Mapping Group 078
 Files: 14
 
-## File Tree
-**packages/console/core/**
-  - `black-onboard-waitlist.ts` →  (38 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `black-select-workspaces.ts` →  (41 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `black-stats.ts` →  (312 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `black-transfer.ts` →  (163 ln)  [typescript]
-    → Imports: ../src/billing.js
-  - `create-coupon.ts` →  (24 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `credit-workspace.ts` →  (35 ln)  [typescript]
-    → Imports: ../src/billing.js
-  - `disable-reload.ts` →  (34 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `freeze-workspace.ts` →  (39 ln)  [typescript]
-    → Imports: ../src/billing.js
-  - `lookup-user.ts` →  (386 ln)  [typescript]
-    → Imports: ../src/drizzle/index.js
-  - `promote-limits.ts` →  (22 ln)  [typescript]
-    → Imports: bun
-  - `promote-models.ts` →  (33 ln)  [typescript]
-    → Imports: bun
-  - `pull-models.ts` →  (33 ln)  [typescript]
-    → Imports: bun
-  - `reset-db.ts` →  (13 ln)  [typescript]
-    → Imports: @opencode-ai/console-resource
-  - `update-limits.ts` →  (28 ln)  [typescript]
-    → Imports: bun
+**packages/opencode/src/**
+- `paths.ts` →  (55 ln)  [config]
+- `permission.ts` →  (70 ln)  [config]
+- `plugin.ts` →  (88 ln)  [config]
+- `provider.ts` →  (113 ln)  [config]
+- `server.ts` →  (22 ln)  [config]
+- `skills.ts` →  (16 ln)  [config]
+- `variable.ts` →  (90 ln)  [config]
+- `index.ts` → getAdapter (45 ln)  [typescript]
+  → Imports: @/project/schema
+  → imports: @/project/schema, ../types, ./worktree
+- `worktree.ts` → WorktreeAdapter (54 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ../types
+- `README.md` →  (19 ln)  [docs]
+- `debug-workspace-plugin.ts` → DebugWorkspacePlugin (73 ln)  [typescript]
+  → Imports: @opencode-ai/plugin
+  → imports: @opencode-ai/plugin, node:fs/promises, node:crypto
+- `schema.ts` → WorkspaceID (18 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/id/id, @/util/effect-zod
+- `types.ts` → WorkspaceInfo (45 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/project/schema, ./schema
+- `util.ts` → waitEvent (39 ln)  [typescript]
+  → Imports: @/bus/global
+  → imports: @/bus/global, effect
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

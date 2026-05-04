@@ -1,36 +1,30 @@
 # Mapping Group 047
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `clipboard.ts` → read (205 ln)  [typescript]
-    → Writes text to clipboard via OSC 52 escape sequence. This allows clipboard operations to work over SSH by having the terminal emulator handle the clip
-  - `editor.ts` → open (37 ln)  [typescript]
-    → Imports: @/util/defer
-  - `model.ts` → index (23 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `provider-origin.ts` → isConsoleManagedProvider (7 ln)  [typescript]
-    → const contains = (consoleManagedProviders: string[] | ReadonlySet<string>, providerID: string) =>
-  - `revert-diff.ts` → getRevertDiffFiles (18 ln)  [typescript]
-    → Imports: diff
-  - `scroll.ts` → getScrollAcceleration (23 ln)  [typescript]
-    → Imports: @opentui/core
-  - `selection.ts` → copy (25 ln)  [typescript]
-    → show: (input: { message: string; variant: "info" | "success" | "warning" | "error" }) => void
-  - `signal.ts` → createDebouncedSignal (41 ln)  [typescript]
-    → Imports: solid-js
-  - `sound.ts` → start (156 ln)  [typescript]
-    → Imports: cli-sound
-  - `transcript.ts` → formatTranscript (112 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `validate-session.ts` → validateSession (24 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2
-  - `win32.ts` → win32DisableProcessedInput (130 ln)  [typescript]
-    → Clear ENABLE_PROCESSED_INPUT on the console stdin handle. /
-  - `worker.ts` → rpc (104 ln)  [typescript]
-    → Imports: @/installation
-  - `uninstall.ts` → UninstallCommand (353 ln)  [typescript]
-    → Imports: yargs
+**packages/core/src/**
+- `path.ts` → getFilename (37 ln)  [typescript]
+  → export function getFilename(path: string | undefined) {
+- `retry.ts` → retry (42 ln)  [typescript]
+  → retryIf?: (error: unknown) => boolean
+- `slug.ts` →  (74 ln)  [typescript]
+  → const ADJECTIVES = [
+
+**packages/core/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/core/test/**
+- `cross-spawn-spawner.test.ts` →  (423 ln)  [test]
+- `observability.test.ts` →  (46 ln)  [test]
+- `filesystem.test.ts` →  (338 ln)  [test]
+- `effect-flock-worker.ts` →  (60 ln)  [test]
+- `flock-worker.ts` →  (72 ln)  [test]
+- `tmpdir.ts` →  (13 ln)  [test]
+- `global.test.ts` →  (16 ln)  [test]
+- `effect.ts` →  (53 ln)  [test]
+- `npm-config.test.ts` →  (51 ln)  [test]
+- `npm.test.ts` →  (91 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

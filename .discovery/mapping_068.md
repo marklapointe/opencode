@@ -1,36 +1,41 @@
 # Mapping Group 068
 Files: 14
 
-## File Tree
-**packages/opencode/test/**
-  - `httpapi-pty-websocket.test.ts` →  (16 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-pty.test.ts` →  (175 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-raw-route-auth.test.ts` →  (89 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-sdk.test.ts` → Backend (670 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-session.test.ts` →  (464 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-sync.test.ts` →  (130 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-tui.test.ts` →  (121 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-ui.test.ts` →  (245 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-workspace-routing.test.ts` → ProxiedRequest (471 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-workspace.test.ts` → ProxiedRequest (360 ln)  [typescript]
-    → Imports: bun:test
-  - `project-init-git.test.ts` →  (122 ln)  [typescript]
-    → Imports: bun:test
-  - `proxy-util.test.ts` →  (113 ln)  [typescript]
-    → Imports: bun:test
-  - `session-actions.test.ts` →  (49 ln)  [typescript]
-    → Imports: bun:test
-  - `session-list.test.ts` →  (238 ln)  [typescript]
-    → Imports: bun:test
+**packages/opencode/src/**
+- `index.tsx` → Prompt (1477 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, solid-js, path
+- `part.ts` → strip (16 ln)  [typescript]
+  → Imports: @/session/schema
+  → imports: @/session/schema, ./history
+- `stash.tsx` →  (101 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/global, @/util/filesystem
+- `spinner.tsx` → Spinner (24 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, ../context/theme, ../context/kv
+- `startup-loading.tsx` → StartupLoading (63 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, ../context/theme, ./spinner
+- `textarea-keybindings.ts` → useTextareaKeybindings (73 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @opentui/core, ../context/keybind
+- `todo-item.tsx` → TodoItem (32 ln)  [typescript]
+  → Imports: ../context/theme
+  → imports: ../context/theme
+- `use-connected.tsx` → useConnected (9 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/sync
+- `cwd.ts` →  (5 ln)  [config]
+- `tui-migrate.ts` →  (152 ln)  [config]
+- `tui-schema.ts` →  (38 ln)  [config]
+- `tui.ts` →  (220 ln)  [config]
+- `args.tsx` →  (15 ln)  [typescript]
+  → Imports: ./helper
+  → imports: ./helper
+- `directory.ts` → useDirectory (15 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, ./project, ./sync
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

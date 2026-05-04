@@ -1,36 +1,49 @@
 # Mapping Group 052
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `client.ts` → create (697 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `diagnostic.ts` → pretty (29 ln)  [typescript]
-    → const MAX_PER_FILE = 20
-  - `language.ts` → LANGUAGE_EXTENSIONS (121 ln)  [typescript]
-    → export const LANGUAGE_EXTENSIONS: Record<string, string> = {
-  - `launch.ts` → spawn (21 ln)  [typescript]
-    → Imports: child_process
-  - `lsp.ts` → Event (522 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `server.ts` → Deno (2064 ln)  [typescript]
-    → Imports: child_process
-  - `azure.ts` → AzureAuthPlugin (26 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `cloudflare.ts` → CloudflareWorkersAuthPlugin (76 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `codex.ts` → parseJwtClaims (615 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `copilot.ts` → CopilotAuthPlugin (394 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `models.ts` → get (195 ln)  [typescript]
-    → Imports: zod
-  - `index.ts` → layer (291 ln)  [typescript]
-    → Imports: @opencode-ai/plugin
-  - `install.ts` → installPlugin (439 ln)  [typescript]
-    → Imports: path
-  - `loader.ts` →  (216 ln)  [typescript]
-    → Imports: ./shared
+**packages/desktop-electron/src/**
+- `webview-zoom.ts` →  (38 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js
+
+**packages/desktop-electron/sst-env.d.ts/**
+- `sst-env.d.ts` →  (10 ln)  [typescript]
+  → Imports: sst
+  → imports: sst
+
+**packages/desktop-electron/tsconfig.json/**
+- `tsconfig.json` →  (23 ln)  [config]
+
+**packages/desktop/.gitignore/**
+- `.gitignore` →  (24 ln)  [file]
+
+**packages/desktop/AGENTS.md/**
+- `AGENTS.md` →  (4 ln)  [docs]
+
+**packages/desktop/README.md/**
+- `README.md` →  (32 ln)  [docs]
+
+**packages/desktop/package.json/**
+- `package.json` →  (46 ln)  [json]
+
+**packages/desktop/scripts/**
+- `copy-bundles.ts` →  (12 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, ./utils
+- `finalize-latest-json.ts` →  (164 ln)  [test]
+- `predev.ts` →  (15 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, ./utils
+- `prepare.ts` →  (20 ln)  [typescript]
+  → Imports: bun
+  → imports: bun, @opencode-ai/script, ./utils
+- `utils.ts` → getCurrentSidecar (61 ln)  [typescript]
+  → Imports: bun
+  → imports: bun
+
+**packages/desktop/src-tauri/**
+- `.gitignore` →  (9 ln)  [file]
+- `Cargo.toml` →  (75 ln)  [toml]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

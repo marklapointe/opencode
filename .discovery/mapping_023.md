@@ -1,31 +1,46 @@
 # Mapping Group 023
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `workspace.tsx` →  (238 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `index.css` →  (556 ln)  [stylesheet]
-  - `index.tsx` →  (315 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `index.css` →  (604 ln)  [stylesheet]
-  - `index.tsx` →  (176 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `[...path].ts` → GET (30 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `index.ts` → GET (30 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `index.css` →  (588 ln)  [stylesheet]
-  - `index.tsx` →  (284 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `index.css` →  (1195 ln)  [stylesheet]
-  - `index.tsx` →  (528 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `[id].ts` → GET (30 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `[...path].tsx` → GET (26 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `[id].css` →  (337 ln)  [stylesheet]
+- `language.tsx` →  (72 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, solid-js/web
+- `entry-client.tsx` →  (4 ln)  [typescript]
+  → Imports: @solidjs/start/client
+  → imports: @solidjs/start/client
+- `entry-server.tsx` →  (37 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, solid-js/web, ~/lib/language
+- `global.d.ts` →  (5 ln)  [typescript]
+- `ar.ts` → dict (779 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `br.ts` → dict (791 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `da.ts` → dict (785 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `de.ts` → dict (790 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `en.ts` → dict (784 ln)  [typescript]
+  → export const dict = {
+- `es.ts` → dict (790 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `fr.ts` → dict (797 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `index.ts` → i18n (43 ln)  [typescript]
+  → Imports: ~/lib/language
+  → imports: ~/lib/language, ~/i18n/en, ~/i18n/zh
+- `it.ts` → dict (787 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `ja.ts` → dict (788 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,29 +1,48 @@
 # Mapping Group 024
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `billing-section.module.css` →  (185 ln)  [stylesheet]
-  - `billing-section.tsx` → BillingSection (266 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `black-section.module.css` →  (142 ln)  [stylesheet]
-  - `black-section.tsx` → BlackSection (290 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `black-waitlist-section.module.css` →  (23 ln)  [stylesheet]
-  - `index.tsx` →  (35 ln)  [typescript]
-    → Imports: ./monthly-limit-section
-  - `monthly-limit-section.module.css` →  (96 ln)  [stylesheet]
-  - `monthly-limit-section.tsx` → MonthlyLimitSection (145 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `payment-section.module.css` →  (93 ln)  [stylesheet]
-  - `payment-section.tsx` → PaymentSection (141 ln)  [typescript]
-    → Imports: @opencode-ai/console-core/billing.js
-  - `redeem-section.module.css` →  (61 ln)  [stylesheet]
-  - `redeem-section.tsx` → RedeemSection (71 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `reload-section.module.css` →  (261 ln)  [stylesheet]
-  - `[id].tsx` →  (80 ln)  [typescript]
-    → Imports: solid-js
+- `ko.ts` → dict (779 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `no.ts` → dict (786 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `pl.ts` → dict (792 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en
+- `ru.ts` → dict (794 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `th.ts` → dict (782 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `tr.ts` → dict (791 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `zh.ts` → dict (761 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `zht.ts` → dict (760 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./en
+- `changelog.ts` → loadChangelog (146 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router
+- `form-error.ts` → formErrorReloadAmountMin (86 ln)  [typescript]
+  → Imports: ~/i18n
+  → imports: ~/i18n
+- `github.ts` → github (38 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, ~/config
+- `language.ts` → docs (324 ln)  [typescript]
+  → export const LOCALES = [
+- `salesforce.ts` → createLead (81 ln)  [typescript]
+  → Imports: @opencode-ai/console-resource
+  → imports: @opencode-ai/console-resource
+- `middleware.ts` →  (16 ln)  [typescript]
+  → Imports: @solidjs/start/middleware
+  → imports: @solidjs/start/middleware, ~/lib/language
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,35 +1,39 @@
 # Mapping Group 022
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `[...callback].ts` → GET (46 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `authorize.ts` → GET (10 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `index.ts` → GET (14 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `logout.ts` → GET (17 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `status.ts` → GET (7 ln)  [typescript]
-    → Imports: @solidjs/start
-  - `[id].tsx` → TaskSource (375 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `index.tsx` → BenchmarkResult (88 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `submission.ts` → POST (32 ln)  [typescript]
-    → Imports: @solidjs/start/server
-  - `common.tsx` → PlanIcon (65 ln)  [typescript]
-    → Imports: solid-js
-  - `index.tsx` →  (125 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `[plan].tsx` → SuccessData (484 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `workspace.css` →  (214 ln)  [stylesheet]
-  - `workspace-picker.tsx` → WorkspacePicker (124 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `workspace.tsx` →  (40 ln)  [typescript]
-    → Imports: @solidjs/router
+- `icon.tsx` → IconZen (286 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js
+- `language-picker.css` →  (135 ln)  [stylesheet]
+- `language-picker.tsx` → LanguagePicker (40 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @solidjs/router, ~/component/dropdown
+- `legal.tsx` → Legal (28 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, ~/component/language-picker, ~/context/i18n
+- `locale-links.tsx` → LocaleLinks (36 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, solid-js, solid-js/web
+- `modal.css` →  (67 ln)  [stylesheet]
+- `modal.tsx` → Modal (24 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, ./modal.css
+- `spotlight.css` →  (15 ln)  [stylesheet]
+- `spotlight.tsx` → defaultConfig (820 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, ./spotlight.css
+- `config.ts` →  (29 ln)  [config]
+- `auth.session.ts` →  (1 ln)  [typescript]
+- `auth.ts` → useAuthSession (116 ln)  [typescript]
+  → Imports: solid-js/web
+  → imports: solid-js/web, @opencode-ai/console-core/drizzle/index.js, @opencode-ai/console-core/schema/user.sql.js
+- `auth.withActor.ts` → withActor (7 ln)  [typescript]
+  → Imports: @opencode-ai/console-core/actor.js
+  → imports: @opencode-ai/console-core/actor.js, ./auth
+- `i18n.tsx` →  (27 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @opencode-ai/ui/context, ~/i18n
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

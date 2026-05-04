@@ -1,36 +1,41 @@
 # Mapping Group 033
 Files: 14
 
-## File Tree
-**packages/core/src/**
-  - `hash.ts` →  (7 ln)  [typescript]
-    → Imports: crypto
-  - `identifier.ts` →  (48 ln)  [typescript]
-    → Imports: crypto
-  - `iife.ts` → iife (3 ln)  [typescript]
-    → export function iife<T>(fn: () => T) {
-  - `lazy.ts` → lazy (11 ln)  [typescript]
-    → export function lazy<T>(fn: () => T) {
-  - `log.ts` → file (185 ln)  [typescript]
-    → Imports: path
-  - `module.ts` →  (10 ln)  [typescript]
-    → Imports: node:module
-  - `opencode-process.ts` → ensureRunID (24 ln)  [typescript]
-    → export const OPENCODE_RUN_ID = "OPENCODE_RUN_ID"
-  - `path.ts` → getFilename (37 ln)  [typescript]
-    → export function getFilename(path: string | undefined) {
-  - `retry.ts` → retry (42 ln)  [typescript]
-  - `slug.ts` →  (74 ln)  [typescript]
-    → const ADJECTIVES = [
-
-**packages/desktop-electron/src/**
-  - `apps.ts` → checkAppExists (148 ln)  [typescript]
-    → Imports: node:child_process
-  - `constants.ts` → CHANNEL (10 ln)  [typescript]
-    → Imports: electron
-  - `env.d.ts` → ImportMetaEnv (29 ln)  [typescript]
-  - `index.ts` →  (452 ln)  [typescript]
-    → Imports: node:crypto
+**packages/console/app/**
+- `openai-compatible.ts` → fromOaCompatibleRequest (555 ln)  [typescript]
+  → Imports: ./provider
+  → imports: ./provider
+- `openai.ts` → fromOpenaiRequest (628 ln)  [typescript]
+  → Imports: ./provider
+  → imports: ./provider
+- `provider.ts` → buildCostChunk (228 ln)  [typescript]
+  → Imports: @opencode-ai/console-core/model.js
+  → imports: @opencode-ai/console-core/model.js, ./anthropic, ./openai
+- `stickyProviderTracker.ts` → createStickyTracker (16 ln)  [typescript]
+  → Imports: @opencode-ai/console-resource
+  → imports: @opencode-ai/console-resource
+- `trialLimiter.ts` → createTrialLimiter (46 ln)  [typescript]
+  → Imports: @opencode-ai/console-core/drizzle/index.js
+  → imports: @opencode-ai/console-core/drizzle/index.js, @opencode-ai/console-core/schema/ip.sql.js, ./provider/provider
+- `completions.ts` → POST (12 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, ~/routes/zen/util/handler
+- `messages.ts` → POST (12 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, ~/routes/zen/util/handler
+- `models.ts` → OPTIONS (34 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, @opencode-ai/console-core/model.js, @opencode-ai/console-core/drizzle/index.js
+- `[model].ts` → POST (14 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, ~/routes/zen/util/handler
+- `responses.ts` → POST (12 ln)  [typescript]
+  → Imports: @solidjs/start/server
+  → imports: @solidjs/start/server, ~/routes/zen/util/handler
+- `base.css` →  (21 ln)  [stylesheet]
+- `button.css` →  (102 ln)  [stylesheet]
+- `index.css` →  (8 ln)  [stylesheet]
+- `reset.css` →  (76 ln)  [stylesheet]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

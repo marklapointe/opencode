@@ -1,36 +1,31 @@
 # Mapping Group 062
 Files: 14
 
-## File Tree
+**packages/opencode/specs/**
+- `instance-context.md` →  (309 ln)  [docs]
+- `loose-ends.md` →  (34 ln)  [docs]
+- `migration.md` →  (299 ln)  [docs]
+- `routes.md` →  (64 ln)  [docs]
+- `schema.md` →  (399 ln)  [docs]
+- `server-package.md` →  (668 ln)  [docs]
+- `tools.md` →  (90 ln)  [docs]
+- `tui-plugins.md` →  (433 ln)  [docs]
+- `api.ts` →  (67 ln)  [typescript]
+  → Imports: @opencode-ai/core
+  → imports: @opencode-ai/core, @opencode-ai/core/tools
+- `keymappings.md` →  (10 ln)  [docs]
+- `message-shape.md` →  (136 ln)  [docs]
+
 **packages/opencode/src/**
-  - `run-state.ts` → layer (110 ln)  [typescript]
-    → Imports: @/effect/instance-state
-  - `schema.ts` → SessionID (35 ln)  [typescript]
-    → Imports: effect
-  - `session.sql.ts` → SessionTable (124 ln)  [typescript]
-    → Imports: drizzle-orm/sqlite-core
-  - `session.ts` → isDefaultTitle (902 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/slug
-  - `status.ts` → Info (88 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `summary.ts` → layer (165 ln)  [typescript]
-    → Imports: effect
-  - `system.ts` → provider (84 ln)  [typescript]
-    → Imports: effect
-  - `todo.ts` → Info (86 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `shell.ts` → killTree (215 ln)  [typescript]
-    → Imports: @opencode-ai/core/flag/flag
-  - `discovery.ts` → layer (116 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `index.ts` → fmt (297 ln)  [typescript]
-    → Imports: path
-  - `index.ts` → Patch (777 ln)  [typescript]
-    → Imports: effect
-  - `db.bun.ts` → init (8 ln)  [typescript]
-    → Imports: bun:sqlite
-  - `db.node.ts` → init (8 ln)  [typescript]
-    → Imports: node:sqlite
+- `account.sql.ts` → AccountTable (39 ln)  [typescript]
+  → Imports: drizzle-orm/sqlite-core
+  → imports: drizzle-orm/sqlite-core, ./schema, ../storage/schema.sql
+- `account.ts` → layer (456 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, @/util/effect-http-client
+- `repo.ts` → layer (166 ln)  [typescript]
+  → Imports: drizzle-orm
+  → imports: drizzle-orm, effect, @/storage/db
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

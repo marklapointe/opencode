@@ -1,36 +1,47 @@
 # Mapping Group 000
 Files: 14
 
-## File Tree
-**packages/app/src/**
-  - `serialize.test.ts` →  (319 ln)  [typescript]
-    → Imports: bun:test
-  - `serialize.ts` → StringSerializeHandler (634 ln)  [typescript]
-    → SerializeAddon - Serialize terminal buffer contents  Port of xterm.js addon-serialize for ghostty-web.
-  - `debug-bar.tsx` → DebugBar (443 ln)  [typescript]
-    → Imports: @solidjs/router
-  - `dialog-connect-provider.tsx` → DialogConnectProvider (654 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `dialog-custom-provider-form.ts` → validateCustomProvider (158 ln)  [typescript]
-    → const PROVIDER_ID = /^[a-z0-9][a-z0-9-_]*$/
-  - `dialog-custom-provider.test.ts` →  (80 ln)  [typescript]
-    → Imports: bun:test
-  - `dialog-custom-provider.tsx` → DialogCustomProvider (329 ln)  [typescript]
-    → Imports: @opencode-ai/ui/button
-  - `dialog-edit-project.tsx` → DialogEditProject (265 ln)  [typescript]
-    → Imports: @opencode-ai/ui/button
-  - `dialog-fork.tsx` → DialogFork (108 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-manage-models.tsx` → DialogManageModels (101 ln)  [typescript]
-    → Imports: @opencode-ai/ui/dialog
-  - `dialog-release-notes.tsx` → DialogReleaseNotes (144 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-select-directory.tsx` → DialogSelectDirectory (392 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context/dialog
-  - `dialog-select-file.tsx` → DialogSelectFile (466 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context/dialog
-  - `dialog-select-mcp.tsx` → DialogSelectMcp (103 ln)  [typescript]
-    → Imports: @tanstack/solid-query
+**.github/pull_request_template.md/**
+- `pull_request_template.md` →  (29 ln)  [docs]
+
+**.gitignore/**
+- `.gitignore` →  (31 ln)  [config]
+
+**.oxlintrc.json/**
+- `.oxlintrc.json` →  (51 ln)  [json]
+
+**.vscode/launch.example.json/**
+- `launch.example.json` →  (11 ln)  [json]
+
+**.vscode/settings.example.json/**
+- `settings.example.json` →  (5 ln)  [json]
+
+**.zed/settings.json/**
+- `settings.json` →  (9 ln)  [json]
+
+**AGENTS.md/**
+- `AGENTS.md` →  (103 ln)  [docs]
+
+**CONTRIBUTING.md/**
+- `CONTRIBUTING.md` →  (311 ln)  [docs]
+
+**README.ar.md/**
+- `README.ar.md` →  (141 ln)  [docs]
+
+**README.bn.md/**
+- `README.bn.md` →  (141 ln)  [docs]
+
+**README.br.md/**
+- `README.br.md` →  (141 ln)  [docs]
+
+**README.bs.md/**
+- `README.bs.md` →  (141 ln)  [docs]
+
+**README.da.md/**
+- `README.da.md` →  (141 ln)  [docs]
+
+**README.de.md/**
+- `README.de.md` →  (141 ln)  [docs]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

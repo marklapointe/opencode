@@ -1,36 +1,45 @@
 # Mapping Group 045
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `plugins.tsx` →  (270 ln)  [typescript]
-    → Imports: @/util/keybind
-  - `layer.ts` → CliLayer (6 ln)  [typescript]
-    → Imports: effect
-  - `api.tsx` → createTuiApi (390 ln)  [typescript]
-    → Imports: @opentui/core
-  - `internal.ts` → INTERNAL_TUI_PLUGINS (27 ln)  [typescript]
-    → Imports: ../feature-plugins/home/footer
-  - `runtime.ts` → init (1030 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `slots.tsx` → setupSlots (60 ln)  [typescript]
-    → Imports: @opencode-ai/plugin/tui
-  - `home.tsx` → Home (90 ln)  [typescript]
-    → Imports: @tui/component/prompt
-  - `dialog-fork-from-timeline.tsx` → DialogForkFromTimeline (76 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-message.tsx` → DialogMessage (108 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog-subagent.tsx` → DialogSubagent (26 ln)  [typescript]
-    → Imports: @tui/ui/dialog-select
-  - `dialog-timeline.tsx` → DialogTimeline (47 ln)  [typescript]
-    → Imports: solid-js
-  - `footer.tsx` → Footer (91 ln)  [typescript]
-    → Imports: solid-js
-  - `index.tsx` → Session (2271 ln)  [typescript]
-    → Imports: solid-js
-  - `permission.tsx` → PermissionPrompt (682 ln)  [typescript]
-    → Imports: solid-js/store
+**packages/containers/tsconfig.json/**
+- `tsconfig.json` →  (8 ln)  [config]
+
+**packages/core/package.json/**
+- `package.json` →  (50 ln)  [json]
+
+**packages/core/src/**
+- `cross-spawn-spawner.ts` → make (505 ln)  [typescript]
+  → Imports: @effect/platform-node
+  → imports: @effect/platform-node, effect/unstable/process/ChildProcessSpawner, effect/unstable/process/ChildProcessSpawner
+- `logger.ts` → logger (73 ln)  [typescript]
+  → Imports: effect
+  → imports: effect
+- `memo-map.ts` → memoMap (3 ln)  [typescript]
+  → Imports: effect
+  → imports: effect
+- `observability.ts` → resource (107 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, effect/unstable/observability
+- `runtime.ts` → makeRuntime (21 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, ./memo-map, ./observability
+- `filesystem.ts` →  (236 ln)  [typescript]
+  → Imports: @effect/platform-node
+  → imports: @effect/platform-node, path, fs
+- `flag.ts` → Flag (107 ln)  [typescript]
+  → Imports: effect
+  → imports: effect
+- `global.ts` → make (80 ln)  [typescript]
+  → Imports: path
+  → imports: path, fs/promises, xdg-basedir
+- `version.ts` → InstallationVersion (8 ln)  [typescript]
+  → const OPENCODE_VERSION: string
+- `npm-config.ts` →  (40 ln)  [config]
+- `npm.ts` → sanitize (271 ln)  [typescript]
+  → Imports: path
+  → imports: path, npm-package-arg, effect
+- `array.ts` → findLast (10 ln)  [typescript]
+  → export function findLast<T>(
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

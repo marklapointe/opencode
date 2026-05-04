@@ -1,37 +1,45 @@
 # Mapping Group 063
 Files: 14
 
-## File Tree
 **packages/opencode/src/**
-  - `db.ts` → getChannelPath (181 ln)  [typescript]
-    → Imports: drizzle-orm/bun-sqlite
-  - `json-migration.ts` → run (431 ln)  [typescript]
-    → Imports: drizzle-orm/bun-sqlite
-  - `schema.sql.ts` → Timestamps (10 ln)  [typescript]
-    → Imports: drizzle-orm/sqlite-core
-  - `schema.ts` → AccountTable, AccountStateTable, ControlAccountTable, ProjectTable, SessionTable (5 ln)  [typescript]
-  - `storage.ts` → NotFoundError (334 ln)  [typescript]
-    → Imports: path
-
-**packages/opencode/test/**
-  - `account.test.ts` →  (26 ln)  [typescript]
-    → Imports: bun:test
-  - `prompt-part.test.ts` →  (47 ln)  [typescript]
-    → Imports: bun:test
-  - `sync.test.tsx` →  (149 ln)  [typescript]
-    → Imports: bun:test
-  - `error.test.ts` →  (18 ln)  [typescript]
-    → Imports: bun:test
-  - `github-action.test.ts` →  (198 ln)  [typescript]
-    → Imports: bun:test
-  - `github-remote.test.ts` →  (80 ln)  [typescript]
-    → Imports: bun:test
-  - `import.test.ts` →  (54 ln)  [typescript]
-    → Imports: bun:test
-  - `plugin-auth-picker.test.ts` →  (120 ln)  [typescript]
-    → Imports: bun:test
-  - `editor-context-zed.test.ts` → ZedFixtureOptions (356 ln)  [typescript]
-    → Imports: bun:sqlite
+- `schema.ts` → AccountID (99 ln)  [typescript]
+  → Imports: effect
+  → imports: effect
+- `url.ts` → normalizeServerUrl (8 ln)  [typescript]
+  → export const normalizeServerUrl = (input: string): string => {
+- `README.md` →  (174 ln)  [docs]
+- `agent.ts` → init (1838 ln)  [typescript]
+  → Imports: @agentclientprotocol/sdk
+  → imports: @agentclientprotocol/sdk, url, @/util/filesystem
+- `session.ts` →  (116 ln)  [typescript]
+  → Imports: @agentclientprotocol/sdk
+  → imports: @agentclientprotocol/sdk, ./types, @opencode-ai/sdk/v2
+- `types.ts` →  (24 ln)  [typescript]
+  → Imports: @agentclientprotocol/sdk
+  → imports: @agentclientprotocol/sdk, @opencode-ai/sdk/v2, ../provider/schema
+- `agent.ts` → Info (413 ln)  [typescript]
+  → Imports: @/config/config
+  → imports: @/config/config, zod, @/provider/provider
+- `audio.d.ts` →  (4 ln)  [typescript]
+  → const file: string
+- `index.ts` → OAUTH_DUMMY_KEY (98 ln)  [typescript]
+  → Imports: path
+  → imports: path, effect, @/util/effect-zod
+- `bus-event.ts` → define (49 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, effect, @/util/effect-zod
+- `global.ts` → GlobalBus (12 ln)  [typescript]
+  → Imports: events
+  → imports: events
+- `index.ts` → publish (188 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @/effect/bridge, ./bus-event
+- `bootstrap.ts` → bootstrap (18 ln)  [typescript]
+  → Imports: @/effect/app-runtime
+  → imports: @/effect/app-runtime, ../project/bootstrap, ../project/instance
+- `account.ts` → formatAccountLabel (258 ln)  [typescript]
+  → Imports: ./cmd
+  → imports: ./cmd, effect, ../ui
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

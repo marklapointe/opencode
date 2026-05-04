@@ -1,32 +1,21 @@
 # Mapping Group 111
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `text-shimmer.stories.tsx` → Basic (92 ln)  [typescript]
-    → Imports: storybook/preview-api
-  - `text-shimmer.tsx` → TextShimmer (62 ln)  [typescript]
-    → Imports: solid-js
-  - `text-strikethrough.css` →  (27 ln)  [stylesheet]
-  - `text-strikethrough.stories.tsx` → Playground (279 ln)  [typescript]
-    → Imports: solid-js
-  - `text-strikethrough.tsx` → TextStrikethrough (84 ln)  [typescript]
-    → Imports: solid-js
-  - `thinking-heading.stories.tsx` → Playground (854 ln)  [typescript]
-    → Imports: solid-js
-  - `timeline-playground.stories.tsx` → sum (2041 ln)  [typescript]
-    → Source mapping for a CSS control. - `anchor`: immutable text near the property (comment, selector, etc.) that won't change when values change — used t
-  - `toast.css` →  (236 ln)  [stylesheet]
-  - `toast.stories.tsx` → Basic (138 ln)  [typescript]
-    → Imports: ./button
-  - `toast.tsx` → showToast + toaster (185 ln)  [typescript]
-    → Imports: @kobalte/core/toast
-  - `todo-panel-motion.stories.tsx` → Playground (605 ln)  [typescript]
-    → Imports: solid-js
-  - `tool-count-label.css` →  (57 ln)  [stylesheet]
-  - `tool-count-label.tsx` → AnimatedCountLabel (58 ln)  [typescript]
-    → Imports: solid-js
-  - `tool-count-summary.css` →  (102 ln)  [stylesheet]
+**packages/opencode/test/**
+- `snapshot-tool-race.test.ts` →  (249 ln)  [test]
+- `structured-output-integration.test.ts` →  (264 ln)  [test]
+- `structured-output.test.ts` →  (381 ln)  [test]
+- `system.test.ts` →  (73 ln)  [test]
+- `share-next.test.ts` →  (333 ln)  [test]
+- `shell.test.ts` →  (99 ln)  [test]
+- `discovery.test.ts` →  (116 ln)  [test]
+- `skill.test.ts` →  (391 ln)  [test]
+- `snapshot.test.ts` →  (1531 ln)  [test]
+- `db.test.ts` →  (14 ln)  [test]
+- `json-migration.test.ts` →  (832 ln)  [test]
+- `storage.test.ts` →  (293 ln)  [test]
+- `index.test.ts` →  (256 ln)  [test]
+- `apply_patch.test.ts` →  (614 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

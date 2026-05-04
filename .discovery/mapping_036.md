@@ -1,37 +1,21 @@
 # Mapping Group 036
 Files: 14
 
-## File Tree
-**packages/desktop-electron/src/**
-  - `ru.ts` → dict (27 ln)  [typescript]
-    → export const dict = {
-  - `zh.ts` → dict (26 ln)  [typescript]
-    → export const dict = {
-  - `zht.ts` → dict (26 ln)  [typescript]
-    → export const dict = {
-  - `index.tsx` →  (377 ln)  [typescript]
-    → Imports: @opencode-ai/app
-  - `loading.tsx` →  (83 ln)  [typescript]
-    → Imports: @solidjs/meta
-  - `styles.css` →  (0 ln)  [stylesheet]
-  - `updater.ts` → runUpdater (12 ln)  [typescript]
-    → Imports: ./i18n
-  - `webview-zoom.ts` → webviewZoom (38 ln)  [typescript]
-    → Imports: solid-js
-
-**packages/desktop/src/**
-  - `ar.ts` → dict (59 ln)  [typescript]
-    → export const dict = {
-  - `br.ts` → dict (61 ln)  [typescript]
-    → export const dict = {
-  - `bs.ts` → dict (62 ln)  [typescript]
-    → export const dict = {
-  - `da.ts` → dict (61 ln)  [typescript]
-    → export const dict = {
-  - `de.ts` → dict (62 ln)  [typescript]
-    → export const dict = {
-  - `en.ts` → dict (61 ln)  [typescript]
-    → export const dict = {
+**packages/console/core/**
+- `snapshot.json` →  (1185 ln)  [json]
+- `snapshot.json` →  (1171 ln)  [json]
+- `snapshot.json` →  (1185 ln)  [json]
+- `snapshot.json` →  (1233 ln)  [json]
+- `snapshot.json` →  (1265 ln)  [json]
+- `snapshot.json` →  (1237 ln)  [json]
+- `snapshot.json` →  (1251 ln)  [json]
+- `snapshot.json` →  (1231 ln)  [json]
+- `snapshot.json` →  (1203 ln)  [json]
+- `snapshot.json` →  (1203 ln)  [json]
+- `snapshot.json` →  (1245 ln)  [json]
+- `snapshot.json` →  (1359 ln)  [json]
+- `snapshot.json` →  (1487 ln)  [json]
+- `snapshot.json` →  (1501 ln)  [json]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

@@ -1,36 +1,47 @@
 # Mapping Group 067
 Files: 14
 
-## File Tree
-**packages/opencode/test/**
-  - `httpapi-authorization.test.ts` →  (103 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-bridge.test.ts` → OpenApiSpec (420 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-config.test.ts` →  (67 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-cors.test.ts` →  (89 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-event.test.ts` →  (57 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-experimental.test.ts` →  (217 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-file.test.ts` →  (77 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-instance-context.test.ts` →  (233 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-instance.legacy.test.ts` →  (138 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-instance.test.ts` →  (83 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-json-parity.test.ts` → TestApp (254 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-mcp-oauth.test.ts` →  (76 ln)  [typescript]
-    → Imports: @effect/platform-node
-  - `httpapi-mcp.test.ts` → TestApp (186 ln)  [typescript]
-    → Imports: bun:test
-  - `httpapi-provider.test.ts` →  (150 ln)  [typescript]
-    → Imports: bun:test
+**packages/opencode/src/**
+- `dialog-stash.tsx` → DialogStash (87 ln)  [typescript]
+  → Imports: @tui/ui/dialog
+  → imports: @tui/ui/dialog, @tui/ui/dialog-select, solid-js
+- `dialog-status.tsx` → DialogStatus (168 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, bun, ../context/theme
+- `dialog-tag.tsx` → DialogTag (44 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/ui/dialog-select, @tui/ui/dialog
+- `dialog-theme-list.tsx` → DialogThemeList (50 ln)  [typescript]
+  → Imports: ../ui/dialog-select
+  → imports: ../ui/dialog-select, ../context/theme, ../ui/dialog
+- `dialog-variant.tsx` → DialogVariant (39 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, @tui/context/local, @tui/ui/dialog-select
+- `dialog-workspace-create.tsx` → openWorkspaceSession (200 ln)  [typescript]
+  → Imports: @opencode-ai/sdk/v2
+  → imports: @opencode-ai/sdk/v2, @tui/ui/dialog, @tui/ui/dialog-select
+- `dialog-workspace-unavailable.tsx` → DialogWorkspaceUnavailable (81 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, @opentui/solid, solid-js/store
+- `error-component.tsx` → ErrorComponent (92 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, @opentui/solid, solid-js
+- `logo.tsx` → Logo (896 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, @opentui/solid, solid-js
+- `plugin-route-missing.tsx` → PluginRouteMissing (14 ln)  [typescript]
+  → Imports: ../context/theme
+  → imports: ../context/theme
+- `autocomplete.tsx` → Autocomplete (722 ln)  [typescript]
+  → Imports: @opentui/core
+  → imports: @opentui/core, bun, fuzzysort
+- `cwd.ts` →  (0 ln)  [typescript]
+- `frecency.tsx` →  (90 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/global, @/util/filesystem
+- `history.tsx` →  (108 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/global, @/util/filesystem
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

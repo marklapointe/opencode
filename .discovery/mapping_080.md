@@ -1,39 +1,48 @@
 # Mapping Group 080
 Files: 14
 
-## File Tree
-**packages/core/sst-env.d.ts/**
-  - `sst-env.d.ts` →  (10 ln)  [typescript]
-
-**packages/core/test/**
-  - `cross-spawn-spawner.test.ts` →  (423 ln)  [typescript]
-    → Imports: bun:test
-  - `observability.test.ts` →  (46 ln)  [typescript]
-    → Imports: bun:test
-  - `filesystem.test.ts` →  (338 ln)  [typescript]
-    → Imports: bun:test
-  - `effect-flock-worker.ts` → Msg (60 ln)  [typescript]
-    → Imports: fs/promises
-  - `flock-worker.ts` → Msg (72 ln)  [typescript]
-    → Imports: fs/promises
-  - `tmpdir.ts` → tmpdir (13 ln)  [typescript]
-    → Imports: fs/promises
-  - `global.test.ts` →  (16 ln)  [typescript]
-    → Imports: bun:test
-  - `effect.ts` → it (53 ln)  [typescript]
-    → Imports: bun:test
-  - `npm-config.test.ts` →  (51 ln)  [typescript]
-    → Imports: path
-  - `npm.test.ts` →  (91 ln)  [typescript]
-    → Imports: fs/promises
-  - `effect-flock.test.ts` → Msg (386 ln)  [typescript]
-    → Imports: bun:test
-  - `flock.test.ts` → Msg (426 ln)  [typescript]
-    → Imports: bun:test
-
-**packages/desktop-electron/electron-builder.config.ts/**
-  - `electron-builder.config.ts` →  (116 ln)  [typescript]
-    → Imports: node:child_process
+**packages/opencode/src/**
+- `ignore.ts` → match (81 ln)  [typescript]
+  → Imports: @opencode-ai/core/util/glob
+  → imports: @opencode-ai/core/util/glob
+- `index.ts` → Info (658 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, @/effect/instance-state, @opencode-ai/core/filesystem
+- `protected.ts` → names (59 ln)  [typescript]
+  → Imports: path
+  → imports: path, os
+- `ripgrep.ts` → SearchMatch (482 ln)  [typescript]
+  → Imports: path
+  → imports: path, @opencode-ai/core/filesystem, effect
+- `watcher.ts` → Event (159 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, @parcel/watcher/wrapper, @parcel/watcher
+- `formatter.ts` → gofmt (403 ln)  [typescript]
+  → Imports: @opencode-ai/core/npm
+  → imports: @opencode-ai/core/npm, ../project/instance, @/util/filesystem
+- `index.ts` → Status (207 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/process, @opencode-ai/core/cross-spawn-spawner
+- `index.ts` → layer (260 ln)  [typescript]
+  → Imports: @opencode-ai/core/cross-spawn-spawner
+  → imports: @opencode-ai/core/cross-spawn-spawner, effect, effect/unstable/process
+- `id.ts` → schema (86 ln)  [typescript]
+  → Imports: zod
+  → imports: zod, crypto
+- `index.ts` → ide (74 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, zod, effect
+- `index.ts` →  (247 ln)  [typescript]
+  → Imports: yargs
+  → imports: yargs, yargs/helpers, ./cli/cmd/run
+- `index.ts` → getReleaseType (339 ln)  [typescript]
+  → Imports: effect
+  → imports: effect, effect/unstable/http, @opencode-ai/core/cross-spawn-spawner
+- `client.ts` → create (697 ln)  [typescript]
+  → Imports: @/bus/bus-event
+  → imports: @/bus/bus-event, @/bus, path
+- `diagnostic.ts` → pretty (29 ln)  [typescript]
+  → const MAX_PER_FILE = 20
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

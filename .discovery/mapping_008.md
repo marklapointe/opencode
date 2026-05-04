@@ -1,36 +1,46 @@
 # Mapping Group 008
 Files: 14
 
-## File Tree
 **packages/app/src/**
-  - `models.tsx` → Visibility (163 ln)  [typescript]
-    → Imports: solid-js
-  - `notification.tsx` → NotificationBase (373 ln)  [typescript]
-    → Imports: solid-js/store
-  - `permission-auto-respond.test.ts` →  (102 ln)  [typescript]
-    → Imports: bun:test
-  - `permission-auto-respond.ts` → acceptKey (51 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/encode
-  - `permission.tsx` → PermissionRespondFn (277 ln)  [typescript]
-    → Imports: solid-js
-  - `platform.tsx` → PickerPaths (99 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context
-  - `prompt.tsx` → isPromptEqual (297 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context
-  - `sdk.tsx` → SDKEventMap (49 ln)  [typescript]
-    → Imports: @opencode-ai/sdk/v2/client
-  - `server.tsx` → normalizeServerUrl (303 ln)  [typescript]
-    → Imports: @opencode-ai/ui/context
-  - `settings.tsx` → monoInput (332 ln)  [typescript]
-    → Imports: solid-js/store
-  - `sync-optimistic.test.ts` → Text (123 ln)  [typescript]
-    → Imports: bun:test
-  - `sync.tsx` → mergeOptimisticPage (619 ln)  [typescript]
-    → Imports: solid-js
-  - `terminal-title.ts` → defaultTitle (24 ln)  [typescript]
-    → const template = "Terminal {{number}}"
-  - `terminal.test.ts` →  (82 ln)  [typescript]
-    → Imports: bun:test
+- `session-new-view.tsx` → NewSessionView (91 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, luxon, @/context/sync
+- `session-sortable-tab.tsx` → FileVisual (70 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js, @thisbeyond/solid-dnd
+- `session-sortable-terminal-tab.tsx` → SortableTerminalTab (193 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js, solid-js/store
+- `settings-general.tsx` → SettingsGeneral (802 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @opencode-ai/ui/button
+- `settings-keybinds.tsx` → SettingsKeybinds (453 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @solid-primitives/event-listener
+- `settings-list.tsx` → SettingsList (5 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js
+- `settings-models.tsx` → SettingsModels (137 ln)  [typescript]
+  → Imports: @opencode-ai/ui/hooks
+  → imports: @opencode-ai/ui/hooks, @opencode-ai/ui/provider-icon, @opencode-ai/ui/switch
+- `settings-providers.tsx` → SettingsProviders (251 ln)  [typescript]
+  → Imports: @opencode-ai/ui/button
+  → imports: @opencode-ai/ui/button, @opencode-ai/ui/context/dialog, @opencode-ai/ui/provider-icon
+- `status-popover-body.tsx` → StatusPopoverBody (404 ln)  [typescript]
+  → Imports: @opencode-ai/ui/button
+  → imports: @opencode-ai/ui/button, @opencode-ai/ui/context/dialog, @opencode-ai/ui/icon
+- `status-popover.tsx` → StatusPopover (66 ln)  [typescript]
+  → Imports: @opencode-ai/ui/button
+  → imports: @opencode-ai/ui/button, @opencode-ai/ui/icon, @opencode-ai/ui/popover
+- `terminal.tsx` → Terminal (645 ln)  [typescript]
+  → Imports: @opencode-ai/ui/theme/color
+  → imports: @opencode-ai/ui/theme/color, @opencode-ai/ui/theme/context, @opencode-ai/ui/theme/resolve
+- `titlebar-history.test.ts` →  (63 ln)  [test]
+- `titlebar-history.ts` → applyPath (57 ln)  [typescript]
+  → export const MAX_TITLEBAR_HISTORY = 100
+- `titlebar.tsx` → Titlebar (321 ln)  [typescript]
+  → Imports: solid-js
+  → imports: solid-js, solid-js/store, @solidjs/router
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

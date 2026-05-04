@@ -1,36 +1,38 @@
 # Mapping Group 051
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `bridge.ts` → make (59 ln)  [typescript]
-    → Imports: effect
-  - `config-service.ts` → Service (67 ln)  [typescript]
-    → The service shape inferred from an object of Effect `Config` definitions. /
-  - `instance-ref.ts` → InstanceRef (11 ln)  [typescript]
-    → Imports: effect
-  - `instance-registry.ts` → registerDisposer (12 ln)  [typescript]
-    → const disposers = new Set<(directory: string) => Promise<void>>()
-  - `instance-state.ts` → bind (83 ln)  [typescript]
-    → Imports: effect
-  - `run-service.ts` → attachWith (52 ln)  [typescript]
-    → Imports: effect
-  - `runner.ts` → make (222 ln)  [typescript]
-    → Imports: effect
-  - `service-use.ts` → serviceUse (38 ln)  [typescript]
-    → Imports: effect
-  - `ignore.ts` → match (81 ln)  [typescript]
-    → Imports: @opencode-ai/core/util/glob
-  - `index.ts` → Info (658 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `protected.ts` → names (59 ln)  [typescript]
-    → Imports: path
-  - `ripgrep.ts` → SearchMatch (482 ln)  [typescript]
-    → Imports: path
-  - `watcher.ts` → Event (159 ln)  [typescript]
-    → Imports: effect
-  - `index.ts` → ide (74 ln)  [typescript]
-    → Imports: @/bus/bus-event
+**packages/desktop-electron/src/**
+- `es.ts` → dict (27 ln)  [typescript]
+  → export const dict = {
+- `fr.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `index.ts` → t (188 ln)  [typescript]
+  → Imports: ./en
+  → imports: ./en, ./zh, ./zht
+- `ja.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `ko.ts` → dict (27 ln)  [typescript]
+  → export const dict = {
+- `no.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `pl.ts` → dict (28 ln)  [typescript]
+  → export const dict = {
+- `ru.ts` → dict (27 ln)  [typescript]
+  → export const dict = {
+- `zh.ts` → dict (26 ln)  [typescript]
+  → export const dict = {
+- `zht.ts` → dict (26 ln)  [typescript]
+  → export const dict = {
+- `index.tsx` →  (377 ln)  [typescript]
+  → Imports: @opencode-ai/app
+  → imports: @opencode-ai/app, @solid-primitives/storage, @solidjs/router
+- `loading.tsx` →  (83 ln)  [typescript]
+  → Imports: @solidjs/meta
+  → imports: @solidjs/meta, solid-js/web, @opencode-ai/ui/font
+- `styles.css` →  (0 ln)  [stylesheet]
+- `updater.ts` → runUpdater (12 ln)  [typescript]
+  → Imports: ./i18n
+  → imports: ./i18n
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

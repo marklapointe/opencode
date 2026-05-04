@@ -1,34 +1,35 @@
 # Mapping Group 029
 Files: 14
 
-## File Tree
 **packages/console/app/**
-  - `reset.css` →  (76 ln)  [stylesheet]
-  - `color.css` →  (91 ln)  [stylesheet]
-  - `font.css` →  (21 ln)  [stylesheet]
-  - `space.css` →  (46 ln)  [stylesheet]
-
-**packages/console/core/**
-  - `account.ts` →  (32 ln)  [typescript]
-    → Imports: zod
-  - `actor.ts` →  (98 ln)  [typescript]
-    → Imports: ./context
-  - `aws.ts` →  (65 ln)  [typescript]
-    → Imports: zod
-  - `billing.ts` →  (556 ln)  [typescript]
-    → Imports: stripe
-  - `black.ts` →  (40 ln)  [typescript]
-    → Imports: zod
-  - `context.ts` →  (21 ln)  [typescript]
-    → Imports: node:async_hooks
-  - `index.ts` →  (85 ln)  [typescript]
-    → Imports: drizzle-orm/planetscale-serverless
-  - `types.ts` → ulid (33 ln)  [typescript]
-    → Imports: drizzle-orm
-  - `identifier.ts` →  (32 ln)  [typescript]
-    → Imports: ulid
-  - `key.ts` →  (92 ln)  [typescript]
-    → Imports: zod
+- `billing-section.module.css` →  (185 ln)  [stylesheet]
+- `billing-section.tsx` → BillingSection (266 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js, solid-js/store
+- `black-section.module.css` →  (142 ln)  [stylesheet]
+- `black-section.tsx` → BlackSection (290 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js/store, solid-js
+- `black-waitlist-section.module.css` →  (23 ln)  [stylesheet]
+- `index.tsx` →  (35 ln)  [typescript]
+  → Imports: ./monthly-limit-section
+  → imports: ./monthly-limit-section, ./billing-section, ./reload-section
+- `monthly-limit-section.module.css` →  (96 ln)  [stylesheet]
+- `monthly-limit-section.tsx` → MonthlyLimitSection (145 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js, solid-js/store
+- `payment-section.module.css` →  (93 ln)  [stylesheet]
+- `payment-section.tsx` → PaymentSection (141 ln)  [typescript]
+  → Imports: @opencode-ai/console-core/billing.js
+  → imports: @opencode-ai/console-core/billing.js, @solidjs/router, solid-js
+- `redeem-section.module.css` →  (61 ln)  [stylesheet]
+- `redeem-section.tsx` → RedeemSection (71 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js, ~/context/auth.withActor
+- `reload-section.module.css` →  (261 ln)  [stylesheet]
+- `reload-section.tsx` → ReloadSection (220 ln)  [typescript]
+  → Imports: @solidjs/router
+  → imports: @solidjs/router, solid-js, solid-js/store
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

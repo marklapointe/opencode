@@ -1,31 +1,21 @@
 # Mapping Group 110
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `switch.tsx` → Switch (29 ln)  [typescript]
-    → Imports: @kobalte/core/switch
-  - `tabs.css` →  (635 ln)  [stylesheet]
-  - `tabs.stories.tsx` → Basic (179 ln)  [typescript]
-    → Imports: ./icon-button
-  - `tabs.tsx` → Tabs (125 ln)  [typescript]
-    → Imports: @kobalte/core/tabs
-  - `tag.css` →  (37 ln)  [stylesheet]
-  - `tag.stories.tsx` → Basic (58 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `tag.tsx` → Tag (22 ln)  [typescript]
-    → Imports: solid-js
-  - `text-field.css` →  (134 ln)  [stylesheet]
-  - `text-field.stories.tsx` → Basic (111 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `text-field.tsx` → TextField (128 ln)  [typescript]
-    → Imports: @kobalte/core/text-field
-  - `text-reveal.css` →  (150 ln)  [stylesheet]
-  - `text-reveal.stories.tsx` → Playground (320 ln)  [typescript]
-    → Imports: solid-js
-  - `text-reveal.tsx` → TextReveal (143 ln)  [typescript]
-    → Imports: solid-js
-  - `text-shimmer.css` →  (119 ln)  [stylesheet]
+**packages/opencode/test/**
+- `workspace-routing.test.ts` →  (85 ln)  [test]
+- `compaction.test.ts` →  (2181 ln)  [test]
+- `instruction.test.ts` →  (246 ln)  [test]
+- `llm.test.ts` →  (1272 ln)  [test]
+- `message-v2.test.ts` →  (1291 ln)  [test]
+- `messages-pagination.test.ts` →  (1173 ln)  [test]
+- `processor-effect.test.ts` →  (842 ln)  [test]
+- `prompt.test.ts` →  (1980 ln)  [test]
+- `retry.test.ts` →  (326 ln)  [test]
+- `revert-compact.test.ts` →  (639 ln)  [test]
+- `schema-decoding.test.ts` →  (311 ln)  [test]
+- `session-entry-stepper.test.ts` →  (916 ln)  [test]
+- `session-schema.test.ts` →  (76 ln)  [test]
+- `session.test.ts` →  (185 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

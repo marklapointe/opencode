@@ -1,35 +1,39 @@
 # Mapping Group 055
 Files: 14
 
-## File Tree
-**packages/opencode/src/**
-  - `local-shell.ts` → localShellInputSchema (64 ln)  [typescript]
-    → Execute a shell command on the server. /
-  - `web-search-preview.ts` → webSearchPreviewArgsSchema (103 ln)  [typescript]
-    → Search context size to use for the web search. - high: Most comprehensive context, highest cost, slower response - medium: Balanced context, cost, and
-  - `web-search.ts` → webSearchArgsSchema (102 ln)  [typescript]
-    → Filters for the search. /
-  - `transform.ts` → message (1200 ln)  [typescript]
-    → Imports: ai
-  - `index.ts` → Info (368 ln)  [typescript]
-    → Imports: @/bus/bus-event
-  - `input.ts` → handlePtyInput (24 ln)  [typescript]
-    → Imports: effect
-  - `pty.bun.ts` → spawn (26 ln)  [typescript]
-    → Imports: bun-pty
-  - `pty.node.ts` → spawn (27 ln)  [typescript]
-    → Imports: ./pty
-  - `pty.ts` →  (25 ln)  [typescript]
-  - `schema.ts` → PtyID (16 ln)  [typescript]
-    → Imports: effect
-  - `adapter.bun.ts` → adapter (44 ln)  [typescript]
-    → Imports: hono
-  - `adapter.node.ts` → adapter (73 ln)  [typescript]
-    → Imports: @hono/node-server
-  - `adapter.ts` →  (26 ln)  [typescript]
-    → Imports: hono
-  - `backend.ts` → select (32 ln)  [typescript]
-    → Imports: @opencode-ai/core/flag/flag
+**packages/desktop/src/**
+- `en.ts` → dict (61 ln)  [typescript]
+  → export const dict = {
+- `es.ts` → dict (61 ln)  [typescript]
+  → export const dict = {
+- `fr.ts` → dict (62 ln)  [typescript]
+  → export const dict = {
+- `index.ts` → t (192 ln)  [typescript]
+  → Imports: @tauri-apps/plugin-store
+  → imports: @tauri-apps/plugin-store, ./en, ./zh
+- `ja.ts` → dict (62 ln)  [typescript]
+  → export const dict = {
+- `ko.ts` → dict (60 ln)  [typescript]
+  → export const dict = {
+- `no.ts` → dict (61 ln)  [typescript]
+  → export const dict = {
+- `pl.ts` → dict (62 ln)  [typescript]
+  → export const dict = {
+- `ru.ts` → dict (61 ln)  [typescript]
+  → export const dict = {
+- `zh.ts` → dict (59 ln)  [typescript]
+  → export const dict = {
+- `zht.ts` → dict (59 ln)  [typescript]
+  → export const dict = {
+- `index.tsx` →  (505 ln)  [typescript]
+  → Imports: @opencode-ai/app
+  → imports: @opencode-ai/app, @solid-primitives/storage, @tauri-apps/api/window
+- `loading.tsx` →  (90 ln)  [typescript]
+  → Imports: solid-js/web
+  → imports: solid-js/web, @solidjs/meta, @opencode-ai/ui/font
+- `menu.ts` → createMenu (190 ln)  [typescript]
+  → Imports: @tauri-apps/api/menu
+  → imports: @tauri-apps/api/menu, @tauri-apps/plugin-opener, @tauri-apps/plugin-os
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

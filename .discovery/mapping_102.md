@@ -1,32 +1,21 @@
 # Mapping Group 102
 Files: 14
 
-## File Tree
-**packages/ui/src/**
-  - `dialog.css` →  (181 ln)  [stylesheet]
-  - `dialog.stories.tsx` → Basic (173 ln)  [typescript]
-    → Imports: solid-js
-  - `dialog.tsx` → Dialog (72 ln)  [typescript]
-    → Imports: @kobalte/core/dialog
-  - `diff-changes.css` →  (42 ln)  [stylesheet]
-  - `diff-changes.stories.tsx` → Default (81 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `diff-changes.tsx` → DiffChanges (115 ln)  [typescript]
-    → Imports: solid-js
-  - `dock-prompt.stories.tsx` → Basic (62 ln)  [typescript]
-    → Imports: ../storybook/scaffold
-  - `dock-prompt.tsx` → DockPrompt (23 ln)  [typescript]
-    → Imports: solid-js
-  - `dock-surface.css` →  (23 ln)  [stylesheet]
-  - `dock-surface.tsx` → DockShell (54 ln)  [typescript]
-    → Imports: solid-js
-  - `dropdown-menu.css` →  (135 ln)  [stylesheet]
-  - `dropdown-menu.stories.tsx` → Basic (97 ln)  [typescript]
-    → Imports: ./button
-  - `dropdown-menu.tsx` → DropdownMenu (308 ln)  [typescript]
-    → Imports: @kobalte/core/dropdown-menu
-  - `favicon.stories.tsx` → Basic (49 ln)  [typescript]
-    → const docs = `### Overview
+**packages/opencode/test/**
+- `workspace.test.ts` →  (1526 ln)  [test]
+- `app-runtime-logger.test.ts` →  (98 ln)  [test]
+- `config-service.test.ts` →  (65 ln)  [test]
+- `instance-state.test.ts` →  (393 ln)  [test]
+- `run-service.test.ts` →  (49 ln)  [test]
+- `runner.test.ts` →  (523 ln)  [test]
+- `provider.ts` →  (81 ln)  [test]
+- `fsmonitor.test.ts` →  (68 ln)  [test]
+- `ignore.test.ts` →  (10 ln)  [test]
+- `index.test.ts` →  (956 ln)  [test]
+- `path-traversal.test.ts` →  (204 ln)  [test]
+- `ripgrep.test.ts` →  (214 ln)  [test]
+- `watcher.test.ts` →  (249 ln)  [test]
+- `filesystem.test.ts` →  (319 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z

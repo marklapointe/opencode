@@ -1,38 +1,21 @@
 # Mapping Group 099
 Files: 14
 
-## File Tree
-**packages/sdk/js/**
-  - `pathSerializer.gen.ts` → separatorArrayExplode (167 ln)  [typescript]
-    → @default true /
-  - `queryKeySerializer.gen.ts` → queryKeyJsonReplacer (111 ln)  [typescript]
-    → JSON-friendly union that mirrors what Pinia Colada can hash. /
-  - `serverSentEvents.gen.ts` → createSseClient (239 ln)  [typescript]
-    → Fetch API implementation. You can use this option to provide a custom fetch instance.
-  - `types.gen.ts` → IsExactlyNeverOrNeverUndefined (86 ln)  [typescript]
-    → Returns the final request URL. /
-  - `utils.gen.ts` → getValidRequestBody (137 ln)  [typescript]
-    → Imports: ./bodySerializer.gen.js
-  - `sdk.gen.ts` → HeyApiClient (4497 ln)  [typescript]
-    → You can provide a client instance returned by `createClient()` instead of individual options. This might be also useful if you want to implement a cus
-  - `types.gen.ts` →  (5546 ln)  [typescript]
-    → Startup script to run when creating a new workspace (worktree) /
-  - `index.ts` → createOpencode (23 ln)  [typescript]
-    → Imports: ./client.js
-  - `server.ts` → createOpencodeServer (134 ln)  [typescript]
-    → Imports: cross-spawn
-
-**packages/slack/src/**
-  - `index.ts` →  (145 ln)  [typescript]
-    → Imports: @slack/bolt
-
-**packages/ui/src/**
-  - `accordion.css` →  (123 ln)  [stylesheet]
-  - `accordion.stories.tsx` → Basic (149 ln)  [typescript]
-    → Imports: solid-js
-  - `accordion.tsx` → Accordion (92 ln)  [typescript]
-    → Imports: @kobalte/core/accordion
-  - `animated-number.css` →  (75 ln)  [stylesheet]
+**packages/opencode/test/**
+- `event-subscription.test.ts` →  (725 ln)  [test]
+- `agent.test.ts` →  (742 ln)  [test]
+- `auth.test.ts` →  (86 ln)  [test]
+- `bus-effect.test.ts` →  (161 ln)  [test]
+- `bus-integration.test.ts` →  (87 ln)  [test]
+- `bus.test.ts` →  (219 ln)  [test]
+- `account.test.ts` →  (26 ln)  [test]
+- `prompt-part.test.ts` →  (47 ln)  [test]
+- `sync.test.tsx` →  (149 ln)  [test]
+- `error.test.ts` →  (18 ln)  [test]
+- `github-action.test.ts` →  (198 ln)  [test]
+- `github-remote.test.ts` →  (80 ln)  [test]
+- `import.test.ts` →  (54 ln)  [test]
+- `plugin-auth-picker.test.ts` →  (120 ln)  [test]
 
 ---
-Generated: 2026-05-03 15:01:00
+Generated: 2026-05-04 02:45:04Z
